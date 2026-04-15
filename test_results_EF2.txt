@@ -1,0 +1,262 @@
+OK: 1. Random uniform on EF1 (m=5000, n=1000000, 7960 bytes)
+Benchmark 1. Random uniform on EF1
+	type:Access	elapsed time: 8.9905e+09	ns per query: 89.905 (dummy=340596)
+Benchmark 1. Random uniform on EF1
+	type:Predecessor	elapsed time: 6.62312e+09	ns per query: 66.2312 (dummy=14133)
+Benchmark 1. Random uniform on EF1
+	type:Successor	elapsed time: 7.01105e+09	ns per query: 70.1105 (dummy=407896)
+Benchmark 1. Random uniform on EF1
+	type:Contains	elapsed time: 5.99436e+09	ns per query: 59.9436 (dummy=1)
+------------------------------------------------------------
+OK: 1. Random uniform on EF2 (m=5000, n=1000000, 7928 bytes)
+Benchmark 1. Random uniform on EF2
+	type:Access	elapsed time: 9.1084e+09	ns per query: 91.084 (dummy=122254)
+Benchmark 1. Random uniform on EF2
+	type:Predecessor	elapsed time: 6.6506e+09	ns per query: 66.506 (dummy=205856)
+Benchmark 1. Random uniform on EF2
+	type:Successor	elapsed time: 6.67978e+09	ns per query: 66.7978 (dummy=604968)
+Benchmark 1. Random uniform on EF2
+	type:Contains	elapsed time: 5.99123e+09	ns per query: 59.9123 (dummy=1)
+------------------------------------------------------------
+OK: 2. Dense cluster on EF1 (m=1000, n=1000000, 1848 bytes)
+Benchmark 2. Dense cluster on EF1
+	type:Access	elapsed time: 3.79089e+09	ns per query: 37.9089 (dummy=3665)
+Benchmark 2. Dense cluster on EF1
+	type:Predecessor	elapsed time: 2.30156e+09	ns per query: 23.0156 (dummy=1461)
+Benchmark 2. Dense cluster on EF1
+	type:Successor	elapsed time: 2.52437e+09	ns per query: 25.2437 (dummy=502144)
+Benchmark 2. Dense cluster on EF1
+	type:Contains	elapsed time: 1.20209e+09	ns per query: 12.0209 (dummy=0)
+------------------------------------------------------------
+OK: 2. Dense cluster on EF2 (m=1000, n=1000000, 1840 bytes)
+Benchmark 2. Dense cluster on EF2
+	type:Access	elapsed time: 3.82991e+09	ns per query: 38.2991 (dummy=2785)
+Benchmark 2. Dense cluster on EF2
+	type:Predecessor	elapsed time: 5.52123e+09	ns per query: 55.2123 (dummy=1192)
+Benchmark 2. Dense cluster on EF2
+	type:Successor	elapsed time: 5.67219e+09	ns per query: 56.7219 (dummy=502996)
+Benchmark 2. Dense cluster on EF2
+	type:Contains	elapsed time: 1.27936e+09	ns per query: 12.7936 (dummy=1)
+------------------------------------------------------------
+OK: 3. Extreme sparsity (m=10, n=2^40) on EF1 (m=10, n=1099511627776, 80 bytes)
+Benchmark 3. Extreme sparsity (m=10, n=2^40) on EF1
+	type:Access	elapsed time: 1.61126e+09	ns per query: 16.1126 (dummy=957997262663)
+Benchmark 3. Extreme sparsity (m=10, n=2^40) on EF1
+	type:Predecessor	elapsed time: 4.59893e+09	ns per query: 45.9893 (dummy=748540605948)
+Benchmark 3. Extreme sparsity (m=10, n=2^40) on EF1
+	type:Successor	elapsed time: 4.93983e+09	ns per query: 49.3983 (dummy=671483456875)
+Benchmark 3. Extreme sparsity (m=10, n=2^40) on EF1
+	type:Contains	elapsed time: 3.76457e+09	ns per query: 37.6457 (dummy=0)
+------------------------------------------------------------
+OK: 3. Extreme sparsity (m=10, n=2^40) on EF2 (m=10, n=1099511627776, 72 bytes)
+Benchmark 3. Extreme sparsity (m=10, n=2^40) on EF2
+	type:Access	elapsed time: 1.56427e+09	ns per query: 15.6427 (dummy=1048326890390)
+Benchmark 3. Extreme sparsity (m=10, n=2^40) on EF2
+	type:Predecessor	elapsed time: 4.52148e+09	ns per query: 45.2148 (dummy=480202141973)
+Benchmark 3. Extreme sparsity (m=10, n=2^40) on EF2
+	type:Successor	elapsed time: 4.48935e+09	ns per query: 44.8935 (dummy=390145365996)
+Benchmark 3. Extreme sparsity (m=10, n=2^40) on EF2
+	type:Contains	elapsed time: 3.80764e+09	ns per query: 38.0764 (dummy=0)
+------------------------------------------------------------
+OK: 4a. Single {0} n=1 on EF1 (m=1, n=1, 16 bytes)
+Benchmark 4a. Single {0} n=1 on EF1
+	type:Access	elapsed time: 4.67294e+08	ns per query: 4.67294 (dummy=0)
+Benchmark 4a. Single {0} n=1 on EF1
+	type:Predecessor	elapsed time: 1.66317e+09	ns per query: 16.6317 (dummy=0)
+Benchmark 4a. Single {0} n=1 on EF1
+	type:Successor	elapsed time: 1.81049e+09	ns per query: 18.1049 (dummy=0)
+Benchmark 4a. Single {0} n=1 on EF1
+	type:Contains	elapsed time: 7.6959e+08	ns per query: 7.6959 (dummy=0)
+------------------------------------------------------------
+OK: 4a. Single {0} n=1 on EF2 (m=1, n=1, 8 bytes)
+Benchmark 4a. Single {0} n=1 on EF2
+	type:Access	elapsed time: 4.96765e+08	ns per query: 4.96765 (dummy=0)
+Benchmark 4a. Single {0} n=1 on EF2
+	type:Predecessor	elapsed time: 1.65311e+09	ns per query: 16.5311 (dummy=0)
+Benchmark 4a. Single {0} n=1 on EF2
+	type:Successor	elapsed time: 1.62978e+09	ns per query: 16.2978 (dummy=0)
+Benchmark 4a. Single {0} n=1 on EF2
+	type:Contains	elapsed time: 8.41616e+08	ns per query: 8.41616 (dummy=0)
+------------------------------------------------------------
+OK: 4b. Single {0} n=100 on EF1 (m=1, n=100, 24 bytes)
+Benchmark 4b. Single {0} n=100 on EF1
+	type:Access	elapsed time: 7.2079e+08	ns per query: 7.2079 (dummy=0)
+Benchmark 4b. Single {0} n=100 on EF1
+	type:Predecessor	elapsed time: 2.1736e+09	ns per query: 21.736 (dummy=0)
+Benchmark 4b. Single {0} n=100 on EF1
+	type:Successor	elapsed time: 1.95841e+09	ns per query: 19.5841 (dummy=0)
+Benchmark 4b. Single {0} n=100 on EF1
+	type:Contains	elapsed time: 1.03349e+09	ns per query: 10.3349 (dummy=1)
+------------------------------------------------------------
+OK: 4b. Single {0} n=100 on EF2 (m=1, n=100, 16 bytes)
+Benchmark 4b. Single {0} n=100 on EF2
+	type:Access	elapsed time: 7.52761e+08	ns per query: 7.52761 (dummy=0)
+Benchmark 4b. Single {0} n=100 on EF2
+	type:Predecessor	elapsed time: 2.20549e+09	ns per query: 22.0549 (dummy=0)
+Benchmark 4b. Single {0} n=100 on EF2
+	type:Successor	elapsed time: 1.88488e+09	ns per query: 18.8488 (dummy=0)
+Benchmark 4b. Single {0} n=100 on EF2
+	type:Contains	elapsed time: 1.05779e+09	ns per query: 10.5779 (dummy=0)
+------------------------------------------------------------
+OK: 4c. Single {99} n=100 on EF1 (m=1, n=100, 24 bytes)
+Benchmark 4c. Single {99} n=100 on EF1
+	type:Access	elapsed time: 7.68748e+08	ns per query: 7.68748 (dummy=0)
+Benchmark 4c. Single {99} n=100 on EF1
+	type:Predecessor	elapsed time: 1.88027e+09	ns per query: 18.8027 (dummy=0)
+Benchmark 4c. Single {99} n=100 on EF1
+	type:Successor	elapsed time: 2.58003e+09	ns per query: 25.8003 (dummy=0)
+Benchmark 4c. Single {99} n=100 on EF1
+	type:Contains	elapsed time: 1.38407e+09	ns per query: 13.8407 (dummy=0)
+------------------------------------------------------------
+OK: 4c. Single {99} n=100 on EF2 (m=1, n=100, 16 bytes)
+Benchmark 4c. Single {99} n=100 on EF2
+	type:Access	elapsed time: 7.49783e+08	ns per query: 7.49783 (dummy=0)
+Benchmark 4c. Single {99} n=100 on EF2
+	type:Predecessor	elapsed time: 1.83291e+09	ns per query: 18.3291 (dummy=99)
+Benchmark 4c. Single {99} n=100 on EF2
+	type:Successor	elapsed time: 2.17083e+09	ns per query: 21.7083 (dummy=0)
+Benchmark 4c. Single {99} n=100 on EF2
+	type:Contains	elapsed time: 1.39308e+09	ns per query: 13.9308 (dummy=1)
+------------------------------------------------------------
+OK: 4d. Two {0,99} n=100 on EF1 (m=2, n=100, 32 bytes)
+Benchmark 4d. Two {0,99} n=100 on EF1
+	type:Access	elapsed time: 1.76277e+09	ns per query: 17.6277 (dummy=0)
+Benchmark 4d. Two {0,99} n=100 on EF1
+	type:Predecessor	elapsed time: 3.03189e+09	ns per query: 30.3189 (dummy=99)
+Benchmark 4d. Two {0,99} n=100 on EF1
+	type:Successor	elapsed time: 3.50684e+09	ns per query: 35.0684 (dummy=99)
+Benchmark 4d. Two {0,99} n=100 on EF1
+	type:Contains	elapsed time: 1.83845e+09	ns per query: 18.3845 (dummy=0)
+------------------------------------------------------------
+OK: 4d. Two {0,99} n=100 on EF2 (m=2, n=100, 24 bytes)
+Benchmark 4d. Two {0,99} n=100 on EF2
+	type:Access	elapsed time: 1.80531e+09	ns per query: 18.0531 (dummy=99)
+Benchmark 4d. Two {0,99} n=100 on EF2
+	type:Predecessor	elapsed time: 2.82556e+09	ns per query: 28.2556 (dummy=99)
+Benchmark 4d. Two {0,99} n=100 on EF2
+	type:Successor	elapsed time: 3.02377e+09	ns per query: 30.2377 (dummy=99)
+Benchmark 4d. Two {0,99} n=100 on EF2
+	type:Contains	elapsed time: 1.87569e+09	ns per query: 18.7569 (dummy=1)
+------------------------------------------------------------
+OK: 5. elements at start: first 500 on EF1 (m=500, n=1000000, 1000 bytes)
+Benchmark 5. elements at start: first 500 on EF1
+	type:Access	elapsed time: 3.62286e+09	ns per query: 36.2286 (dummy=27)
+Benchmark 5. elements at start: first 500 on EF1
+	type:Predecessor	elapsed time: 2.4971e+09	ns per query: 24.971 (dummy=378)
+Benchmark 5. elements at start: first 500 on EF1
+	type:Successor	elapsed time: 1.67394e+09	ns per query: 16.7394 (dummy=447)
+Benchmark 5. elements at start: first 500 on EF1
+	type:Contains	elapsed time: 1.24495e+09	ns per query: 12.4495 (dummy=0)
+------------------------------------------------------------
+OK: 5. elements at start: first 500 on EF2 (m=500, n=1000000, 992 bytes)
+Benchmark 5. elements at start: first 500 on EF2
+	type:Access	elapsed time: 3.73261e+09	ns per query: 37.3261 (dummy=447)
+Benchmark 5. elements at start: first 500 on EF2
+	type:Predecessor	elapsed time: 5.96597e+09	ns per query: 59.6597 (dummy=301)
+Benchmark 5. elements at start: first 500 on EF2
+	type:Successor	elapsed time: 2.03726e+09	ns per query: 20.3726 (dummy=335)
+Benchmark 5. elements at start: first 500 on EF2
+	type:Contains	elapsed time: 1.23042e+09	ns per query: 12.3042 (dummy=0)
+------------------------------------------------------------
+OK: 6. elements at end: last 500 on EF1 (m=500, n=1000000, 1000 bytes)
+Benchmark 6. elements at end: last 500 on EF1
+	type:Access	elapsed time: 3.29255e+09	ns per query: 32.9255 (dummy=961)
+Benchmark 6. elements at end: last 500 on EF1
+	type:Predecessor	elapsed time: 1.5892e+09	ns per query: 15.892 (dummy=91)
+Benchmark 6. elements at end: last 500 on EF1
+	type:Successor	elapsed time: 2.65275e+09	ns per query: 26.5275 (dummy=147)
+Benchmark 6. elements at end: last 500 on EF1
+	type:Contains	elapsed time: 1.18804e+09	ns per query: 11.8804 (dummy=1)
+------------------------------------------------------------
+OK: 6. elements at end: last 500 on EF2 (m=500, n=1000000, 992 bytes)
+Benchmark 6. elements at end: last 500 on EF2
+	type:Access	elapsed time: 3.29467e+09	ns per query: 32.9467 (dummy=1004)
+Benchmark 6. elements at end: last 500 on EF2
+	type:Predecessor	elapsed time: 1.87661e+09	ns per query: 18.7661 (dummy=999478)
+Benchmark 6. elements at end: last 500 on EF2
+	type:Successor	elapsed time: 6.45154e+09	ns per query: 64.5154 (dummy=872)
+Benchmark 6. elements at end: last 500 on EF2
+	type:Contains	elapsed time: 1.18539e+09	ns per query: 11.8539 (dummy=0)
+------------------------------------------------------------
+OK: 7. large random (n=2^32) on EF1 (m=100000, n=4294967296, 259224 bytes)
+Benchmark 7. large random (n=2^32) on EF1
+	type:Access	elapsed time: 1.36454e+10	ns per query: 136.454 (dummy=3071048124)
+Benchmark 7. large random (n=2^32) on EF1
+	type:Predecessor	elapsed time: 7.59465e+09	ns per query: 75.9465 (dummy=352615775)
+Benchmark 7. large random (n=2^32) on EF1
+	type:Successor	elapsed time: 8.09987e+09	ns per query: 80.9987 (dummy=1568772808)
+Benchmark 7. large random (n=2^32) on EF1
+	type:Contains	elapsed time: 7.06366e+09	ns per query: 70.6366 (dummy=1)
+------------------------------------------------------------
+OK: 7. large random (n=2^32) on EF2 (m=100000, n=4294967296, 258712 bytes)
+Benchmark 7. large random (n=2^32) on EF2
+	type:Access	elapsed time: 1.41841e+10	ns per query: 141.841 (dummy=3336868859)
+Benchmark 7. large random (n=2^32) on EF2
+	type:Predecessor	elapsed time: 7.66979e+09	ns per query: 76.6979 (dummy=768022931)
+Benchmark 7. large random (n=2^32) on EF2
+	type:Successor	elapsed time: 7.78059e+09	ns per query: 77.8059 (dummy=3313613150)
+Benchmark 7. large random (n=2^32) on EF2
+	type:Contains	elapsed time: 7.04483e+09	ns per query: 70.4483 (dummy=0)
+------------------------------------------------------------
+OK: 8. Evenly spaced (stride=100) on EF1 (m=10000, n=1000000, 14720 bytes)
+Benchmark 8. Evenly spaced (stride=100) on EF1
+	type:Access	elapsed time: 9.91103e+09	ns per query: 99.1103 (dummy=142432)
+Benchmark 8. Evenly spaced (stride=100) on EF1
+	type:Predecessor	elapsed time: 6.41295e+09	ns per query: 64.1295 (dummy=611456)
+Benchmark 8. Evenly spaced (stride=100) on EF1
+	type:Successor	elapsed time: 7.0098e+09	ns per query: 70.098 (dummy=475948)
+Benchmark 8. Evenly spaced (stride=100) on EF1
+	type:Contains	elapsed time: 5.8875e+09	ns per query: 58.875 (dummy=0)
+------------------------------------------------------------
+OK: 8. Evenly spaced (stride=100) on EF2 (m=10000, n=1000000, 14656 bytes)
+Benchmark 8. Evenly spaced (stride=100) on EF2
+	type:Access	elapsed time: 1.01131e+10	ns per query: 101.131 (dummy=1027648)
+Benchmark 8. Evenly spaced (stride=100) on EF2
+	type:Predecessor	elapsed time: 6.54595e+09	ns per query: 65.4595 (dummy=889164)
+Benchmark 8. Evenly spaced (stride=100) on EF2
+	type:Successor	elapsed time: 6.64761e+09	ns per query: 66.4761 (dummy=935228)
+Benchmark 8. Evenly spaced (stride=100) on EF2
+	type:Contains	elapsed time: 5.85445e+09	ns per query: 58.5445 (dummy=1)
+------------------------------------------------------------
+OK: 9. Two disjoint clusters on EF1 (m=776, n=1000000, 1456 bytes)
+Benchmark 9. Two disjoint clusters on EF1
+	type:Access	elapsed time: 4.93204e+09	ns per query: 49.3204 (dummy=640)
+Benchmark 9. Two disjoint clusters on EF1
+	type:Predecessor	elapsed time: 2.59577e+09	ns per query: 25.9577 (dummy=998780)
+Benchmark 9. Two disjoint clusters on EF1
+	type:Successor	elapsed time: 2.79173e+09	ns per query: 27.9173 (dummy=577)
+Benchmark 9. Two disjoint clusters on EF1
+	type:Contains	elapsed time: 1.26019e+09	ns per query: 12.6019 (dummy=0)
+------------------------------------------------------------
+OK: 9. Two disjoint clusters on EF2 (m=776, n=1000000, 1448 bytes)
+Benchmark 9. Two disjoint clusters on EF2
+	type:Access	elapsed time: 4.85885e+09	ns per query: 48.5885 (dummy=31898)
+Benchmark 9. Two disjoint clusters on EF2
+	type:Predecessor	elapsed time: 6.6759e+09	ns per query: 66.759 (dummy=999617)
+Benchmark 9. Two disjoint clusters on EF2
+	type:Successor	elapsed time: 8.124e+09	ns per query: 81.24 (dummy=998679)
+Benchmark 9. Two disjoint clusters on EF2
+	type:Contains	elapsed time: 1.28325e+09	ns per query: 12.8325 (dummy=0)
+------------------------------------------------------------
+OK: 10. Exponential gaps (powers of 2) on EF1 (m=59, n=1152921504606846976, 448 bytes)
+Benchmark 10. Exponential gaps (powers of 2) on EF1
+	type:Access	elapsed time: 2.76014e+09	ns per query: 27.6014 (dummy=553660852637838716)
+Benchmark 10. Exponential gaps (powers of 2) on EF1
+	type:Predecessor	elapsed time: 3.35811e+09	ns per query: 33.5811 (dummy=590917393178427392)
+Benchmark 10. Exponential gaps (powers of 2) on EF1
+	type:Successor	elapsed time: 3.98823e+09	ns per query: 39.8823 (dummy=904326881958952960)
+Benchmark 10. Exponential gaps (powers of 2) on EF1
+	type:Contains	elapsed time: 2.28083e+09	ns per query: 22.8083 (dummy=0)
+------------------------------------------------------------
+OK: 10. Exponential gaps (powers of 2) on EF2 (m=59, n=1152921504606846976, 440 bytes)
+Benchmark 10. Exponential gaps (powers of 2) on EF2
+	type:Access	elapsed time: 2.83763e+09	ns per query: 28.3763 (dummy=188196691618547362)
+Benchmark 10. Exponential gaps (powers of 2) on EF2
+	type:Predecessor	elapsed time: 4.02866e+09	ns per query: 40.2866 (dummy=1032898403001958400)
+Benchmark 10. Exponential gaps (powers of 2) on EF2
+	type:Successor	elapsed time: 3.84918e+09	ns per query: 38.4918 (dummy=31242163341754368)
+Benchmark 10. Exponential gaps (powers of 2) on EF2
+	type:Contains	elapsed time: 2.31028e+09	ns per query: 23.1028 (dummy=0)
+------------------------------------------------------------
+
+All tests passed.

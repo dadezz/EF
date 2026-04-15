@@ -149,8 +149,19 @@ public:
     }
 
     bool contains(u64 x) const {
-        auto s = successor(x);
-        return s.has_value() && *s == x;
+        if (m == 0 || x >= n) return false;
+
+        u64 prefix = getPrefixBits(x);
+        u64 suffix = getSuffixBits(x);
+        
+        u64 lo_s = getS(prefix);
+        u64 hi_s = getS(prefix + 1);
+
+        if (lo_s == hi_s) return false;
+
+        u64 pos = suffix_lower_bound(lo_s, hi_s, suffix);
+
+        return (pos < hi_s && getF(pos) == suffix);
     }
 
 private:
