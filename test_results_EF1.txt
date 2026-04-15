@@ -1,0 +1,132 @@
+OK: 1. Random uniform (m=5000, n=1000000, 7960 bytes)
+Benchmark 1. Random uniform
+	type:Access	elapsed time: 9.54622e+09	ns per query: 95.4622 (dummy=340596)
+Benchmark 1. Random uniform
+	type:Predecessor	elapsed time: 6.56816e+09	ns per query: 65.6816 (dummy=14133)
+Benchmark 1. Random uniform
+	type:Successor	elapsed time: 7.26519e+09	ns per query: 72.6519 (dummy=407896)
+Benchmark 1. Random uniform
+	type:Contains	elapsed time: 7.33498e+09	ns per query: 73.3498 (dummy=1)
+------------------------------------------------------------
+OK: 2. Dense cluster (m=1000, n=1000000, 1848 bytes)
+Benchmark 2. Dense cluster
+	type:Access	elapsed time: 3.8238e+09	ns per query: 38.238 (dummy=1461)
+Benchmark 2. Dense cluster
+	type:Predecessor	elapsed time: 2.2368e+09	ns per query: 22.368 (dummy=502344)
+Benchmark 2. Dense cluster
+	type:Successor	elapsed time: 2.66987e+09	ns per query: 26.6987 (dummy=503740)
+Benchmark 2. Dense cluster
+	type:Contains	elapsed time: 2.62996e+09	ns per query: 26.2996 (dummy=1)
+------------------------------------------------------------
+OK: 3. Extreme sparsity (m=10, n=2^40) (m=10, n=1099511627776, 80 bytes)
+Benchmark 3. Extreme sparsity (m=10, n=2^40)
+	type:Access	elapsed time: 1.7848e+09	ns per query: 17.848 (dummy=125612819449)
+Benchmark 3. Extreme sparsity (m=10, n=2^40)
+	type:Predecessor	elapsed time: 4.65648e+09	ns per query: 46.5648 (dummy=119013867322)
+Benchmark 3. Extreme sparsity (m=10, n=2^40)
+	type:Successor	elapsed time: 4.94197e+09	ns per query: 49.4197 (dummy=567606675993)
+Benchmark 3. Extreme sparsity (m=10, n=2^40)
+	type:Contains	elapsed time: 4.96659e+09	ns per query: 49.6659 (dummy=0)
+------------------------------------------------------------
+OK: 4a. Single {0} n=1 (m=1, n=1, 16 bytes)
+Benchmark 4a. Single {0} n=1
+	type:Access	elapsed time: 4.80762e+08	ns per query: 4.80762 (dummy=0)
+Benchmark 4a. Single {0} n=1
+	type:Predecessor	elapsed time: 1.65036e+09	ns per query: 16.5036 (dummy=0)
+Benchmark 4a. Single {0} n=1
+	type:Successor	elapsed time: 1.83463e+09	ns per query: 18.3463 (dummy=0)
+Benchmark 4a. Single {0} n=1
+	type:Contains	elapsed time: 1.98734e+09	ns per query: 19.8734 (dummy=0)
+------------------------------------------------------------
+OK: 4b. Single {0} n=100 (m=1, n=100, 24 bytes)
+Benchmark 4b. Single {0} n=100
+	type:Access	elapsed time: 7.19297e+08	ns per query: 7.19297 (dummy=0)
+Benchmark 4b. Single {0} n=100
+	type:Predecessor	elapsed time: 2.21862e+09	ns per query: 22.1862 (dummy=0)
+Benchmark 4b. Single {0} n=100
+	type:Successor	elapsed time: 2.00383e+09	ns per query: 20.0383 (dummy=0)
+Benchmark 4b. Single {0} n=100
+	type:Contains	elapsed time: 1.99101e+09	ns per query: 19.9101 (dummy=1)
+------------------------------------------------------------
+OK: 4c. Single {99} n=100 (m=1, n=100, 24 bytes)
+Benchmark 4c. Single {99} n=100
+	type:Access	elapsed time: 7.26753e+08	ns per query: 7.26753 (dummy=0)
+Benchmark 4c. Single {99} n=100
+	type:Predecessor	elapsed time: 1.7663e+09	ns per query: 17.663 (dummy=99)
+Benchmark 4c. Single {99} n=100
+	type:Successor	elapsed time: 2.46522e+09	ns per query: 24.6522 (dummy=0)
+Benchmark 4c. Single {99} n=100
+	type:Contains	elapsed time: 2.58118e+09	ns per query: 25.8118 (dummy=0)
+------------------------------------------------------------
+OK: 4d. Two {0,99} n=100 (m=2, n=100, 32 bytes)
+Benchmark 4d. Two {0,99} n=100
+	type:Access	elapsed time: 1.76098e+09	ns per query: 17.6098 (dummy=99)
+Benchmark 4d. Two {0,99} n=100
+	type:Predecessor	elapsed time: 3.03244e+09	ns per query: 30.3244 (dummy=0)
+Benchmark 4d. Two {0,99} n=100
+	type:Successor	elapsed time: 3.59615e+09	ns per query: 35.9615 (dummy=99)
+Benchmark 4d. Two {0,99} n=100
+	type:Contains	elapsed time: 3.59411e+09	ns per query: 35.9411 (dummy=1)
+------------------------------------------------------------
+OK: 5. elements at start: first 500 (m=500, n=1000000, 1000 bytes)
+Benchmark 5. elements at start: first 500
+	type:Access	elapsed time: 3.62264e+09	ns per query: 36.2264 (dummy=423)
+Benchmark 5. elements at start: first 500
+	type:Predecessor	elapsed time: 2.45735e+09	ns per query: 24.5735 (dummy=47)
+Benchmark 5. elements at start: first 500
+	type:Successor	elapsed time: 1.79393e+09	ns per query: 17.9393 (dummy=188)
+Benchmark 5. elements at start: first 500
+	type:Contains	elapsed time: 1.75196e+09	ns per query: 17.5196 (dummy=0)
+------------------------------------------------------------
+OK: 6. elements at end: last 500 (m=500, n=1000000, 1000 bytes)
+Benchmark 6. elements at end: last 500
+	type:Access	elapsed time: 3.32544e+09	ns per query: 33.2544 (dummy=78)
+Benchmark 6. elements at end: last 500
+	type:Predecessor	elapsed time: 1.72042e+09	ns per query: 17.2042 (dummy=979)
+Benchmark 6. elements at end: last 500
+	type:Successor	elapsed time: 2.69008e+09	ns per query: 26.9008 (dummy=885)
+Benchmark 6. elements at end: last 500
+	type:Contains	elapsed time: 2.82947e+09	ns per query: 28.2947 (dummy=1)
+------------------------------------------------------------
+OK: 7. large random (n=2^32) (m=100000, n=4294967296, 259224 bytes)
+Benchmark 7. large random (n=2^32)
+	type:Access	elapsed time: 1.36103e+10	ns per query: 136.103 (dummy=3301380239)
+Benchmark 7. large random (n=2^32)
+	type:Predecessor	elapsed time: 7.49789e+09	ns per query: 74.9789 (dummy=3906865623)
+Benchmark 7. large random (n=2^32)
+	type:Successor	elapsed time: 8.02402e+09	ns per query: 80.2402 (dummy=1895244095)
+Benchmark 7. large random (n=2^32)
+	type:Contains	elapsed time: 8.11932e+09	ns per query: 81.1932 (dummy=1)
+------------------------------------------------------------
+OK: 8. Evenly spaced (stride=100) (m=10000, n=1000000, 14720 bytes)
+Benchmark 8. Evenly spaced (stride=100)
+	type:Access	elapsed time: 1.01373e+10	ns per query: 101.373 (dummy=940592)
+Benchmark 8. Evenly spaced (stride=100)
+	type:Predecessor	elapsed time: 6.43586e+09	ns per query: 64.3586 (dummy=196976)
+Benchmark 8. Evenly spaced (stride=100)
+	type:Successor	elapsed time: 7.01382e+09	ns per query: 70.1382 (dummy=1033780)
+Benchmark 8. Evenly spaced (stride=100)
+	type:Contains	elapsed time: 7.05659e+09	ns per query: 70.5659 (dummy=0)
+------------------------------------------------------------
+OK: 9. Two disjoint clusters (m=797, n=1000000, 1496 bytes)
+Benchmark 9. Two disjoint clusters
+	type:Access	elapsed time: 5.17406e+09	ns per query: 51.7406 (dummy=32019)
+Benchmark 9. Two disjoint clusters
+	type:Predecessor	elapsed time: 2.56095e+09	ns per query: 25.6095 (dummy=998474)
+Benchmark 9. Two disjoint clusters
+	type:Successor	elapsed time: 2.85094e+09	ns per query: 28.5094 (dummy=999250)
+Benchmark 9. Two disjoint clusters
+	type:Contains	elapsed time: 3.1735e+09	ns per query: 31.735 (dummy=0)
+------------------------------------------------------------
+OK: 10. Exponential gaps (powers of 2) (m=59, n=1152921504606846976, 448 bytes)
+Benchmark 10. Exponential gaps (powers of 2)
+	type:Access	elapsed time: 2.7134e+09	ns per query: 27.134 (dummy=93965657960654922)
+Benchmark 10. Exponential gaps (powers of 2)
+	type:Predecessor	elapsed time: 3.35319e+09	ns per query: 33.5319 (dummy=689171345669357568)
+Benchmark 10. Exponential gaps (powers of 2)
+	type:Successor	elapsed time: 4.13077e+09	ns per query: 41.3077 (dummy=1036363333508268032)
+Benchmark 10. Exponential gaps (powers of 2)
+	type:Contains	elapsed time: 4.27472e+09	ns per query: 42.7472 (dummy=0)
+------------------------------------------------------------
+
+All tests passed.
