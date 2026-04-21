@@ -207,15 +207,15 @@ private:
     u32 m_prefixBits, m_suffixBits, m_bitsForM, m_bitsForN, m_suffixOffset;
     std::vector<u64> m_data; 
     
-    void checkInput(std::span<const u64>& sorted_vals, u64 universe) {
-        if (sorted_vals.empty()) 
+    void checkInput(std::span<const u64> sorted_vals, u64 universe) {
+        if (sorted_vals.empty())  [[unlikely]]
             throw std::invalid_argument("Empty vector");
-        if (universe == 0) 
+        if (universe == 0) [[unlikely]]
             throw std::invalid_argument("universe must be > 0");
         for (auto v : sorted_vals)
-            if (v >= universe) 
+            if (v >= universe) [[unlikely]]
                 throw std::out_of_range("element >= universe");
-        if (!std::is_sorted(sorted_vals.begin(), sorted_vals.end()))
+        if (!std::is_sorted(sorted_vals.begin(), sorted_vals.end())) [[unlikely]]
             throw std::invalid_argument("Input vector must be sorted");
     }
 

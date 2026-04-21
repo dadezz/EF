@@ -11,6 +11,7 @@
 #include "concept_type.hpp"
 #include "EF_bucket.hpp"
 #include "EF_bucket2.hpp"
+#include "EF_vigna.hpp"
 using u64 = uint64_t;
 
 std::mt19937_64 rng(42);  // global random generator
@@ -153,7 +154,6 @@ void run_test_suite(const std::vector<u64>& sorted_vals, u64 universe, std::stri
 }
 
 int main() {
-
     // 1) Random uniform
     {
         uint64_t n = 1'000'000, m = 5000;
@@ -162,6 +162,7 @@ int main() {
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
         run_test_suite<BucketEFSet>(sorted, n, "1. Random uniform on EF1");
         run_test_suite<BucketEFSet2>(sorted, n, "1. Random uniform on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "1. Random uniform on Vigna's EF");
     }
 
     // 2) Dense cluster — most buckets empty
@@ -173,6 +174,7 @@ int main() {
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
         run_test_suite<BucketEFSet>(sorted, n, "2. Dense cluster on EF1");
         run_test_suite<BucketEFSet2>(sorted, n, "2. Dense cluster on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "2. Dense cluster on Vigna's EF");
     }
 
     // 3) Extreme sparsity: few elements, huge universe
@@ -183,18 +185,23 @@ int main() {
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
         run_test_suite<BucketEFSet>(sorted, n, "3. Extreme sparsity (m=10, n=2^40) on EF1");
         run_test_suite<BucketEFSet2>(sorted, n, "3. Extreme sparsity (m=10, n=2^40) on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "3. Extreme sparsity (m=10, n=2^40) on Vigna's EF");
     }
 
     // 4) Small edge cases
     {
         run_test_suite<BucketEFSet>({0}, 1, "4a. Single {0} n=1 on EF1");
         run_test_suite<BucketEFSet2>({0}, 1, "4a. Single {0} n=1 on EF2");
+        run_test_suite<VignaEFSet>({0}, 1, "4a. Single {0} n=1 on Vigna's EF");
         run_test_suite<BucketEFSet>({0}, 100, "4b. Single {0} n=100 on EF1");
         run_test_suite<BucketEFSet2>({0}, 100, "4b. Single {0} n=100 on EF2");
+        run_test_suite<VignaEFSet>({0}, 100, "4b. Single {0} n=100 on Vigna's EF");
         run_test_suite<BucketEFSet>({99}, 100, "4c. Single {99} n=100 on EF1");
         run_test_suite<BucketEFSet2>({99}, 100, "4c. Single {99} n=100 on EF2");
+        run_test_suite<VignaEFSet>({99}, 100, "4c. Single {99} n=100 on Vigna's EF");
         run_test_suite<BucketEFSet>({0, 99}, 100, "4d. Two {0,99} n=100 on EF1");
         run_test_suite<BucketEFSet2>({0, 99}, 100, "4d. Two {0,99} n=100 on EF2");
+        run_test_suite<VignaEFSet>({0, 99}, 100, "4d. Two {0,99} n=100 on Vigna's EF");
     }
 
     // 5) All elements at start of universe
@@ -203,6 +210,7 @@ int main() {
         for (uint64_t i = 0; i < 500; i++) sorted.push_back(i);
         run_test_suite<BucketEFSet>(sorted, 1'000'000, "5. elements at start: first 500 on EF1");
         run_test_suite<BucketEFSet2>(sorted, 1'000'000, "5. elements at start: first 500 on EF2");
+        run_test_suite<VignaEFSet>(sorted, 1'000'000, "5. elements at start: first 500 on Vigna's EF");
     }
 
     // 6) All elements at end of universe
@@ -211,6 +219,7 @@ int main() {
         for (uint64_t i = 0; i < 500; i++) sorted.push_back(999'500 + i);
         run_test_suite<BucketEFSet>(sorted, 1'000'000, "6. elements at end: last 500 on EF1");
         run_test_suite<BucketEFSet2>(sorted, 1'000'000, "6. elements at end: last 500 on EF2");
+        run_test_suite<VignaEFSet>(sorted, 1'000'000, "6. elements at end: last 500 on Vigna's EF");
     }
 
     // 7) Large random
@@ -221,6 +230,7 @@ int main() {
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
         run_test_suite<BucketEFSet>(sorted, n, "7. large random (n=2^32) on EF1");
         run_test_suite<BucketEFSet2>(sorted, n, "7. large random (n=2^32) on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "7. large random (n=2^32) on Vigna's EF");
     }
 
     // 8) Evenly spaced elements (stride)
@@ -230,6 +240,7 @@ int main() {
         for (uint64_t i = 0; i < n; i += 100) sorted.push_back(i);
         run_test_suite<BucketEFSet>(sorted, n, "8. Evenly spaced (stride=100) on EF1");
         run_test_suite<BucketEFSet2>(sorted, n, "8. Evenly spaced (stride=100) on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "8. Evenly spaced (stride=100) on Vigna's EF");
     }
 
     // 9) Two disjoint dense clusters separated by huge gap
@@ -241,6 +252,7 @@ int main() {
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
         run_test_suite<BucketEFSet>(sorted, n, "9. Two disjoint clusters on EF1");
         run_test_suite<BucketEFSet2>(sorted, n, "9. Two disjoint clusters on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "9. Two disjoint clusters on Vigna's EF");
     }
     
     // 10) Exponential gaps
@@ -250,6 +262,18 @@ int main() {
         for (uint64_t i = 1; i < 60; i++) sorted.push_back(1ULL << i);
         run_test_suite<BucketEFSet>(sorted, n, "10. Exponential gaps (powers of 2) on EF1");
         run_test_suite<BucketEFSet2>(sorted, n, "10. Exponential gaps (powers of 2) on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "10. Exponential gaps (powers of 2) on Vigna's EF");
+    }
+    // 11) m = 10M elements
+    {
+        uint64_t n = 1ULL << 63;
+        uint64_t m = 10000000;
+        std::set<uint64_t> dedup;
+        while (dedup.size() < m) dedup.insert(rng() % n);
+        std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
+        run_test_suite<BucketEFSet>(sorted, n, "11. m = 10M elements on EF1");
+        run_test_suite<BucketEFSet2>(sorted, n, "11. m = 10M elements on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "11. m = 10M elements on Vigna's EF");
     }
 
     std::cout << "\nAll tests passed.\n";

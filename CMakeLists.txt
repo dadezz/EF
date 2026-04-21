@@ -8,7 +8,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(ef_test test.cpp)
 
-target_include_directories(ef_test PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(ef_test PRIVATE 
+    ${CMAKE_SOURCE_DIR}/include
+    /home/utente/dev/sux
+)
+get_target_property(INCLUDES ef_test INCLUDE_DIRECTORIES)
+message(STATUS "Include dirs: ${INCLUDES}")
 
 target_compile_options(ef_test PRIVATE
     -O3
