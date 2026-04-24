@@ -275,6 +275,140 @@ int main() {
         run_test_suite<BucketEFSet2>(sorted, n, "11. m = 10M elements on EF2");
         run_test_suite<VignaEFSet>(sorted, n, "11. m = 10M elements on Vigna's EF");
     }
+    // 12) 50M Random Walk (90% small gaps, 10% massive gaps)
+    {
+        uint64_t n = 1ULL << 63;
+        uint64_t m = 50'000'000;
+        std::vector<uint64_t> sorted;
+        sorted.reserve(m);
+        
+        uint64_t current = 0;
+        for (uint64_t i = 0; i < m; i++) {
+            sorted.push_back(current);
+            if (rng() % 100 < 90) {
+                current += (rng() % 100) + 1;           // 90% chance: gap of 1-100
+            } else {
+                current += (rng() % (1ULL << 30)) + 1;  // 10% chance: massive gap
+            }
+            if (current >= n) break; // Prevent overflow
+        }
+        
+        // Ensure unique and strictly increasing
+        sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
+        
+        run_test_suite<BucketEFSet>(sorted, n, "12. 50M Random Walk on EF1");
+        run_test_suite<BucketEFSet2>(sorted, n, "12. 50M Random Walk on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "12. 50M Random Walk on Vigna's EF");
+    }
+    // 12) 50M Random Walk (90% small gaps, 10% massive gaps)
+    {
+        uint64_t n = 1ULL << 63;
+        uint64_t m = 50'000'000;
+        std::vector<uint64_t> sorted;
+        sorted.reserve(m);
+        
+        uint64_t current = 0;
+        for (uint64_t i = 0; i < m; i++) {
+            sorted.push_back(current);
+            if (rng() % 100 < 90) {
+                current += (rng() % 100) + 1;           // 90% chance: gap of 1-100
+            } else {
+                current += (rng() % (1ULL << 30)) + 1;  // 10% chance: massive gap
+            }
+            if (current >= n) break; // Prevent overflow
+        }
+        
+        // Ensure unique and strictly increasing
+        sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
+        
+        run_test_suite<BucketEFSet>(sorted, n, "12. 50M Random Walk on EF1");
+        run_test_suite<BucketEFSet2>(sorted, n, "12. 50M Random Walk on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "12. 50M Random Walk on Vigna's EF");
+    }
+    // 13) 100M Contiguous Bursts
+    {
+        uint64_t n = 1ULL << 63;
+        uint64_t num_clusters = 100'000;
+        uint64_t burst_size = 1000;
+        
+        std::vector<uint64_t> sorted;
+        sorted.reserve(num_clusters * burst_size);
+        
+        for (uint64_t i = 0; i < num_clusters; i++) {
+            uint64_t start_val = rng() % (n - burst_size);
+            for (uint64_t j = 0; j < burst_size; j++) {
+                sorted.push_back(start_val + j);
+            }
+        }
+        
+        std::sort(sorted.begin(), sorted.end());
+        sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
+        
+        run_test_suite<BucketEFSet>(sorted, n, "13. 100M Contiguous Bursts on EF1");
+        run_test_suite<BucketEFSet2>(sorted, n, "13. 100M Contiguous Bursts on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "13. 100M Contiguous Bursts on Vigna's EF");
+    }
+    // 14) 50M Geometric (Power-Law) Gaps
+    {
+        uint64_t n = 1ULL << 63;
+        uint64_t m = 50'000'000;
+        std::vector<uint64_t> sorted;
+        sorted.reserve(m);
+        
+        uint64_t current = 0;
+        for (uint64_t i = 0; i < m; i++) {
+            sorted.push_back(current);
+            // Gap magnitude is 2^X, where X is random between 0 and 35
+            uint64_t bit_width = rng() % 36; 
+            current += (1ULL << bit_width) + (rng() % 10); // Base jump + noise
+            if (current >= n) break;
+        }
+        
+        sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
+        
+        run_test_suite<BucketEFSet>(sorted, n, "14. 50M Geometric Gaps on EF1");
+        run_test_suite<BucketEFSet2>(sorted, n, "14. 50M Geometric Gaps on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "14. 50M Geometric Gaps on Vigna's EF");
+    }
+    // 15) 10M Adversarial Single-Prefix Cluster
+    {
+        uint64_t n = 1ULL << 63;
+        uint64_t m = 10'000'000;
+        std::vector<uint64_t> sorted;
+        sorted.reserve(m);
+        
+        // Fix the top 40 bits to a random static value
+        uint64_t fixed_prefix = (rng() % (1ULL << 40)) << 23; 
+        
+        for (uint64_t i = 0; i < m; i++) {
+            // Only the bottom 23 bits vary
+            sorted.push_back(fixed_prefix | (rng() % (1ULL << 23)));
+        }
+        
+        std::sort(sorted.begin(), sorted.end());
+        sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
+        
+        run_test_suite<BucketEFSet>(sorted, n, "15. 10M Adversarial Single-Prefix on EF1");
+        run_test_suite<BucketEFSet2>(sorted, n, "15. 10M Adversarial Single-Prefix on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "15. 10M Adversarial Single-Prefix on Vigna's EF");
+    }
+    // 16) 100M True Uniform Random
+    {
+        uint64_t n = 1ULL << 63;
+        uint64_t m = 100'000'000;
+        std::vector<uint64_t> sorted(m);
+        
+        for (auto& val : sorted) {
+            val = rng() % n;
+        }
+        
+        std::sort(sorted.begin(), sorted.end());
+        sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
+        
+        run_test_suite<BucketEFSet>(sorted, n, "16. 100M Uniform Random on EF1");
+        run_test_suite<BucketEFSet2>(sorted, n, "16. 100M Uniform Random on EF2");
+        run_test_suite<VignaEFSet>(sorted, n, "16. 100M Uniform Random on Vigna's EF");
+    }
 
     std::cout << "\nAll tests passed.\n";
     return 0;
