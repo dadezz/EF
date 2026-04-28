@@ -11,6 +11,8 @@
 #include "concept_type.hpp"
 #include "EF_bucket.hpp"
 #include "EF_bucket2.hpp"
+#include "EF_bucket2v2.hpp"
+#include "EF_bucketv3.hpp"
 #include "EF_vigna.hpp"
 using u64 = uint64_t;
 
@@ -20,7 +22,7 @@ template<typename T>
 requires EF<T>
 void checkCorrectness(std::span<const u64> sorted_vals, 
     u64 universe, const T& t, std::string_view label) {
-
+    std::cout << "Checking correctness of " << label << "...\n";
     assert(t.size() == sorted_vals.size());
 
     // ################ ACCESS TESTS ################
@@ -71,100 +73,111 @@ enum class TestType {
 
 template<typename T>
 requires EF<T>
-void benchmark(const T& t, TestType type, std::string_view label) {
-    constexpr int NUM_QUERIES = 100000000;
-    uint64_t n = t.universe();
-    uint64_t size = t.size();
+u64 run_queries(const T& t, TestType type, const std::vector<u64>& queries) {
+    u64 result = 0;
+    switch (type) {
+        case TestType::ACCESS:
+            for (u64 x : queries) result ^= t.access(x).value_or(0);
+            break;
+        case TestType::PREDECESSOR:
+            for (u64 x : queries) result ^= t.predecessor(x).value_or(0);
+            break;
+        case TestType::SUCCESSOR:
+            for (u64 x : queries) result ^= t.successor(x).value_or(0);
+            break;
+        case TestType::CONTAINS:
+            for (u64 x : queries) result ^= t.contains(x);
+            break;
+    }
+    return result;
+}
 
-    auto tests = [&] (std::vector<uint64_t> const& queries) -> u64{
-        u64 result = 0; // dummy variable to prevent optimization
-        switch (type) {
-            case TestType::ACCESS:
-                for (uint64_t x : queries)
-                    result ^= t.access(x).value_or(0);
-            break;
-            case TestType::PREDECESSOR:
-                for (uint64_t x : queries)
-                    result ^= t.predecessor(x).value_or(0);
-            break;
-            case TestType::SUCCESSOR:
-                for (uint64_t x : queries)
-                    result ^= t.successor(x).value_or(0);
-            break;
-            case TestType::CONTAINS:
-                for (uint64_t x : queries)
-                    result ^= t.contains(x);
-            break;
-        }
-        return result;
-    };
+template<typename T>
+requires EF<T>
+void benchmark(const T& t, TestType type, std::string_view label,
+               std::optional<std::pair<u64,u64>> query_range = std::nullopt) {
+    constexpr int NUM_QUERIES = 100;
+
+    u64 qlo, qhi;
+    if (type == TestType::ACCESS) {
+        qlo = 0;
+        qhi = t.size();
+    } else if (query_range) {
+        qlo = query_range->first;
+        qhi = query_range->second;
+    } else {
+        qlo = 0;
+        qhi = t.universe();
+    }
+    u64 span = qhi - qlo;
 
     // cold start
-    std::vector<uint64_t> queries(1000);
-    for (int i = 0; i < 1000; i++) {
-        if (type == TestType::ACCESS) {
-            queries[i] = rng() % size; // Access richiede indici < size
-        } else {
-            queries[i] = rng() % n;    // Gli altri richiedono valori < universe
-        }
-    }
-    auto dummy = tests(queries);
+    std::vector<u64> queries(1000);
+    for (int i = 0; i < 1000; i++) queries[i] = qlo + rng() % span;
+    u64 dummy = run_queries(t, type, queries);
 
-
-    // generator of random queries (outside timed section to avoid bias due to RNG)
-    std::vector<uint64_t> queries2(NUM_QUERIES);
-    for (int i = 0; i < NUM_QUERIES; i++) {
-        if (type == TestType::ACCESS) {
-            queries2[i] = rng() % size; // Access richiede indici < size
-        } else {
-            queries2[i] = rng() % n;    // Gli altri richiedono valori < universe
-        }
-    }
+    // timed queries
+    std::vector<u64> queries2(NUM_QUERIES);
+    for (int i = 0; i < NUM_QUERIES; i++) queries2[i] = qlo + rng() % span;
 
     auto start = std::chrono::high_resolution_clock::now();
-    dummy ^= tests(queries2);
+    dummy ^= run_queries(t, type, queries2);
     auto end = std::chrono::high_resolution_clock::now();
-    
+
     std::chrono::duration<double, std::nano> elapsed = end - start;
     double ns_per_query = elapsed.count() / NUM_QUERIES;
-    
+
     const char* type_str = "";
     if (type == TestType::ACCESS) type_str = "Access";
     if (type == TestType::PREDECESSOR) type_str = "Predecessor";
     if (type == TestType::SUCCESSOR) type_str = "Successor";
     if (type == TestType::CONTAINS) type_str = "Contains";
-    
+
     std::cout << "Benchmark " << label << "\n"
-        << "\ttype:" << type_str 
-        << "\telapsed time: " << elapsed.count() 
-        << "\tns per query: " << ns_per_query 
-        << " (dummy=" << dummy << ")"<<std::endl;
+        << "\ttype:" << type_str
+        << "\telapsed time: " << elapsed.count()
+        << "\tns per query: " << ns_per_query
+        << " (dummy=" << dummy << ")" << std::endl;
 }
 
 template<typename T>
 requires EF<T>
-void run_test_suite(const std::vector<u64>& sorted_vals, u64 universe, std::string_view label) {
+void run_test_suite(const std::vector<u64>& sorted_vals, u64 universe, std::string_view label,
+                    std::optional<std::pair<u64,u64>> query_range = std::nullopt) {
     T ef(sorted_vals, universe);
     checkCorrectness(sorted_vals, universe, ef, label);
+    std::cout << "Running benchmarks for " << label << "...\n";
     benchmark(ef, TestType::ACCESS, label);
-    benchmark(ef, TestType::PREDECESSOR, label);
-    benchmark(ef, TestType::SUCCESSOR, label);
-    benchmark(ef, TestType::CONTAINS, label);
+    benchmark(ef, TestType::PREDECESSOR, label, query_range);
+    benchmark(ef, TestType::SUCCESSOR, label, query_range);
+    benchmark(ef, TestType::CONTAINS, label, query_range);
     std::cout << std::string(60, '-') << "\n";
 }
 
+void test_every_method(const std::vector<u64>& sorted_vals, u64 universe, std::string_view label,
+                    std::optional<std::pair<u64,u64>> query_range = std::nullopt) {
+    std::string label_1 = std::string(label) + " on EF1";
+    std::string label_2 = std::string(label) + " on EF2";
+    std::string label_2v2 = std::string(label) + " on EF2v2";
+    std::string label_2v3 = std::string(label) + " on EF2v3";
+    std::string label_vigna = std::string(label) + " on Vigna's EF";
+    
+    run_test_suite<BucketEFSet>(sorted_vals, universe, label_1, query_range);
+    run_test_suite<BucketEFSet2>(sorted_vals, universe, label_2, query_range);
+    run_test_suite<BucketEFSet2v2>(sorted_vals, universe, label_2v2, query_range);
+    run_test_suite<BucketEFSet2v3>(sorted_vals, universe, label_2v3, query_range);
+    run_test_suite<VignaEFSet>(sorted_vals, universe, label_vigna, query_range);
+}
 int main() {
+    #if 0
     // 1) Random uniform
     {
         uint64_t n = 1'000'000, m = 5000;
         std::set<uint64_t> dedup;
         while (dedup.size() < m) dedup.insert(rng() % n);
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        run_test_suite<BucketEFSet>(sorted, n, "1. Random uniform on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "1. Random uniform on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "1. Random uniform on Vigna's EF");
+        test_every_method(sorted, n, "1. Random uniform");
     }
-
     // 2) Dense cluster — most buckets empty
     {
         uint64_t n = 1'000'000, m = 1000;
@@ -172,77 +185,50 @@ int main() {
         uint64_t base = 500'000;
         while (dedup.size() < m) dedup.insert(base + (rng() % 2000));
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        run_test_suite<BucketEFSet>(sorted, n, "2. Dense cluster on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "2. Dense cluster on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "2. Dense cluster on Vigna's EF");
+        test_every_method(sorted, n, "2. Dense cluster");
     }
-
     // 3) Extreme sparsity: few elements, huge universe
     {
         uint64_t n = 1ULL << 40, m = 10;
         std::set<uint64_t> dedup;
         while (dedup.size() < m) dedup.insert(rng() % n);
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        run_test_suite<BucketEFSet>(sorted, n, "3. Extreme sparsity (m=10, n=2^40) on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "3. Extreme sparsity (m=10, n=2^40) on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "3. Extreme sparsity (m=10, n=2^40) on Vigna's EF");
+        test_every_method(sorted, n, "3. Extreme sparsity (m=10, n=2^40)");
     }
-
     // 4) Small edge cases
     {
-        run_test_suite<BucketEFSet>({0}, 1, "4a. Single {0} n=1 on EF1");
-        run_test_suite<BucketEFSet2>({0}, 1, "4a. Single {0} n=1 on EF2");
-        run_test_suite<VignaEFSet>({0}, 1, "4a. Single {0} n=1 on Vigna's EF");
-        run_test_suite<BucketEFSet>({0}, 100, "4b. Single {0} n=100 on EF1");
-        run_test_suite<BucketEFSet2>({0}, 100, "4b. Single {0} n=100 on EF2");
-        run_test_suite<VignaEFSet>({0}, 100, "4b. Single {0} n=100 on Vigna's EF");
-        run_test_suite<BucketEFSet>({99}, 100, "4c. Single {99} n=100 on EF1");
-        run_test_suite<BucketEFSet2>({99}, 100, "4c. Single {99} n=100 on EF2");
-        run_test_suite<VignaEFSet>({99}, 100, "4c. Single {99} n=100 on Vigna's EF");
-        run_test_suite<BucketEFSet>({0, 99}, 100, "4d. Two {0,99} n=100 on EF1");
-        run_test_suite<BucketEFSet2>({0, 99}, 100, "4d. Two {0,99} n=100 on EF2");
-        run_test_suite<VignaEFSet>({0, 99}, 100, "4d. Two {0,99} n=100 on Vigna's EF");
+        test_every_method({0}, 1, "4a. Single {0} n=1 ");
+        test_every_method({0}, 100, "4b. Single {0} n=100");
+        test_every_method({99}, 100, "4c. Single {99} n=100");
+        test_every_method({0, 99}, 100, "4d. Two {0,99} n=100");
     }
-
     // 5) All elements at start of universe
     {
         std::vector<uint64_t> sorted;
         for (uint64_t i = 0; i < 500; i++) sorted.push_back(i);
-        run_test_suite<BucketEFSet>(sorted, 1'000'000, "5. elements at start: first 500 on EF1");
-        run_test_suite<BucketEFSet2>(sorted, 1'000'000, "5. elements at start: first 500 on EF2");
-        run_test_suite<VignaEFSet>(sorted, 1'000'000, "5. elements at start: first 500 on Vigna's EF");
+        test_every_method(sorted, 1'000'000, "5. elements at start: first 500");
     }
-
     // 6) All elements at end of universe
     {
         std::vector<uint64_t> sorted;
         for (uint64_t i = 0; i < 500; i++) sorted.push_back(999'500 + i);
-        run_test_suite<BucketEFSet>(sorted, 1'000'000, "6. elements at end: last 500 on EF1");
-        run_test_suite<BucketEFSet2>(sorted, 1'000'000, "6. elements at end: last 500 on EF2");
-        run_test_suite<VignaEFSet>(sorted, 1'000'000, "6. elements at end: last 500 on Vigna's EF");
+        test_every_method(sorted, 1'000'000, "6. elements at end: last 500");
     }
-
     // 7) Large random
     {
         uint64_t n = 1ULL << 32, m = 100'000;
         std::set<uint64_t> dedup;
         while (dedup.size() < m) dedup.insert(rng() % n);
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        run_test_suite<BucketEFSet>(sorted, n, "7. large random (n=2^32) on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "7. large random (n=2^32) on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "7. large random (n=2^32) on Vigna's EF");
+        test_every_method(sorted, n, "7. large random (n=2^32)");
     }
-
     // 8) Evenly spaced elements (stride)
     {
         uint64_t n = 1'000'000;
         std::vector<uint64_t> sorted;
         for (uint64_t i = 0; i < n; i += 100) sorted.push_back(i);
-        run_test_suite<BucketEFSet>(sorted, n, "8. Evenly spaced (stride=100) on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "8. Evenly spaced (stride=100) on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "8. Evenly spaced (stride=100) on Vigna's EF");
+        test_every_method(sorted, n, "8. Evenly spaced (stride=100)");
     }
-
     // 9) Two disjoint dense clusters separated by huge gap
     {
         uint64_t n = 1'000'000;
@@ -250,19 +236,14 @@ int main() {
         for(int i=0; i<500; ++i) dedup.insert(rng() % 1000); 
         for(int i=0; i<500; ++i) dedup.insert(999'000 + (rng() % 1000));
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        run_test_suite<BucketEFSet>(sorted, n, "9. Two disjoint clusters on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "9. Two disjoint clusters on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "9. Two disjoint clusters on Vigna's EF");
+        test_every_method(sorted, n, "9. Two disjoint clusters");
     }
-    
     // 10) Exponential gaps
     {
         uint64_t n = 1ULL << 60;
         std::vector<uint64_t> sorted;
         for (uint64_t i = 1; i < 60; i++) sorted.push_back(1ULL << i);
-        run_test_suite<BucketEFSet>(sorted, n, "10. Exponential gaps (powers of 2) on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "10. Exponential gaps (powers of 2) on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "10. Exponential gaps (powers of 2) on Vigna's EF");
+        test_every_method(sorted, n, "10. Exponential gaps (powers of 2)");
     }
     // 11) m = 10M elements
     {
@@ -271,9 +252,7 @@ int main() {
         std::set<uint64_t> dedup;
         while (dedup.size() < m) dedup.insert(rng() % n);
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        run_test_suite<BucketEFSet>(sorted, n, "11. m = 10M elements on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "11. m = 10M elements on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "11. m = 10M elements on Vigna's EF");
+        test_every_method(sorted, n, "11. m = 10M elements");
     }
     // 12) 50M Random Walk (90% small gaps, 10% massive gaps)
     {
@@ -296,9 +275,7 @@ int main() {
         // Ensure unique and strictly increasing
         sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
         
-        run_test_suite<BucketEFSet>(sorted, n, "12. 50M Random Walk on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "12. 50M Random Walk on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "12. 50M Random Walk on Vigna's EF");
+        test_every_method(sorted, n, "12. 50M Random Walk");
     }
     // 12) 50M Random Walk (90% small gaps, 10% massive gaps)
     {
@@ -321,9 +298,7 @@ int main() {
         // Ensure unique and strictly increasing
         sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
         
-        run_test_suite<BucketEFSet>(sorted, n, "12. 50M Random Walk on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "12. 50M Random Walk on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "12. 50M Random Walk on Vigna's EF");
+        test_every_method(sorted, n, "12. 50M Random Walk");
     }
     // 13) 100M Contiguous Bursts
     {
@@ -344,9 +319,7 @@ int main() {
         std::sort(sorted.begin(), sorted.end());
         sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
         
-        run_test_suite<BucketEFSet>(sorted, n, "13. 100M Contiguous Bursts on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "13. 100M Contiguous Bursts on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "13. 100M Contiguous Bursts on Vigna's EF");
+        test_every_method(sorted, n, "13. 100M Contiguous Bursts");
     }
     // 14) 50M Geometric (Power-Law) Gaps
     {
@@ -366,9 +339,7 @@ int main() {
         
         sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
         
-        run_test_suite<BucketEFSet>(sorted, n, "14. 50M Geometric Gaps on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "14. 50M Geometric Gaps on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "14. 50M Geometric Gaps on Vigna's EF");
+        test_every_method(sorted, n, "14. 50M Geometric Gaps");
     }
     // 15) 10M Adversarial Single-Prefix Cluster
     {
@@ -388,9 +359,7 @@ int main() {
         std::sort(sorted.begin(), sorted.end());
         sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
         
-        run_test_suite<BucketEFSet>(sorted, n, "15. 10M Adversarial Single-Prefix on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "15. 10M Adversarial Single-Prefix on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "15. 10M Adversarial Single-Prefix on Vigna's EF");
+        test_every_method(sorted, n, "15. 10M Adversarial Single-Prefix");
     }
     // 16) 100M True Uniform Random
     {
@@ -405,9 +374,43 @@ int main() {
         std::sort(sorted.begin(), sorted.end());
         sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
         
-        run_test_suite<BucketEFSet>(sorted, n, "16. 100M Uniform Random on EF1");
-        run_test_suite<BucketEFSet2>(sorted, n, "16. 100M Uniform Random on EF2");
-        run_test_suite<VignaEFSet>(sorted, n, "16. 100M Uniform Random on Vigna's EF");
+        test_every_method(sorted, n, "16. 100M Uniform Random");
+    }
+    // 17) Uniform scan to map EF2 vs Vigna crossover
+    {
+        for (uint64_t m : {10000ULL, 50000ULL, 200000ULL, 500000ULL, 2000000ULL}) {
+            uint64_t n = 1000 * m;  // density kept roughly constant
+            std::set<uint64_t> dedup;
+            while (dedup.size() < m) dedup.insert(rng() % n);
+            std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
+            std::string label = "17. Uniform crossover m=" + std::to_string(m);
+            test_every_method(sorted, n, label);
+        }
+    }
+
+    // 18) Uniform sparse large m — stresses EF2 exp search in uniform regime
+    {
+        uint64_t m = 1'000'000, n = 1ULL << 50;  // n/m = 2^30, many empty buckets
+        std::set<uint64_t> dedup;
+        while (dedup.size() < m) dedup.insert(rng() % n);
+        std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
+        test_every_method(sorted, n, "18. Uniform sparse m=1M");
+    }
+    #endif
+    // 19) 50M Random Walk with queries restricted to [min, max] of data
+    //     removes the "query in empty universe tail" artifact that inflated test 12
+    {
+        std::mt19937_64 local_rng(12345);
+        uint64_t m = 50'000'000, n = 1ULL << 63;
+        std::vector<uint64_t> sorted;
+        sorted.reserve(m);
+        uint64_t cur = 0;
+        for (uint64_t i = 0; i < m; ++i) {
+            cur += 1 + (local_rng() % 1000);
+            sorted.push_back(cur);
+        }
+        auto range = std::make_pair(sorted.front(), sorted.back() + 1);
+        test_every_method(sorted, n, "19. 50M Random Walk [bounded queries]", range);
     }
 
     std::cout << "\nAll tests passed.\n";

@@ -1,0 +1,62 @@
+Checking correctness of 19. 50M Random Walk [bounded queries] on EF1...
+OK: 19. 50M Random Walk [bounded queries] on EF1 (m=50000000, n=9223372036854775808, 272288952 bytes)
+Running benchmarks for 19. 50M Random Walk [bounded queries] on EF1...
+Benchmark 19. 50M Random Walk [bounded queries] on EF1
+	type:Access	elapsed time: 30736	ns per query: 307.36 (dummy=30683087221)
+Benchmark 19. 50M Random Walk [bounded queries] on EF1
+	type:Predecessor	elapsed time: 109861	ns per query: 1098.61 (dummy=7649745184)
+Benchmark 19. 50M Random Walk [bounded queries] on EF1
+	type:Successor	elapsed time: 114045	ns per query: 1140.45 (dummy=23844361875)
+Benchmark 19. 50M Random Walk [bounded queries] on EF1
+	type:Contains	elapsed time: 109109	ns per query: 1091.09 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 19. 50M Random Walk [bounded queries] on EF2...
+OK: 19. 50M Random Walk [bounded queries] on EF2 (m=50000000, n=9223372036854775808, 272157880 bytes)
+Running benchmarks for 19. 50M Random Walk [bounded queries] on EF2...
+Benchmark 19. 50M Random Walk [bounded queries] on EF2
+	type:Access	elapsed time: 29772	ns per query: 297.72 (dummy=32502697477)
+Benchmark 19. 50M Random Walk [bounded queries] on EF2
+	type:Predecessor	elapsed time: 123796	ns per query: 1237.96 (dummy=15645791043)
+Benchmark 19. 50M Random Walk [bounded queries] on EF2
+	type:Successor	elapsed time: 112869	ns per query: 1128.69 (dummy=22016664634)
+Benchmark 19. 50M Random Walk [bounded queries] on EF2
+	type:Contains	elapsed time: 110330	ns per query: 1103.3 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 19. 50M Random Walk [bounded queries] on EF2v2...
+OK: 19. 50M Random Walk [bounded queries] on EF2v2 (m=50000000, n=9223372036854775808, 280415408 bytes)
+Running benchmarks for 19. 50M Random Walk [bounded queries] on EF2v2...
+Benchmark 19. 50M Random Walk [bounded queries] on EF2v2
+	type:Access	elapsed time: 30141	ns per query: 301.41 (dummy=9109410911)
+Benchmark 19. 50M Random Walk [bounded queries] on EF2v2
+	type:Predecessor	elapsed time: 109995	ns per query: 1099.95 (dummy=4278565634)
+Benchmark 19. 50M Random Walk [bounded queries] on EF2v2
+	type:Successor	elapsed time: 149817	ns per query: 1498.17 (dummy=1119716117)
+Benchmark 19. 50M Random Walk [bounded queries] on EF2v2
+	type:Contains	elapsed time: 145476	ns per query: 1454.76 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 19. 50M Random Walk [bounded queries] on EF2v3...
+OK: 19. 50M Random Walk [bounded queries] on EF2v3 (m=50000000, n=9223372036854775808, 280415416 bytes)
+Running benchmarks for 19. 50M Random Walk [bounded queries] on EF2v3...
+Benchmark 19. 50M Random Walk [bounded queries] on EF2v3
+	type:Access	elapsed time: 30116	ns per query: 301.16 (dummy=2848136506)
+Benchmark 19. 50M Random Walk [bounded queries] on EF2v3
+	type:Predecessor	elapsed time: 115419	ns per query: 1154.19 (dummy=21243762808)
+Benchmark 19. 50M Random Walk [bounded queries] on EF2v3
+	type:Successor	elapsed time: 106620	ns per query: 1066.2 (dummy=1588463170)
+Benchmark 19. 50M Random Walk [bounded queries] on EF2v3
+	type:Contains	elapsed time: 111600	ns per query: 1116 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 19. 50M Random Walk [bounded queries] on Vigna's EF...
+OK: 19. 50M Random Walk [bounded queries] on Vigna's EF (m=50000000, n=9223372036854775808, 250463552 bytes)
+Running benchmarks for 19. 50M Random Walk [bounded queries] on Vigna's EF...
+Benchmark 19. 50M Random Walk [bounded queries] on Vigna's EF
+	type:Access	elapsed time: 23761	ns per query: 237.61 (dummy=26296974853)
+Benchmark 19. 50M Random Walk [bounded queries] on Vigna's EF
+	type:Predecessor	elapsed time: 8.58253e+09	ns per query: 8.58253e+07 (dummy=32481677670)
+Benchmark 19. 50M Random Walk [bounded queries] on Vigna's EF
+	type:Successor	elapsed time: 1.01518e+10	ns per query: 1.01518e+08 (dummy=31086640100)
+Benchmark 19. 50M Random Walk [bounded queries] on Vigna's EF
+	type:Contains	elapsed time: 8.63479e+09	ns per query: 8.63479e+07 (dummy=1)
+------------------------------------------------------------
+
+All tests passed.
