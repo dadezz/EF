@@ -10,7 +10,7 @@ add_executable(ef_test test.cpp)
 
 target_include_directories(ef_test PRIVATE 
     ${CMAKE_SOURCE_DIR}/include
-    /home/utente/dev/sux
+    "C:\\Users\\Dav\\Uni_Lavoro\\EF\\CMakeLists.txt"
 )
 get_target_property(INCLUDES ef_test INCLUDE_DIRECTORIES)
 message(STATUS "Include dirs: ${INCLUDES}")

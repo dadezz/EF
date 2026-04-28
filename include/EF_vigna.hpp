@@ -9,10 +9,10 @@ ground truth for benchmarking my custom implementations
 
 class VignaEFSet final {
 public:
-    VignaEFSet(std::span<const u64> sorted_vals, u64 universe)
-        : ef_(std::vector<uint64_t>(sorted_vals.begin(), sorted_vals.end()), universe), 
+    VignaEFSet(std::span<const u64> sorted_vals)
+        : ef_(std::vector<uint64_t>(sorted_vals.begin(), sorted_vals.end()), sorted_vals.back() + 1), 
           m(sorted_vals.size()), 
-          n(universe) {}
+          n(sorted_vals.back() + 1) {}
 
     u64 size()     const { return m; }
     u64 universe() const { return n; }

@@ -30,9 +30,9 @@ public:
     /// @brief Constructor for BucketEFSet2
     /// @param sorted_vals an ascending sorted vector of unique integers in [0, universe)
     /// @param universe a positive integer representing the universe size
-    BucketEFSet2 (std::span<const u64> sorted_vals, u64 universe) : m(sorted_vals.size()), n(universe) {
+    BucketEFSet2 (std::span<const u64> sorted_vals) : m(sorted_vals.size()), n(sorted_vals.back() + 1) {
         
-        checkInput(sorted_vals, universe);
+        checkInput(sorted_vals, n);
         
         m_bitsForM = std::bit_width(m); 
         m_bitsForN = ceilLog2(n); 

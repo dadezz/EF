@@ -20,8 +20,7 @@ std::mt19937_64 rng(42);  // global random generator
 
 template<typename T>
 requires EF<T>
-void checkCorrectness(std::span<const u64> sorted_vals, 
-    u64 universe, const T& t, std::string_view label) {
+void checkCorrectness(std::span<const u64> sorted_vals, const T& t, std::string_view label) {
     std::cout << "Checking correctness of " << label << "...\n";
     assert(t.size() == sorted_vals.size());
 
@@ -34,7 +33,7 @@ void checkCorrectness(std::span<const u64> sorted_vals,
 
     constexpr u64 EXHAUSTIVE_LIMIT = 100'000;
     constexpr int SPOT_CHECKS = 200'000;
-
+    u64 universe = sorted_vals.empty() ? 0 : sorted_vals.back() + 1;
     if (universe <= EXHAUSTIVE_LIMIT) {
 
         for (u64 x = 0; x < universe; x++) {
@@ -142,10 +141,10 @@ void benchmark(const T& t, TestType type, std::string_view label,
 
 template<typename T>
 requires EF<T>
-void run_test_suite(const std::vector<u64>& sorted_vals, u64 universe, std::string_view label,
+void run_test_suite(const std::vector<u64>& sorted_vals, std::string_view label,
                     std::optional<std::pair<u64,u64>> query_range = std::nullopt) {
-    T ef(sorted_vals, universe);
-    checkCorrectness(sorted_vals, universe, ef, label);
+    T ef(sorted_vals);
+    checkCorrectness(sorted_vals, ef, label);
     std::cout << "Running benchmarks for " << label << "...\n";
     benchmark(ef, TestType::ACCESS, label);
     benchmark(ef, TestType::PREDECESSOR, label, query_range);
@@ -154,7 +153,7 @@ void run_test_suite(const std::vector<u64>& sorted_vals, u64 universe, std::stri
     std::cout << std::string(60, '-') << "\n";
 }
 
-void test_every_method(const std::vector<u64>& sorted_vals, u64 universe, std::string_view label,
+void test_every_method(const std::vector<u64>& sorted_vals, std::string_view label,
                     std::optional<std::pair<u64,u64>> query_range = std::nullopt) {
     std::string label_1 = std::string(label) + " on EF1";
     std::string label_2 = std::string(label) + " on EF2";
@@ -162,21 +161,24 @@ void test_every_method(const std::vector<u64>& sorted_vals, u64 universe, std::s
     std::string label_2v3 = std::string(label) + " on EF2v3";
     std::string label_vigna = std::string(label) + " on Vigna's EF";
     
-    run_test_suite<BucketEFSet>(sorted_vals, universe, label_1, query_range);
-    run_test_suite<BucketEFSet2>(sorted_vals, universe, label_2, query_range);
-    run_test_suite<BucketEFSet2v2>(sorted_vals, universe, label_2v2, query_range);
-    run_test_suite<BucketEFSet2v3>(sorted_vals, universe, label_2v3, query_range);
-    run_test_suite<VignaEFSet>(sorted_vals, universe, label_vigna, query_range);
+    run_test_suite<BucketEFSet>(sorted_vals, label_1, query_range);
+    run_test_suite<BucketEFSet2>(sorted_vals, label_2, query_range);
+    run_test_suite<BucketEFSet2v2>(sorted_vals, label_2v2, query_range);
+    run_test_suite<BucketEFSet2v3>(sorted_vals, label_2v3, query_range);
+    run_test_suite<VignaEFSet>(sorted_vals, label_vigna, query_range);
 }
 int main() {
-    #if 0
     // 1) Random uniform
     {
         uint64_t n = 1'000'000, m = 5000;
         std::set<uint64_t> dedup;
         while (dedup.size() < m) dedup.insert(rng() % n);
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        test_every_method(sorted, n, "1. Random uniform");
+        test_every_method(sorted, "1. Random uniform");
+        
+        dedup.insert(n-1); 
+        sorted.assign(dedup.begin(), dedup.end());
+        test_every_method(sorted, "1b. Random uniform with n-1");
     }
     // 2) Dense cluster — most buckets empty
     {
@@ -185,7 +187,11 @@ int main() {
         uint64_t base = 500'000;
         while (dedup.size() < m) dedup.insert(base + (rng() % 2000));
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        test_every_method(sorted, n, "2. Dense cluster");
+        test_every_method(sorted, "2. Dense cluster");
+
+        dedup.insert(n-1);
+        sorted.assign(dedup.begin(), dedup.end());
+        test_every_method(sorted, "2b. Dense cluster with n-1");
     }
     // 3) Extreme sparsity: few elements, huge universe
     {
@@ -193,26 +199,29 @@ int main() {
         std::set<uint64_t> dedup;
         while (dedup.size() < m) dedup.insert(rng() % n);
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        test_every_method(sorted, n, "3. Extreme sparsity (m=10, n=2^40)");
+        test_every_method(sorted, "3. Extreme sparsity (m=10, n=2^40), tight universe");
+
+        dedup.insert(n-1);
+        sorted.assign(dedup.begin(), dedup.end());
+        test_every_method(sorted, "3b. Extreme sparsity (m=10, n=2^40) with n-1");
     }
     // 4) Small edge cases
     {
-        test_every_method({0}, 1, "4a. Single {0} n=1 ");
-        test_every_method({0}, 100, "4b. Single {0} n=100");
-        test_every_method({99}, 100, "4c. Single {99} n=100");
-        test_every_method({0, 99}, 100, "4d. Two {0,99} n=100");
+        test_every_method({0}, "4a. Single {0} n=1 ");
+        test_every_method({99}, "4b. Single {99} n=100");
+        test_every_method({0, 99}, "4c. Two {0,99} n=100");
     }
     // 5) All elements at start of universe
     {
         std::vector<uint64_t> sorted;
         for (uint64_t i = 0; i < 500; i++) sorted.push_back(i);
-        test_every_method(sorted, 1'000'000, "5. elements at start: first 500");
+        test_every_method(sorted, "5. n=m, elements at start: first 500");
     }
     // 6) All elements at end of universe
     {
         std::vector<uint64_t> sorted;
         for (uint64_t i = 0; i < 500; i++) sorted.push_back(999'500 + i);
-        test_every_method(sorted, 1'000'000, "6. elements at end: last 500");
+        test_every_method(sorted, "6. n=1000000, elements at end: last 500");
     }
     // 7) Large random
     {
@@ -220,14 +229,18 @@ int main() {
         std::set<uint64_t> dedup;
         while (dedup.size() < m) dedup.insert(rng() % n);
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        test_every_method(sorted, n, "7. large random (n=2^32)");
+        test_every_method(sorted, "7. large random (n=2^32) tight universe");
+
+        dedup.insert(n-1);
+        sorted.assign(dedup.begin(), dedup.end());
+        test_every_method(sorted, "7b. large random (n=2^32) with n-1");
     }
     // 8) Evenly spaced elements (stride)
     {
         uint64_t n = 1'000'000;
         std::vector<uint64_t> sorted;
         for (uint64_t i = 0; i < n; i += 100) sorted.push_back(i);
-        test_every_method(sorted, n, "8. Evenly spaced (stride=100)");
+        test_every_method(sorted, "8. Evenly spaced (stride=100)");
     }
     // 9) Two disjoint dense clusters separated by huge gap
     {
@@ -236,14 +249,22 @@ int main() {
         for(int i=0; i<500; ++i) dedup.insert(rng() % 1000); 
         for(int i=0; i<500; ++i) dedup.insert(999'000 + (rng() % 1000));
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        test_every_method(sorted, n, "9. Two disjoint clusters");
+        test_every_method(sorted, "9. Two disjoint clusters, tight universe");
+
+        dedup.insert(n-1);
+        sorted.assign(dedup.begin(), dedup.end());
+        test_every_method(sorted, "9b. Two disjoint clusters, with n-1");
     }
     // 10) Exponential gaps
     {
         uint64_t n = 1ULL << 60;
         std::vector<uint64_t> sorted;
         for (uint64_t i = 1; i < 60; i++) sorted.push_back(1ULL << i);
-        test_every_method(sorted, n, "10. Exponential gaps (powers of 2)");
+        test_every_method(sorted, "10. Exponential gaps (powers of 2), tight universe");
+        if (!sorted.back() == n - 1) {
+            sorted.push_back(n - 1);
+            test_every_method(sorted, "10b. Exponential gaps (powers of 2) with n-1");
+        }
     }
     // 11) m = 10M elements
     {
@@ -252,7 +273,11 @@ int main() {
         std::set<uint64_t> dedup;
         while (dedup.size() < m) dedup.insert(rng() % n);
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        test_every_method(sorted, n, "11. m = 10M elements");
+        test_every_method(sorted, "11. m = 10M elements tight universe");
+
+        dedup.insert(n-1);
+        sorted.assign(dedup.begin(), dedup.end());
+        test_every_method(sorted, "11b. m = 10M elements with n-1");
     }
     // 12) 50M Random Walk (90% small gaps, 10% massive gaps)
     {
@@ -275,30 +300,12 @@ int main() {
         // Ensure unique and strictly increasing
         sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
         
-        test_every_method(sorted, n, "12. 50M Random Walk");
-    }
-    // 12) 50M Random Walk (90% small gaps, 10% massive gaps)
-    {
-        uint64_t n = 1ULL << 63;
-        uint64_t m = 50'000'000;
-        std::vector<uint64_t> sorted;
-        sorted.reserve(m);
-        
-        uint64_t current = 0;
-        for (uint64_t i = 0; i < m; i++) {
-            sorted.push_back(current);
-            if (rng() % 100 < 90) {
-                current += (rng() % 100) + 1;           // 90% chance: gap of 1-100
-            } else {
-                current += (rng() % (1ULL << 30)) + 1;  // 10% chance: massive gap
-            }
-            if (current >= n) break; // Prevent overflow
+        test_every_method(sorted, "12. 50M Random Walk tight universe");
+
+        if (sorted.back() != n - 1) {
+            sorted.push_back(n - 1);
+            test_every_method(sorted, "12b. 50M Random Walk with n-1");
         }
-        
-        // Ensure unique and strictly increasing
-        sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
-        
-        test_every_method(sorted, n, "12. 50M Random Walk");
     }
     // 13) 100M Contiguous Bursts
     {
@@ -319,7 +326,12 @@ int main() {
         std::sort(sorted.begin(), sorted.end());
         sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
         
-        test_every_method(sorted, n, "13. 100M Contiguous Bursts");
+        test_every_method(sorted, "13. 100M Contiguous Bursts, tight universe");
+
+        if (sorted.back() != n - 1) {
+            sorted.push_back(n - 1);
+            test_every_method(sorted, "13b. 100M Contiguous Bursts with n-1");
+        }
     }
     // 14) 50M Geometric (Power-Law) Gaps
     {
@@ -339,7 +351,12 @@ int main() {
         
         sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
         
-        test_every_method(sorted, n, "14. 50M Geometric Gaps");
+        test_every_method(sorted, "14. 50M Geometric Gaps tight universe");
+
+        if (sorted.back() != n - 1) {
+            sorted.push_back(n - 1);
+            test_every_method(sorted, "14b. 50M Geometric Gaps with n-1");
+        }
     }
     // 15) 10M Adversarial Single-Prefix Cluster
     {
@@ -359,7 +376,12 @@ int main() {
         std::sort(sorted.begin(), sorted.end());
         sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
         
-        test_every_method(sorted, n, "15. 10M Adversarial Single-Prefix");
+        test_every_method(sorted, "15. 10M Adversarial Single-Prefix tight universe");
+
+        if (sorted.back() != n - 1) {
+            sorted.push_back(n - 1);
+            test_every_method(sorted, "15b. 10M Adversarial Single-Prefix with n-1");
+        }
     }
     // 16) 100M True Uniform Random
     {
@@ -374,7 +396,12 @@ int main() {
         std::sort(sorted.begin(), sorted.end());
         sorted.erase(std::unique(sorted.begin(), sorted.end()), sorted.end());
         
-        test_every_method(sorted, n, "16. 100M Uniform Random");
+        test_every_method(sorted, "16. 100M Uniform Random tight universe");
+
+        if (sorted.back() != n - 1) {
+            sorted.push_back(n - 1);
+            test_every_method(sorted, "16b. 100M Uniform Random with n-1");
+        }
     }
     // 17) Uniform scan to map EF2 vs Vigna crossover
     {
@@ -383,8 +410,14 @@ int main() {
             std::set<uint64_t> dedup;
             while (dedup.size() < m) dedup.insert(rng() % n);
             std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-            std::string label = "17. Uniform crossover m=" + std::to_string(m);
-            test_every_method(sorted, n, label);
+            std::string label = "17. Uniform crossover m=" + std::to_string(m) + " tight universe";
+            test_every_method(sorted, label);
+
+            std::string label_b = "17b. Uniform crossover m=" + std::to_string(m) + " with n-1";
+            if (sorted.back() != n - 1) {   
+                sorted.push_back(n - 1);
+                test_every_method(sorted, label_b);
+            }
         }
     }
 
@@ -394,9 +427,13 @@ int main() {
         std::set<uint64_t> dedup;
         while (dedup.size() < m) dedup.insert(rng() % n);
         std::vector<uint64_t> sorted(dedup.begin(), dedup.end());
-        test_every_method(sorted, n, "18. Uniform sparse m=1M");
+        test_every_method(sorted, "18. Uniform sparse m=1M tight universe");
+
+        if (sorted.back() != n - 1) {
+            sorted.push_back(n - 1);
+            test_every_method(sorted, "18b. Uniform sparse m=1M with n-1");
+        }
     }
-    #endif
     // 19) 50M Random Walk with queries restricted to [min, max] of data
     //     removes the "query in empty universe tail" artifact that inflated test 12
     {
@@ -410,7 +447,13 @@ int main() {
             sorted.push_back(cur);
         }
         auto range = std::make_pair(sorted.front(), sorted.back() + 1);
-        test_every_method(sorted, n, "19. 50M Random Walk [bounded queries]", range);
+        test_every_method(sorted, "19. 50M Random Walk [bounded queries] tight universe", range);
+
+        range = std::make_pair(sorted.front(), sorted.back() + 1);
+        if (sorted.back() != n - 1) {
+            sorted.push_back(n - 1);
+            test_every_method(sorted, "19b. 50M Random Walk [bounded queries] with n-1", range);
+        }
     }
 
     std::cout << "\nAll tests passed.\n";
