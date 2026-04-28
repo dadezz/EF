@@ -1,0 +1,2582 @@
+Checking correctness of 1. Random uniform on EF1...
+OK: 1. Random uniform on EF1 (m=5000, n=999587, 7960 bytes)
+Running benchmarks for 1. Random uniform on EF1...
+Benchmark 1. Random uniform on EF1
+	type:Access	elapsed time: 9431	ns per query: 94.31 (dummy=824149)
+Benchmark 1. Random uniform on EF1
+	type:Predecessor	elapsed time: 8245	ns per query: 82.45 (dummy=90898)
+Benchmark 1. Random uniform on EF1
+	type:Successor	elapsed time: 7925	ns per query: 79.25 (dummy=348208)
+Benchmark 1. Random uniform on EF1
+	type:Contains	elapsed time: 7130	ns per query: 71.3 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 1. Random uniform on EF2...
+OK: 1. Random uniform on EF2 (m=5000, n=999587, 7928 bytes)
+Running benchmarks for 1. Random uniform on EF2...
+Benchmark 1. Random uniform on EF2
+	type:Access	elapsed time: 9130	ns per query: 91.3 (dummy=92000)
+Benchmark 1. Random uniform on EF2
+	type:Predecessor	elapsed time: 7403	ns per query: 74.03 (dummy=294936)
+Benchmark 1. Random uniform on EF2
+	type:Successor	elapsed time: 7145	ns per query: 71.45 (dummy=504696)
+Benchmark 1. Random uniform on EF2
+	type:Contains	elapsed time: 6957	ns per query: 69.57 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 1. Random uniform on EF2v2...
+OK: 1. Random uniform on EF2v2 (m=5000, n=999587, 8568 bytes)
+Running benchmarks for 1. Random uniform on EF2v2...
+Benchmark 1. Random uniform on EF2v2
+	type:Access	elapsed time: 9756	ns per query: 97.56 (dummy=730719)
+Benchmark 1. Random uniform on EF2v2
+	type:Predecessor	elapsed time: 7449	ns per query: 74.49 (dummy=965412)
+Benchmark 1. Random uniform on EF2v2
+	type:Successor	elapsed time: 7756	ns per query: 77.56 (dummy=943630)
+Benchmark 1. Random uniform on EF2v2
+	type:Contains	elapsed time: 7083	ns per query: 70.83 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 1. Random uniform on EF2v3...
+OK: 1. Random uniform on EF2v3 (m=5000, n=999587, 8568 bytes)
+Running benchmarks for 1. Random uniform on EF2v3...
+Benchmark 1. Random uniform on EF2v3
+	type:Access	elapsed time: 9371	ns per query: 93.71 (dummy=156789)
+Benchmark 1. Random uniform on EF2v3
+	type:Predecessor	elapsed time: 7131	ns per query: 71.31 (dummy=947553)
+Benchmark 1. Random uniform on EF2v3
+	type:Successor	elapsed time: 7491	ns per query: 74.91 (dummy=70339)
+Benchmark 1. Random uniform on EF2v3
+	type:Contains	elapsed time: 6717	ns per query: 67.17 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 1. Random uniform on Vigna's EF...
+OK: 1. Random uniform on Vigna's EF (m=5000, n=999587, 6800 bytes)
+Running benchmarks for 1. Random uniform on Vigna's EF...
+Benchmark 1. Random uniform on Vigna's EF
+	type:Access	elapsed time: 2770	ns per query: 27.7 (dummy=194648)
+Benchmark 1. Random uniform on Vigna's EF
+	type:Predecessor	elapsed time: 7565	ns per query: 75.65 (dummy=645549)
+Benchmark 1. Random uniform on Vigna's EF
+	type:Successor	elapsed time: 6880	ns per query: 68.8 (dummy=1013598)
+Benchmark 1. Random uniform on Vigna's EF
+	type:Contains	elapsed time: 6811	ns per query: 68.11 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 1b. Random uniform with n-1 on EF1...
+OK: 1b. Random uniform with n-1 on EF1 (m=5001, n=1000000, 7960 bytes)
+Running benchmarks for 1b. Random uniform with n-1 on EF1...
+Benchmark 1b. Random uniform with n-1 on EF1
+	type:Access	elapsed time: 9424	ns per query: 94.24 (dummy=741851)
+Benchmark 1b. Random uniform with n-1 on EF1
+	type:Predecessor	elapsed time: 8233	ns per query: 82.33 (dummy=881595)
+Benchmark 1b. Random uniform with n-1 on EF1
+	type:Successor	elapsed time: 7800	ns per query: 78 (dummy=916555)
+Benchmark 1b. Random uniform with n-1 on EF1
+	type:Contains	elapsed time: 6782	ns per query: 67.82 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 1b. Random uniform with n-1 on EF2...
+OK: 1b. Random uniform with n-1 on EF2 (m=5001, n=1000000, 7928 bytes)
+Running benchmarks for 1b. Random uniform with n-1 on EF2...
+Benchmark 1b. Random uniform with n-1 on EF2
+	type:Access	elapsed time: 9234	ns per query: 92.34 (dummy=854849)
+Benchmark 1b. Random uniform with n-1 on EF2
+	type:Predecessor	elapsed time: 8016	ns per query: 80.16 (dummy=769323)
+Benchmark 1b. Random uniform with n-1 on EF2
+	type:Successor	elapsed time: 8132	ns per query: 81.32 (dummy=869961)
+Benchmark 1b. Random uniform with n-1 on EF2
+	type:Contains	elapsed time: 7031	ns per query: 70.31 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 1b. Random uniform with n-1 on EF2v2...
+OK: 1b. Random uniform with n-1 on EF2v2 (m=5001, n=1000000, 8568 bytes)
+Running benchmarks for 1b. Random uniform with n-1 on EF2v2...
+Benchmark 1b. Random uniform with n-1 on EF2v2
+	type:Access	elapsed time: 9403	ns per query: 94.03 (dummy=400265)
+Benchmark 1b. Random uniform with n-1 on EF2v2
+	type:Predecessor	elapsed time: 7467	ns per query: 74.67 (dummy=356411)
+Benchmark 1b. Random uniform with n-1 on EF2v2
+	type:Successor	elapsed time: 7979	ns per query: 79.79 (dummy=680040)
+Benchmark 1b. Random uniform with n-1 on EF2v2
+	type:Contains	elapsed time: 7098	ns per query: 70.98 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 1b. Random uniform with n-1 on EF2v3...
+OK: 1b. Random uniform with n-1 on EF2v3 (m=5001, n=1000000, 8568 bytes)
+Running benchmarks for 1b. Random uniform with n-1 on EF2v3...
+Benchmark 1b. Random uniform with n-1 on EF2v3
+	type:Access	elapsed time: 9174	ns per query: 91.74 (dummy=28311)
+Benchmark 1b. Random uniform with n-1 on EF2v3
+	type:Predecessor	elapsed time: 7056	ns per query: 70.56 (dummy=732031)
+Benchmark 1b. Random uniform with n-1 on EF2v3
+	type:Successor	elapsed time: 7542	ns per query: 75.42 (dummy=956577)
+Benchmark 1b. Random uniform with n-1 on EF2v3
+	type:Contains	elapsed time: 7282	ns per query: 72.82 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 1b. Random uniform with n-1 on Vigna's EF...
+OK: 1b. Random uniform with n-1 on Vigna's EF (m=5001, n=1000000, 6800 bytes)
+Running benchmarks for 1b. Random uniform with n-1 on Vigna's EF...
+Benchmark 1b. Random uniform with n-1 on Vigna's EF
+	type:Access	elapsed time: 2712	ns per query: 27.12 (dummy=295692)
+Benchmark 1b. Random uniform with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 7253	ns per query: 72.53 (dummy=695541)
+Benchmark 1b. Random uniform with n-1 on Vigna's EF
+	type:Successor	elapsed time: 6836	ns per query: 68.36 (dummy=1033542)
+Benchmark 1b. Random uniform with n-1 on Vigna's EF
+	type:Contains	elapsed time: 6634	ns per query: 66.34 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 2. Dense cluster on EF1...
+OK: 2. Dense cluster on EF1 (m=1000, n=501999, 1728 bytes)
+Running benchmarks for 2. Dense cluster on EF1...
+Benchmark 2. Dense cluster on EF1
+	type:Access	elapsed time: 3886	ns per query: 38.86 (dummy=3864)
+Benchmark 2. Dense cluster on EF1
+	type:Predecessor	elapsed time: 1810	ns per query: 18.1 (dummy=503439)
+Benchmark 2. Dense cluster on EF1
+	type:Successor	elapsed time: 3050	ns per query: 30.5 (dummy=1337)
+Benchmark 2. Dense cluster on EF1
+	type:Contains	elapsed time: 1417	ns per query: 14.17 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 2. Dense cluster on EF2...
+OK: 2. Dense cluster on EF2 (m=1000, n=501999, 1720 bytes)
+Running benchmarks for 2. Dense cluster on EF2...
+Benchmark 2. Dense cluster on EF2
+	type:Access	elapsed time: 3859	ns per query: 38.59 (dummy=3596)
+Benchmark 2. Dense cluster on EF2
+	type:Predecessor	elapsed time: 2310	ns per query: 23.1 (dummy=1852)
+Benchmark 2. Dense cluster on EF2
+	type:Successor	elapsed time: 9610	ns per query: 96.1 (dummy=106)
+Benchmark 2. Dense cluster on EF2
+	type:Contains	elapsed time: 1529	ns per query: 15.29 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 2. Dense cluster on EF2v2...
+OK: 2. Dense cluster on EF2v2 (m=1000, n=501999, 1872 bytes)
+Running benchmarks for 2. Dense cluster on EF2v2...
+Benchmark 2. Dense cluster on EF2v2
+	type:Access	elapsed time: 4120	ns per query: 41.2 (dummy=38)
+Benchmark 2. Dense cluster on EF2v2
+	type:Predecessor	elapsed time: 1504	ns per query: 15.04 (dummy=3805)
+Benchmark 2. Dense cluster on EF2v2
+	type:Successor	elapsed time: 8565	ns per query: 85.65 (dummy=3550)
+Benchmark 2. Dense cluster on EF2v2
+	type:Contains	elapsed time: 1643	ns per query: 16.43 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 2. Dense cluster on EF2v3...
+OK: 2. Dense cluster on EF2v3 (m=1000, n=501999, 1872 bytes)
+Running benchmarks for 2. Dense cluster on EF2v3...
+Benchmark 2. Dense cluster on EF2v3
+	type:Access	elapsed time: 3838	ns per query: 38.38 (dummy=4067)
+Benchmark 2. Dense cluster on EF2v3
+	type:Predecessor	elapsed time: 1583	ns per query: 15.83 (dummy=503251)
+Benchmark 2. Dense cluster on EF2v3
+	type:Successor	elapsed time: 9465	ns per query: 94.65 (dummy=2005)
+Benchmark 2. Dense cluster on EF2v3
+	type:Contains	elapsed time: 1479	ns per query: 14.79 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 2. Dense cluster on Vigna's EF...
+OK: 2. Dense cluster on Vigna's EF (m=1000, n=501999, 1792 bytes)
+Running benchmarks for 2. Dense cluster on Vigna's EF...
+Benchmark 2. Dense cluster on Vigna's EF
+	type:Access	elapsed time: 2294	ns per query: 22.94 (dummy=3769)
+Benchmark 2. Dense cluster on Vigna's EF
+	type:Predecessor	elapsed time: 2673	ns per query: 26.73 (dummy=502451)
+Benchmark 2. Dense cluster on Vigna's EF
+	type:Successor	elapsed time: 3425	ns per query: 34.25 (dummy=1891)
+Benchmark 2. Dense cluster on Vigna's EF
+	type:Contains	elapsed time: 3429	ns per query: 34.29 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 2b. Dense cluster with n-1 on EF1...
+OK: 2b. Dense cluster with n-1 on EF1 (m=1001, n=1000000, 1848 bytes)
+Running benchmarks for 2b. Dense cluster with n-1 on EF1...
+Benchmark 2b. Dense cluster with n-1 on EF1
+	type:Access	elapsed time: 4753	ns per query: 47.53 (dummy=585359)
+Benchmark 2b. Dense cluster with n-1 on EF1
+	type:Predecessor	elapsed time: 3247	ns per query: 32.47 (dummy=501482)
+Benchmark 2b. Dense cluster with n-1 on EF1
+	type:Successor	elapsed time: 3169	ns per query: 31.69 (dummy=2086)
+Benchmark 2b. Dense cluster with n-1 on EF1
+	type:Contains	elapsed time: 1521	ns per query: 15.21 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 2b. Dense cluster with n-1 on EF2...
+OK: 2b. Dense cluster with n-1 on EF2 (m=1001, n=1000000, 1840 bytes)
+Running benchmarks for 2b. Dense cluster with n-1 on EF2...
+Benchmark 2b. Dense cluster with n-1 on EF2
+	type:Access	elapsed time: 3934	ns per query: 39.34 (dummy=4060)
+Benchmark 2b. Dense cluster with n-1 on EF2
+	type:Predecessor	elapsed time: 6881	ns per query: 68.81 (dummy=3906)
+Benchmark 2b. Dense cluster with n-1 on EF2
+	type:Successor	elapsed time: 9225	ns per query: 92.25 (dummy=1866)
+Benchmark 2b. Dense cluster with n-1 on EF2
+	type:Contains	elapsed time: 1808	ns per query: 18.08 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 2b. Dense cluster with n-1 on EF2v2...
+OK: 2b. Dense cluster with n-1 on EF2v2 (m=1001, n=1000000, 2000 bytes)
+Running benchmarks for 2b. Dense cluster with n-1 on EF2v2...
+Benchmark 2b. Dense cluster with n-1 on EF2v2
+	type:Access	elapsed time: 4120	ns per query: 41.2 (dummy=582466)
+Benchmark 2b. Dense cluster with n-1 on EF2v2
+	type:Predecessor	elapsed time: 2342	ns per query: 23.42 (dummy=500343)
+Benchmark 2b. Dense cluster with n-1 on EF2v2
+	type:Successor	elapsed time: 9633	ns per query: 96.33 (dummy=0)
+Benchmark 2b. Dense cluster with n-1 on EF2v2
+	type:Contains	elapsed time: 1908	ns per query: 19.08 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 2b. Dense cluster with n-1 on EF2v3...
+OK: 2b. Dense cluster with n-1 on EF2v3 (m=1001, n=1000000, 2000 bytes)
+Running benchmarks for 2b. Dense cluster with n-1 on EF2v3...
+Benchmark 2b. Dense cluster with n-1 on EF2v3
+	type:Access	elapsed time: 3879	ns per query: 38.79 (dummy=653)
+Benchmark 2b. Dense cluster with n-1 on EF2v3
+	type:Predecessor	elapsed time: 2446	ns per query: 24.46 (dummy=66)
+Benchmark 2b. Dense cluster with n-1 on EF2v3
+	type:Successor	elapsed time: 9583	ns per query: 95.83 (dummy=855)
+Benchmark 2b. Dense cluster with n-1 on EF2v3
+	type:Contains	elapsed time: 1731	ns per query: 17.31 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 2b. Dense cluster with n-1 on Vigna's EF...
+OK: 2b. Dense cluster with n-1 on Vigna's EF (m=1001, n=1000000, 1920 bytes)
+Running benchmarks for 2b. Dense cluster with n-1 on Vigna's EF...
+Benchmark 2b. Dense cluster with n-1 on Vigna's EF
+	type:Access	elapsed time: 2347	ns per query: 23.47 (dummy=3065)
+Benchmark 2b. Dense cluster with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 4620	ns per query: 46.2 (dummy=2930)
+Benchmark 2b. Dense cluster with n-1 on Vigna's EF
+	type:Successor	elapsed time: 6929	ns per query: 69.29 (dummy=1855)
+Benchmark 2b. Dense cluster with n-1 on Vigna's EF
+	type:Contains	elapsed time: 6454	ns per query: 64.54 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 3. Extreme sparsity (m=10, n=2^40), tight universe on EF1...
+OK: 3. Extreme sparsity (m=10, n=2^40), tight universe on EF1 (m=10, n=1089125850715, 80 bytes)
+Running benchmarks for 3. Extreme sparsity (m=10, n=2^40), tight universe on EF1...
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF1
+	type:Access	elapsed time: 1670	ns per query: 16.7 (dummy=14506232846)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF1
+	type:Predecessor	elapsed time: 6241	ns per query: 62.41 (dummy=492563485585)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF1
+	type:Successor	elapsed time: 5786	ns per query: 57.86 (dummy=185977531424)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF1
+	type:Contains	elapsed time: 4916	ns per query: 49.16 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2...
+OK: 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2 (m=10, n=1089125850715, 72 bytes)
+Running benchmarks for 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2...
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2
+	type:Access	elapsed time: 2147	ns per query: 21.47 (dummy=924058724715)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2
+	type:Predecessor	elapsed time: 5703	ns per query: 57.03 (dummy=983631916614)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2
+	type:Successor	elapsed time: 5630	ns per query: 56.3 (dummy=81404624342)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2
+	type:Contains	elapsed time: 4860	ns per query: 48.6 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v2...
+OK: 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v2 (m=10, n=1089125850715, 72 bytes)
+Running benchmarks for 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v2...
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v2
+	type:Access	elapsed time: 1794	ns per query: 17.94 (dummy=131705498214)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v2
+	type:Predecessor	elapsed time: 5027	ns per query: 50.27 (dummy=763061359376)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v2
+	type:Successor	elapsed time: 5188	ns per query: 51.88 (dummy=885972796006)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v2
+	type:Contains	elapsed time: 5203	ns per query: 52.03 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v3...
+OK: 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v3 (m=10, n=1089125850715, 80 bytes)
+Running benchmarks for 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v3...
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v3
+	type:Access	elapsed time: 1908	ns per query: 19.08 (dummy=769306783104)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v3
+	type:Predecessor	elapsed time: 4817	ns per query: 48.17 (dummy=404371209946)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v3
+	type:Successor	elapsed time: 5391	ns per query: 53.91 (dummy=234826982343)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on EF2v3
+	type:Contains	elapsed time: 4864	ns per query: 48.64 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 3. Extreme sparsity (m=10, n=2^40), tight universe on Vigna's EF...
+OK: 3. Extreme sparsity (m=10, n=2^40), tight universe on Vigna's EF (m=10, n=1089125850715, 432 bytes)
+Running benchmarks for 3. Extreme sparsity (m=10, n=2^40), tight universe on Vigna's EF...
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on Vigna's EF
+	type:Access	elapsed time: 2520	ns per query: 25.2 (dummy=711389221749)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 6157	ns per query: 61.57 (dummy=1095410469189)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on Vigna's EF
+	type:Successor	elapsed time: 6248	ns per query: 62.48 (dummy=558258359652)
+Benchmark 3. Extreme sparsity (m=10, n=2^40), tight universe on Vigna's EF
+	type:Contains	elapsed time: 6187	ns per query: 61.87 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF1...
+OK: 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF1 (m=11, n=1099511627776, 80 bytes)
+Running benchmarks for 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF1...
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF1
+	type:Access	elapsed time: 1835	ns per query: 18.35 (dummy=845885624473)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF1
+	type:Predecessor	elapsed time: 6532	ns per query: 65.32 (dummy=573810141128)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF1
+	type:Successor	elapsed time: 6126	ns per query: 61.26 (dummy=838439080434)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF1
+	type:Contains	elapsed time: 4799	ns per query: 47.99 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2...
+OK: 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2 (m=11, n=1099511627776, 72 bytes)
+Running benchmarks for 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2...
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2
+	type:Access	elapsed time: 1800	ns per query: 18 (dummy=393141018132)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2
+	type:Predecessor	elapsed time: 6270	ns per query: 62.7 (dummy=510687858866)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2
+	type:Successor	elapsed time: 6037	ns per query: 60.37 (dummy=554425008930)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2
+	type:Contains	elapsed time: 4851	ns per query: 48.51 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v2...
+OK: 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v2 (m=11, n=1099511627776, 72 bytes)
+Running benchmarks for 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v2...
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v2
+	type:Access	elapsed time: 1722	ns per query: 17.22 (dummy=228184826255)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v2
+	type:Predecessor	elapsed time: 5186	ns per query: 51.86 (dummy=157644247127)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v2
+	type:Successor	elapsed time: 5947	ns per query: 59.47 (dummy=755361244739)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v2
+	type:Contains	elapsed time: 4866	ns per query: 48.66 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v3...
+OK: 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v3 (m=11, n=1099511627776, 80 bytes)
+Running benchmarks for 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v3...
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v3
+	type:Access	elapsed time: 1578	ns per query: 15.78 (dummy=841568269883)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v3
+	type:Predecessor	elapsed time: 5097	ns per query: 50.97 (dummy=276499028730)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v3
+	type:Successor	elapsed time: 6169	ns per query: 61.69 (dummy=903267331692)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on EF2v3
+	type:Contains	elapsed time: 5020	ns per query: 50.2 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 3b. Extreme sparsity (m=10, n=2^40) with n-1 on Vigna's EF...
+OK: 3b. Extreme sparsity (m=10, n=2^40) with n-1 on Vigna's EF (m=11, n=1099511627776, 440 bytes)
+Running benchmarks for 3b. Extreme sparsity (m=10, n=2^40) with n-1 on Vigna's EF...
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on Vigna's EF
+	type:Access	elapsed time: 2382	ns per query: 23.82 (dummy=357969423694)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 6230	ns per query: 62.3 (dummy=812619686761)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on Vigna's EF
+	type:Successor	elapsed time: 6461	ns per query: 64.61 (dummy=490760216023)
+Benchmark 3b. Extreme sparsity (m=10, n=2^40) with n-1 on Vigna's EF
+	type:Contains	elapsed time: 5703	ns per query: 57.03 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 4a. Single {0} n=1  on EF1...
+OK: 4a. Single {0} n=1  on EF1 (m=1, n=1, 16 bytes)
+Running benchmarks for 4a. Single {0} n=1  on EF1...
+Benchmark 4a. Single {0} n=1  on EF1
+	type:Access	elapsed time: 730	ns per query: 7.3 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF1
+	type:Predecessor	elapsed time: 2234	ns per query: 22.34 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF1
+	type:Successor	elapsed time: 2000	ns per query: 20 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF1
+	type:Contains	elapsed time: 1200	ns per query: 12 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 4a. Single {0} n=1  on EF2...
+OK: 4a. Single {0} n=1  on EF2 (m=1, n=1, 8 bytes)
+Running benchmarks for 4a. Single {0} n=1  on EF2...
+Benchmark 4a. Single {0} n=1  on EF2
+	type:Access	elapsed time: 750	ns per query: 7.5 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF2
+	type:Predecessor	elapsed time: 1732	ns per query: 17.32 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF2
+	type:Successor	elapsed time: 1948	ns per query: 19.48 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF2
+	type:Contains	elapsed time: 1181	ns per query: 11.81 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 4a. Single {0} n=1  on EF2v2...
+OK: 4a. Single {0} n=1  on EF2v2 (m=1, n=1, 8 bytes)
+Running benchmarks for 4a. Single {0} n=1  on EF2v2...
+Benchmark 4a. Single {0} n=1  on EF2v2
+	type:Access	elapsed time: 747	ns per query: 7.47 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF2v2
+	type:Predecessor	elapsed time: 1222	ns per query: 12.22 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF2v2
+	type:Successor	elapsed time: 1824	ns per query: 18.24 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF2v2
+	type:Contains	elapsed time: 913	ns per query: 9.13 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 4a. Single {0} n=1  on EF2v3...
+OK: 4a. Single {0} n=1  on EF2v3 (m=1, n=1, 8 bytes)
+Running benchmarks for 4a. Single {0} n=1  on EF2v3...
+Benchmark 4a. Single {0} n=1  on EF2v3
+	type:Access	elapsed time: 723	ns per query: 7.23 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF2v3
+	type:Predecessor	elapsed time: 1182	ns per query: 11.82 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF2v3
+	type:Successor	elapsed time: 1966	ns per query: 19.66 (dummy=0)
+Benchmark 4a. Single {0} n=1  on EF2v3
+	type:Contains	elapsed time: 1215	ns per query: 12.15 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 4a. Single {0} n=1  on Vigna's EF...
+OK: 4a. Single {0} n=1  on Vigna's EF (m=1, n=1, 400 bytes)
+Running benchmarks for 4a. Single {0} n=1  on Vigna's EF...
+Benchmark 4a. Single {0} n=1  on Vigna's EF
+	type:Access	elapsed time: 828	ns per query: 8.28 (dummy=0)
+Benchmark 4a. Single {0} n=1  on Vigna's EF
+	type:Predecessor	elapsed time: 1104	ns per query: 11.04 (dummy=0)
+Benchmark 4a. Single {0} n=1  on Vigna's EF
+	type:Successor	elapsed time: 2632	ns per query: 26.32 (dummy=0)
+Benchmark 4a. Single {0} n=1  on Vigna's EF
+	type:Contains	elapsed time: 2548	ns per query: 25.48 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 4b. Single {99} n=100 on EF1...
+OK: 4b. Single {99} n=100 on EF1 (m=1, n=100, 24 bytes)
+Running benchmarks for 4b. Single {99} n=100 on EF1...
+Benchmark 4b. Single {99} n=100 on EF1
+	type:Access	elapsed time: 991	ns per query: 9.91 (dummy=0)
+Benchmark 4b. Single {99} n=100 on EF1
+	type:Predecessor	elapsed time: 2354	ns per query: 23.54 (dummy=0)
+Benchmark 4b. Single {99} n=100 on EF1
+	type:Successor	elapsed time: 2818	ns per query: 28.18 (dummy=0)
+Benchmark 4b. Single {99} n=100 on EF1
+	type:Contains	elapsed time: 1794	ns per query: 17.94 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 4b. Single {99} n=100 on EF2...
+OK: 4b. Single {99} n=100 on EF2 (m=1, n=100, 16 bytes)
+Running benchmarks for 4b. Single {99} n=100 on EF2...
+Benchmark 4b. Single {99} n=100 on EF2
+	type:Access	elapsed time: 903	ns per query: 9.03 (dummy=0)
+Benchmark 4b. Single {99} n=100 on EF2
+	type:Predecessor	elapsed time: 2201	ns per query: 22.01 (dummy=99)
+Benchmark 4b. Single {99} n=100 on EF2
+	type:Successor	elapsed time: 2782	ns per query: 27.82 (dummy=0)
+Benchmark 4b. Single {99} n=100 on EF2
+	type:Contains	elapsed time: 1680	ns per query: 16.8 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 4b. Single {99} n=100 on EF2v2...
+OK: 4b. Single {99} n=100 on EF2v2 (m=1, n=100, 16 bytes)
+Running benchmarks for 4b. Single {99} n=100 on EF2v2...
+Benchmark 4b. Single {99} n=100 on EF2v2
+	type:Access	elapsed time: 960	ns per query: 9.6 (dummy=0)
+Benchmark 4b. Single {99} n=100 on EF2v2
+	type:Predecessor	elapsed time: 1347	ns per query: 13.47 (dummy=99)
+Benchmark 4b. Single {99} n=100 on EF2v2
+	type:Successor	elapsed time: 2588	ns per query: 25.88 (dummy=0)
+Benchmark 4b. Single {99} n=100 on EF2v2
+	type:Contains	elapsed time: 1643	ns per query: 16.43 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 4b. Single {99} n=100 on EF2v3...
+OK: 4b. Single {99} n=100 on EF2v3 (m=1, n=100, 16 bytes)
+Running benchmarks for 4b. Single {99} n=100 on EF2v3...
+Benchmark 4b. Single {99} n=100 on EF2v3
+	type:Access	elapsed time: 907	ns per query: 9.07 (dummy=0)
+Benchmark 4b. Single {99} n=100 on EF2v3
+	type:Predecessor	elapsed time: 1204	ns per query: 12.04 (dummy=99)
+Benchmark 4b. Single {99} n=100 on EF2v3
+	type:Successor	elapsed time: 2772	ns per query: 27.72 (dummy=0)
+Benchmark 4b. Single {99} n=100 on EF2v3
+	type:Contains	elapsed time: 1683	ns per query: 16.83 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 4b. Single {99} n=100 on Vigna's EF...
+OK: 4b. Single {99} n=100 on Vigna's EF (m=1, n=100, 392 bytes)
+Running benchmarks for 4b. Single {99} n=100 on Vigna's EF...
+Benchmark 4b. Single {99} n=100 on Vigna's EF
+	type:Access	elapsed time: 879	ns per query: 8.79 (dummy=0)
+Benchmark 4b. Single {99} n=100 on Vigna's EF
+	type:Predecessor	elapsed time: 2569	ns per query: 25.69 (dummy=0)
+Benchmark 4b. Single {99} n=100 on Vigna's EF
+	type:Successor	elapsed time: 3196	ns per query: 31.96 (dummy=0)
+Benchmark 4b. Single {99} n=100 on Vigna's EF
+	type:Contains	elapsed time: 3203	ns per query: 32.03 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 4c. Two {0,99} n=100 on EF1...
+OK: 4c. Two {0,99} n=100 on EF1 (m=2, n=100, 32 bytes)
+Running benchmarks for 4c. Two {0,99} n=100 on EF1...
+Benchmark 4c. Two {0,99} n=100 on EF1
+	type:Access	elapsed time: 2320	ns per query: 23.2 (dummy=99)
+Benchmark 4c. Two {0,99} n=100 on EF1
+	type:Predecessor	elapsed time: 4136	ns per query: 41.36 (dummy=99)
+Benchmark 4c. Two {0,99} n=100 on EF1
+	type:Successor	elapsed time: 4416	ns per query: 44.16 (dummy=99)
+Benchmark 4c. Two {0,99} n=100 on EF1
+	type:Contains	elapsed time: 2577	ns per query: 25.77 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 4c. Two {0,99} n=100 on EF2...
+OK: 4c. Two {0,99} n=100 on EF2 (m=2, n=100, 24 bytes)
+Running benchmarks for 4c. Two {0,99} n=100 on EF2...
+Benchmark 4c. Two {0,99} n=100 on EF2
+	type:Access	elapsed time: 2140	ns per query: 21.4 (dummy=0)
+Benchmark 4c. Two {0,99} n=100 on EF2
+	type:Predecessor	elapsed time: 3704	ns per query: 37.04 (dummy=99)
+Benchmark 4c. Two {0,99} n=100 on EF2
+	type:Successor	elapsed time: 4039	ns per query: 40.39 (dummy=0)
+Benchmark 4c. Two {0,99} n=100 on EF2
+	type:Contains	elapsed time: 2141	ns per query: 21.41 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 4c. Two {0,99} n=100 on EF2v2...
+OK: 4c. Two {0,99} n=100 on EF2v2 (m=2, n=100, 24 bytes)
+Running benchmarks for 4c. Two {0,99} n=100 on EF2v2...
+Benchmark 4c. Two {0,99} n=100 on EF2v2
+	type:Access	elapsed time: 2169	ns per query: 21.69 (dummy=99)
+Benchmark 4c. Two {0,99} n=100 on EF2v2
+	type:Predecessor	elapsed time: 2769	ns per query: 27.69 (dummy=99)
+Benchmark 4c. Two {0,99} n=100 on EF2v2
+	type:Successor	elapsed time: 3827	ns per query: 38.27 (dummy=99)
+Benchmark 4c. Two {0,99} n=100 on EF2v2
+	type:Contains	elapsed time: 2348	ns per query: 23.48 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 4c. Two {0,99} n=100 on EF2v3...
+OK: 4c. Two {0,99} n=100 on EF2v3 (m=2, n=100, 32 bytes)
+Running benchmarks for 4c. Two {0,99} n=100 on EF2v3...
+Benchmark 4c. Two {0,99} n=100 on EF2v3
+	type:Access	elapsed time: 1991	ns per query: 19.91 (dummy=0)
+Benchmark 4c. Two {0,99} n=100 on EF2v3
+	type:Predecessor	elapsed time: 2709	ns per query: 27.09 (dummy=99)
+Benchmark 4c. Two {0,99} n=100 on EF2v3
+	type:Successor	elapsed time: 4087	ns per query: 40.87 (dummy=0)
+Benchmark 4c. Two {0,99} n=100 on EF2v3
+	type:Contains	elapsed time: 2580	ns per query: 25.8 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 4c. Two {0,99} n=100 on Vigna's EF...
+OK: 4c. Two {0,99} n=100 on Vigna's EF (m=2, n=100, 392 bytes)
+Running benchmarks for 4c. Two {0,99} n=100 on Vigna's EF...
+Benchmark 4c. Two {0,99} n=100 on Vigna's EF
+	type:Access	elapsed time: 1780	ns per query: 17.8 (dummy=0)
+Benchmark 4c. Two {0,99} n=100 on Vigna's EF
+	type:Predecessor	elapsed time: 3613	ns per query: 36.13 (dummy=99)
+Benchmark 4c. Two {0,99} n=100 on Vigna's EF
+	type:Successor	elapsed time: 4839	ns per query: 48.39 (dummy=0)
+Benchmark 4c. Two {0,99} n=100 on Vigna's EF
+	type:Contains	elapsed time: 4870	ns per query: 48.7 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 5. n=m, elements at start: first 500 on EF1...
+OK: 5. n=m, elements at start: first 500 on EF1 (m=500, n=500, 312 bytes)
+Running benchmarks for 5. n=m, elements at start: first 500 on EF1...
+Benchmark 5. n=m, elements at start: first 500 on EF1
+	type:Access	elapsed time: 5944	ns per query: 59.44 (dummy=416)
+Benchmark 5. n=m, elements at start: first 500 on EF1
+	type:Predecessor	elapsed time: 7203	ns per query: 72.03 (dummy=503)
+Benchmark 5. n=m, elements at start: first 500 on EF1
+	type:Successor	elapsed time: 7225	ns per query: 72.25 (dummy=342)
+Benchmark 5. n=m, elements at start: first 500 on EF1
+	type:Contains	elapsed time: 5951	ns per query: 59.51 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 5. n=m, elements at start: first 500 on EF2...
+OK: 5. n=m, elements at start: first 500 on EF2 (m=500, n=500, 304 bytes)
+Running benchmarks for 5. n=m, elements at start: first 500 on EF2...
+Benchmark 5. n=m, elements at start: first 500 on EF2
+	type:Access	elapsed time: 6462	ns per query: 64.62 (dummy=84)
+Benchmark 5. n=m, elements at start: first 500 on EF2
+	type:Predecessor	elapsed time: 7635	ns per query: 76.35 (dummy=111)
+Benchmark 5. n=m, elements at start: first 500 on EF2
+	type:Successor	elapsed time: 6383	ns per query: 63.83 (dummy=448)
+Benchmark 5. n=m, elements at start: first 500 on EF2
+	type:Contains	elapsed time: 5741	ns per query: 57.41 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 5. n=m, elements at start: first 500 on EF2v2...
+OK: 5. n=m, elements at start: first 500 on EF2v2 (m=500, n=500, 336 bytes)
+Running benchmarks for 5. n=m, elements at start: first 500 on EF2v2...
+Benchmark 5. n=m, elements at start: first 500 on EF2v2
+	type:Access	elapsed time: 6157	ns per query: 61.57 (dummy=75)
+Benchmark 5. n=m, elements at start: first 500 on EF2v2
+	type:Predecessor	elapsed time: 6767	ns per query: 67.67 (dummy=301)
+Benchmark 5. n=m, elements at start: first 500 on EF2v2
+	type:Successor	elapsed time: 6297	ns per query: 62.97 (dummy=118)
+Benchmark 5. n=m, elements at start: first 500 on EF2v2
+	type:Contains	elapsed time: 5963	ns per query: 59.63 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 5. n=m, elements at start: first 500 on EF2v3...
+OK: 5. n=m, elements at start: first 500 on EF2v3 (m=500, n=500, 344 bytes)
+Running benchmarks for 5. n=m, elements at start: first 500 on EF2v3...
+Benchmark 5. n=m, elements at start: first 500 on EF2v3
+	type:Access	elapsed time: 5798	ns per query: 57.98 (dummy=256)
+Benchmark 5. n=m, elements at start: first 500 on EF2v3
+	type:Predecessor	elapsed time: 6006	ns per query: 60.06 (dummy=328)
+Benchmark 5. n=m, elements at start: first 500 on EF2v3
+	type:Successor	elapsed time: 6599	ns per query: 65.99 (dummy=72)
+Benchmark 5. n=m, elements at start: first 500 on EF2v3
+	type:Contains	elapsed time: 5572	ns per query: 55.72 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 5. n=m, elements at start: first 500 on Vigna's EF...
+OK: 5. n=m, elements at start: first 500 on Vigna's EF (m=500, n=500, 520 bytes)
+Running benchmarks for 5. n=m, elements at start: first 500 on Vigna's EF...
+Benchmark 5. n=m, elements at start: first 500 on Vigna's EF
+	type:Access	elapsed time: 2390	ns per query: 23.9 (dummy=118)
+Benchmark 5. n=m, elements at start: first 500 on Vigna's EF
+	type:Predecessor	elapsed time: 5654	ns per query: 56.54 (dummy=167)
+Benchmark 5. n=m, elements at start: first 500 on Vigna's EF
+	type:Successor	elapsed time: 5108	ns per query: 51.08 (dummy=463)
+Benchmark 5. n=m, elements at start: first 500 on Vigna's EF
+	type:Contains	elapsed time: 5147	ns per query: 51.47 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 6. n=1000000, elements at end: last 500 on EF1...
+OK: 6. n=1000000, elements at end: last 500 on EF1 (m=500, n=1000000, 1000 bytes)
+Running benchmarks for 6. n=1000000, elements at end: last 500 on EF1...
+Benchmark 6. n=1000000, elements at end: last 500 on EF1
+	type:Access	elapsed time: 4066	ns per query: 40.66 (dummy=880)
+Benchmark 6. n=1000000, elements at end: last 500 on EF1
+	type:Predecessor	elapsed time: 2022	ns per query: 20.22 (dummy=999854)
+Benchmark 6. n=1000000, elements at end: last 500 on EF1
+	type:Successor	elapsed time: 3180	ns per query: 31.8 (dummy=0)
+Benchmark 6. n=1000000, elements at end: last 500 on EF1
+	type:Contains	elapsed time: 1484	ns per query: 14.84 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 6. n=1000000, elements at end: last 500 on EF2...
+OK: 6. n=1000000, elements at end: last 500 on EF2 (m=500, n=1000000, 992 bytes)
+Running benchmarks for 6. n=1000000, elements at end: last 500 on EF2...
+Benchmark 6. n=1000000, elements at end: last 500 on EF2
+	type:Access	elapsed time: 3337	ns per query: 33.37 (dummy=449)
+Benchmark 6. n=1000000, elements at end: last 500 on EF2
+	type:Predecessor	elapsed time: 2515	ns per query: 25.15 (dummy=999686)
+Benchmark 6. n=1000000, elements at end: last 500 on EF2
+	type:Successor	elapsed time: 8229	ns per query: 82.29 (dummy=596)
+Benchmark 6. n=1000000, elements at end: last 500 on EF2
+	type:Contains	elapsed time: 1527	ns per query: 15.27 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 6. n=1000000, elements at end: last 500 on EF2v2...
+OK: 6. n=1000000, elements at end: last 500 on EF2v2 (m=500, n=1000000, 1072 bytes)
+Running benchmarks for 6. n=1000000, elements at end: last 500 on EF2v2...
+Benchmark 6. n=1000000, elements at end: last 500 on EF2v2
+	type:Access	elapsed time: 3497	ns per query: 34.97 (dummy=191)
+Benchmark 6. n=1000000, elements at end: last 500 on EF2v2
+	type:Predecessor	elapsed time: 1586	ns per query: 15.86 (dummy=0)
+Benchmark 6. n=1000000, elements at end: last 500 on EF2v2
+	type:Successor	elapsed time: 7995	ns per query: 79.95 (dummy=290)
+Benchmark 6. n=1000000, elements at end: last 500 on EF2v2
+	type:Contains	elapsed time: 1741	ns per query: 17.41 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 6. n=1000000, elements at end: last 500 on EF2v3...
+OK: 6. n=1000000, elements at end: last 500 on EF2v3 (m=500, n=1000000, 1072 bytes)
+Running benchmarks for 6. n=1000000, elements at end: last 500 on EF2v3...
+Benchmark 6. n=1000000, elements at end: last 500 on EF2v3
+	type:Access	elapsed time: 3924	ns per query: 39.24 (dummy=806)
+Benchmark 6. n=1000000, elements at end: last 500 on EF2v3
+	type:Predecessor	elapsed time: 1845	ns per query: 18.45 (dummy=999978)
+Benchmark 6. n=1000000, elements at end: last 500 on EF2v3
+	type:Successor	elapsed time: 7535	ns per query: 75.35 (dummy=372)
+Benchmark 6. n=1000000, elements at end: last 500 on EF2v3
+	type:Contains	elapsed time: 1685	ns per query: 16.85 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 6. n=1000000, elements at end: last 500 on Vigna's EF...
+OK: 6. n=1000000, elements at end: last 500 on Vigna's EF (m=500, n=1000000, 1200 bytes)
+Running benchmarks for 6. n=1000000, elements at end: last 500 on Vigna's EF...
+Benchmark 6. n=1000000, elements at end: last 500 on Vigna's EF
+	type:Access	elapsed time: 2448	ns per query: 24.48 (dummy=225)
+Benchmark 6. n=1000000, elements at end: last 500 on Vigna's EF
+	type:Predecessor	elapsed time: 2625	ns per query: 26.25 (dummy=999543)
+Benchmark 6. n=1000000, elements at end: last 500 on Vigna's EF
+	type:Successor	elapsed time: 3393	ns per query: 33.93 (dummy=0)
+Benchmark 6. n=1000000, elements at end: last 500 on Vigna's EF
+	type:Contains	elapsed time: 3405	ns per query: 34.05 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 7. large random (n=2^32) tight universe on EF1...
+OK: 7. large random (n=2^32) tight universe on EF1 (m=100000, n=4294844231, 259224 bytes)
+Running benchmarks for 7. large random (n=2^32) tight universe on EF1...
+Benchmark 7. large random (n=2^32) tight universe on EF1
+	type:Access	elapsed time: 15411	ns per query: 154.11 (dummy=708531112)
+Benchmark 7. large random (n=2^32) tight universe on EF1
+	type:Predecessor	elapsed time: 11662	ns per query: 116.62 (dummy=3887056117)
+Benchmark 7. large random (n=2^32) tight universe on EF1
+	type:Successor	elapsed time: 10789	ns per query: 107.89 (dummy=1427667853)
+Benchmark 7. large random (n=2^32) tight universe on EF1
+	type:Contains	elapsed time: 8533	ns per query: 85.33 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 7. large random (n=2^32) tight universe on EF2...
+OK: 7. large random (n=2^32) tight universe on EF2 (m=100000, n=4294844231, 258712 bytes)
+Running benchmarks for 7. large random (n=2^32) tight universe on EF2...
+Benchmark 7. large random (n=2^32) tight universe on EF2
+	type:Access	elapsed time: 16102	ns per query: 161.02 (dummy=285583093)
+Benchmark 7. large random (n=2^32) tight universe on EF2
+	type:Predecessor	elapsed time: 11539	ns per query: 115.39 (dummy=991108171)
+Benchmark 7. large random (n=2^32) tight universe on EF2
+	type:Successor	elapsed time: 9969	ns per query: 99.69 (dummy=3799022782)
+Benchmark 7. large random (n=2^32) tight universe on EF2
+	type:Contains	elapsed time: 8523	ns per query: 85.23 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 7. large random (n=2^32) tight universe on EF2v2...
+OK: 7. large random (n=2^32) tight universe on EF2v2 (m=100000, n=4294844231, 275096 bytes)
+Running benchmarks for 7. large random (n=2^32) tight universe on EF2v2...
+Benchmark 7. large random (n=2^32) tight universe on EF2v2
+	type:Access	elapsed time: 16779	ns per query: 167.79 (dummy=1607317113)
+Benchmark 7. large random (n=2^32) tight universe on EF2v2
+	type:Predecessor	elapsed time: 10394	ns per query: 103.94 (dummy=1063218263)
+Benchmark 7. large random (n=2^32) tight universe on EF2v2
+	type:Successor	elapsed time: 10546	ns per query: 105.46 (dummy=3193611335)
+Benchmark 7. large random (n=2^32) tight universe on EF2v2
+	type:Contains	elapsed time: 8943	ns per query: 89.43 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 7. large random (n=2^32) tight universe on EF2v3...
+OK: 7. large random (n=2^32) tight universe on EF2v3 (m=100000, n=4294844231, 275096 bytes)
+Running benchmarks for 7. large random (n=2^32) tight universe on EF2v3...
+Benchmark 7. large random (n=2^32) tight universe on EF2v3
+	type:Access	elapsed time: 16091	ns per query: 160.91 (dummy=2591446614)
+Benchmark 7. large random (n=2^32) tight universe on EF2v3
+	type:Predecessor	elapsed time: 11127	ns per query: 111.27 (dummy=954100556)
+Benchmark 7. large random (n=2^32) tight universe on EF2v3
+	type:Successor	elapsed time: 10645	ns per query: 106.45 (dummy=1166391382)
+Benchmark 7. large random (n=2^32) tight universe on EF2v3
+	type:Contains	elapsed time: 8573	ns per query: 85.73 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 7. large random (n=2^32) tight universe on Vigna's EF...
+OK: 7. large random (n=2^32) tight universe on Vigna's EF (m=100000, n=4294844231, 225728 bytes)
+Running benchmarks for 7. large random (n=2^32) tight universe on Vigna's EF...
+Benchmark 7. large random (n=2^32) tight universe on Vigna's EF
+	type:Access	elapsed time: 5188	ns per query: 51.88 (dummy=2468898031)
+Benchmark 7. large random (n=2^32) tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 10874	ns per query: 108.74 (dummy=2697276749)
+Benchmark 7. large random (n=2^32) tight universe on Vigna's EF
+	type:Successor	elapsed time: 10397	ns per query: 103.97 (dummy=3924860591)
+Benchmark 7. large random (n=2^32) tight universe on Vigna's EF
+	type:Contains	elapsed time: 9271	ns per query: 92.71 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 7b. large random (n=2^32) with n-1 on EF1...
+OK: 7b. large random (n=2^32) with n-1 on EF1 (m=100001, n=4294967296, 259232 bytes)
+Running benchmarks for 7b. large random (n=2^32) with n-1 on EF1...
+Benchmark 7b. large random (n=2^32) with n-1 on EF1
+	type:Access	elapsed time: 15606	ns per query: 156.06 (dummy=3939395773)
+Benchmark 7b. large random (n=2^32) with n-1 on EF1
+	type:Predecessor	elapsed time: 10676	ns per query: 106.76 (dummy=3159301850)
+Benchmark 7b. large random (n=2^32) with n-1 on EF1
+	type:Successor	elapsed time: 11127	ns per query: 111.27 (dummy=1854331602)
+Benchmark 7b. large random (n=2^32) with n-1 on EF1
+	type:Contains	elapsed time: 9030	ns per query: 90.3 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 7b. large random (n=2^32) with n-1 on EF2...
+OK: 7b. large random (n=2^32) with n-1 on EF2 (m=100001, n=4294967296, 258720 bytes)
+Running benchmarks for 7b. large random (n=2^32) with n-1 on EF2...
+Benchmark 7b. large random (n=2^32) with n-1 on EF2
+	type:Access	elapsed time: 15864	ns per query: 158.64 (dummy=4565964)
+Benchmark 7b. large random (n=2^32) with n-1 on EF2
+	type:Predecessor	elapsed time: 11061	ns per query: 110.61 (dummy=213867298)
+Benchmark 7b. large random (n=2^32) with n-1 on EF2
+	type:Successor	elapsed time: 10145	ns per query: 101.45 (dummy=2058538033)
+Benchmark 7b. large random (n=2^32) with n-1 on EF2
+	type:Contains	elapsed time: 8486	ns per query: 84.86 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 7b. large random (n=2^32) with n-1 on EF2v2...
+OK: 7b. large random (n=2^32) with n-1 on EF2v2 (m=100001, n=4294967296, 275104 bytes)
+Running benchmarks for 7b. large random (n=2^32) with n-1 on EF2v2...
+Benchmark 7b. large random (n=2^32) with n-1 on EF2v2
+	type:Access	elapsed time: 16622	ns per query: 166.22 (dummy=825735475)
+Benchmark 7b. large random (n=2^32) with n-1 on EF2v2
+	type:Predecessor	elapsed time: 11088	ns per query: 110.88 (dummy=3302848607)
+Benchmark 7b. large random (n=2^32) with n-1 on EF2v2
+	type:Successor	elapsed time: 10697	ns per query: 106.97 (dummy=3253006836)
+Benchmark 7b. large random (n=2^32) with n-1 on EF2v2
+	type:Contains	elapsed time: 8811	ns per query: 88.11 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 7b. large random (n=2^32) with n-1 on EF2v3...
+OK: 7b. large random (n=2^32) with n-1 on EF2v3 (m=100001, n=4294967296, 275104 bytes)
+Running benchmarks for 7b. large random (n=2^32) with n-1 on EF2v3...
+Benchmark 7b. large random (n=2^32) with n-1 on EF2v3
+	type:Access	elapsed time: 16533	ns per query: 165.33 (dummy=198645273)
+Benchmark 7b. large random (n=2^32) with n-1 on EF2v3
+	type:Predecessor	elapsed time: 10450	ns per query: 104.5 (dummy=2869135968)
+Benchmark 7b. large random (n=2^32) with n-1 on EF2v3
+	type:Successor	elapsed time: 9817	ns per query: 98.17 (dummy=1452630424)
+Benchmark 7b. large random (n=2^32) with n-1 on EF2v3
+	type:Contains	elapsed time: 8279	ns per query: 82.79 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 7b. large random (n=2^32) with n-1 on Vigna's EF...
+OK: 7b. large random (n=2^32) with n-1 on Vigna's EF (m=100001, n=4294967296, 225768 bytes)
+Running benchmarks for 7b. large random (n=2^32) with n-1 on Vigna's EF...
+Benchmark 7b. large random (n=2^32) with n-1 on Vigna's EF
+	type:Access	elapsed time: 5478	ns per query: 54.78 (dummy=3442663083)
+Benchmark 7b. large random (n=2^32) with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 11041	ns per query: 110.41 (dummy=840358055)
+Benchmark 7b. large random (n=2^32) with n-1 on Vigna's EF
+	type:Successor	elapsed time: 10106	ns per query: 101.06 (dummy=3726646805)
+Benchmark 7b. large random (n=2^32) with n-1 on Vigna's EF
+	type:Contains	elapsed time: 8920	ns per query: 89.2 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 8. Evenly spaced (stride=100) on EF1...
+OK: 8. Evenly spaced (stride=100) on EF1 (m=10000, n=999901, 14720 bytes)
+Running benchmarks for 8. Evenly spaced (stride=100) on EF1...
+Benchmark 8. Evenly spaced (stride=100) on EF1
+	type:Access	elapsed time: 10365	ns per query: 103.65 (dummy=1026464)
+Benchmark 8. Evenly spaced (stride=100) on EF1
+	type:Predecessor	elapsed time: 8181	ns per query: 81.81 (dummy=817588)
+Benchmark 8. Evenly spaced (stride=100) on EF1
+	type:Successor	elapsed time: 7844	ns per query: 78.44 (dummy=124096)
+Benchmark 8. Evenly spaced (stride=100) on EF1
+	type:Contains	elapsed time: 7014	ns per query: 70.14 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 8. Evenly spaced (stride=100) on EF2...
+OK: 8. Evenly spaced (stride=100) on EF2 (m=10000, n=999901, 14656 bytes)
+Running benchmarks for 8. Evenly spaced (stride=100) on EF2...
+Benchmark 8. Evenly spaced (stride=100) on EF2
+	type:Access	elapsed time: 10219	ns per query: 102.19 (dummy=197544)
+Benchmark 8. Evenly spaced (stride=100) on EF2
+	type:Predecessor	elapsed time: 8150	ns per query: 81.5 (dummy=394988)
+Benchmark 8. Evenly spaced (stride=100) on EF2
+	type:Successor	elapsed time: 8349	ns per query: 83.49 (dummy=552968)
+Benchmark 8. Evenly spaced (stride=100) on EF2
+	type:Contains	elapsed time: 7141	ns per query: 71.41 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 8. Evenly spaced (stride=100) on EF2v2...
+OK: 8. Evenly spaced (stride=100) on EF2v2 (m=10000, n=999901, 15936 bytes)
+Running benchmarks for 8. Evenly spaced (stride=100) on EF2v2...
+Benchmark 8. Evenly spaced (stride=100) on EF2v2
+	type:Access	elapsed time: 16960	ns per query: 169.6 (dummy=792236)
+Benchmark 8. Evenly spaced (stride=100) on EF2v2
+	type:Predecessor	elapsed time: 6980	ns per query: 69.8 (dummy=117080)
+Benchmark 8. Evenly spaced (stride=100) on EF2v2
+	type:Successor	elapsed time: 8106	ns per query: 81.06 (dummy=184192)
+Benchmark 8. Evenly spaced (stride=100) on EF2v2
+	type:Contains	elapsed time: 7017	ns per query: 70.17 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 8. Evenly spaced (stride=100) on EF2v3...
+OK: 8. Evenly spaced (stride=100) on EF2v3 (m=10000, n=999901, 15936 bytes)
+Running benchmarks for 8. Evenly spaced (stride=100) on EF2v3...
+Benchmark 8. Evenly spaced (stride=100) on EF2v3
+	type:Access	elapsed time: 10293	ns per query: 102.93 (dummy=200860)
+Benchmark 8. Evenly spaced (stride=100) on EF2v3
+	type:Predecessor	elapsed time: 7119	ns per query: 71.19 (dummy=837696)
+Benchmark 8. Evenly spaced (stride=100) on EF2v3
+	type:Successor	elapsed time: 7806	ns per query: 78.06 (dummy=65824)
+Benchmark 8. Evenly spaced (stride=100) on EF2v3
+	type:Contains	elapsed time: 6642	ns per query: 66.42 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 8. Evenly spaced (stride=100) on Vigna's EF...
+OK: 8. Evenly spaced (stride=100) on Vigna's EF (m=10000, n=999901, 12048 bytes)
+Running benchmarks for 8. Evenly spaced (stride=100) on Vigna's EF...
+Benchmark 8. Evenly spaced (stride=100) on Vigna's EF
+	type:Access	elapsed time: 2812	ns per query: 28.12 (dummy=806836)
+Benchmark 8. Evenly spaced (stride=100) on Vigna's EF
+	type:Predecessor	elapsed time: 7083	ns per query: 70.83 (dummy=180932)
+Benchmark 8. Evenly spaced (stride=100) on Vigna's EF
+	type:Successor	elapsed time: 7196	ns per query: 71.96 (dummy=618388)
+Benchmark 8. Evenly spaced (stride=100) on Vigna's EF
+	type:Contains	elapsed time: 7168	ns per query: 71.68 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 9. Two disjoint clusters, tight universe on EF1...
+OK: 9. Two disjoint clusters, tight universe on EF1 (m=776, n=1000000, 1456 bytes)
+Running benchmarks for 9. Two disjoint clusters, tight universe on EF1...
+Benchmark 9. Two disjoint clusters, tight universe on EF1
+	type:Access	elapsed time: 5096	ns per query: 50.96 (dummy=999750)
+Benchmark 9. Two disjoint clusters, tight universe on EF1
+	type:Predecessor	elapsed time: 3059	ns per query: 30.59 (dummy=0)
+Benchmark 9. Two disjoint clusters, tight universe on EF1
+	type:Successor	elapsed time: 3544	ns per query: 35.44 (dummy=31860)
+Benchmark 9. Two disjoint clusters, tight universe on EF1
+	type:Contains	elapsed time: 1778	ns per query: 17.78 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 9. Two disjoint clusters, tight universe on EF2...
+OK: 9. Two disjoint clusters, tight universe on EF2 (m=776, n=1000000, 1448 bytes)
+Running benchmarks for 9. Two disjoint clusters, tight universe on EF2...
+Benchmark 9. Two disjoint clusters, tight universe on EF2
+	type:Access	elapsed time: 5325	ns per query: 53.25 (dummy=999781)
+Benchmark 9. Two disjoint clusters, tight universe on EF2
+	type:Predecessor	elapsed time: 8454	ns per query: 84.54 (dummy=1000206)
+Benchmark 9. Two disjoint clusters, tight universe on EF2
+	type:Successor	elapsed time: 9423	ns per query: 94.23 (dummy=32640)
+Benchmark 9. Two disjoint clusters, tight universe on EF2
+	type:Contains	elapsed time: 1811	ns per query: 18.11 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 9. Two disjoint clusters, tight universe on EF2v2...
+OK: 9. Two disjoint clusters, tight universe on EF2v2 (m=776, n=1000000, 1608 bytes)
+Running benchmarks for 9. Two disjoint clusters, tight universe on EF2v2...
+Benchmark 9. Two disjoint clusters, tight universe on EF2v2
+	type:Access	elapsed time: 5260	ns per query: 52.6 (dummy=32709)
+Benchmark 9. Two disjoint clusters, tight universe on EF2v2
+	type:Predecessor	elapsed time: 2465	ns per query: 24.65 (dummy=999913)
+Benchmark 9. Two disjoint clusters, tight universe on EF2v2
+	type:Successor	elapsed time: 10342	ns per query: 103.42 (dummy=998426)
+Benchmark 9. Two disjoint clusters, tight universe on EF2v2
+	type:Contains	elapsed time: 1826	ns per query: 18.26 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 9. Two disjoint clusters, tight universe on EF2v3...
+OK: 9. Two disjoint clusters, tight universe on EF2v3 (m=776, n=1000000, 1608 bytes)
+Running benchmarks for 9. Two disjoint clusters, tight universe on EF2v3...
+Benchmark 9. Two disjoint clusters, tight universe on EF2v3
+	type:Access	elapsed time: 5595	ns per query: 55.95 (dummy=32267)
+Benchmark 9. Two disjoint clusters, tight universe on EF2v3
+	type:Predecessor	elapsed time: 2284	ns per query: 22.84 (dummy=999998)
+Benchmark 9. Two disjoint clusters, tight universe on EF2v3
+	type:Successor	elapsed time: 10528	ns per query: 105.28 (dummy=32353)
+Benchmark 9. Two disjoint clusters, tight universe on EF2v3
+	type:Contains	elapsed time: 1782	ns per query: 17.82 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 9. Two disjoint clusters, tight universe on Vigna's EF...
+OK: 9. Two disjoint clusters, tight universe on Vigna's EF (m=776, n=1000000, 1576 bytes)
+Running benchmarks for 9. Two disjoint clusters, tight universe on Vigna's EF...
+Benchmark 9. Two disjoint clusters, tight universe on Vigna's EF
+	type:Access	elapsed time: 2214	ns per query: 22.14 (dummy=998597)
+Benchmark 9. Two disjoint clusters, tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 4617	ns per query: 46.17 (dummy=641)
+Benchmark 9. Two disjoint clusters, tight universe on Vigna's EF
+	type:Successor	elapsed time: 3873	ns per query: 38.73 (dummy=1000281)
+Benchmark 9. Two disjoint clusters, tight universe on Vigna's EF
+	type:Contains	elapsed time: 3713	ns per query: 37.13 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 9b. Two disjoint clusters, with n-1 on EF1...
+OK: 9b. Two disjoint clusters, with n-1 on EF1 (m=776, n=1000000, 1456 bytes)
+Running benchmarks for 9b. Two disjoint clusters, with n-1 on EF1...
+Benchmark 9b. Two disjoint clusters, with n-1 on EF1
+	type:Access	elapsed time: 5139	ns per query: 51.39 (dummy=211)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF1
+	type:Predecessor	elapsed time: 2925	ns per query: 29.25 (dummy=506)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF1
+	type:Successor	elapsed time: 3027	ns per query: 30.27 (dummy=811)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF1
+	type:Contains	elapsed time: 1531	ns per query: 15.31 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 9b. Two disjoint clusters, with n-1 on EF2...
+OK: 9b. Two disjoint clusters, with n-1 on EF2 (m=776, n=1000000, 1448 bytes)
+Running benchmarks for 9b. Two disjoint clusters, with n-1 on EF2...
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2
+	type:Access	elapsed time: 5171	ns per query: 51.71 (dummy=1000102)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2
+	type:Predecessor	elapsed time: 7881	ns per query: 78.81 (dummy=998946)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2
+	type:Successor	elapsed time: 8408	ns per query: 84.08 (dummy=999095)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2
+	type:Contains	elapsed time: 2021	ns per query: 20.21 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 9b. Two disjoint clusters, with n-1 on EF2v2...
+OK: 9b. Two disjoint clusters, with n-1 on EF2v2 (m=776, n=1000000, 1608 bytes)
+Running benchmarks for 9b. Two disjoint clusters, with n-1 on EF2v2...
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2v2
+	type:Access	elapsed time: 5342	ns per query: 53.42 (dummy=857)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2v2
+	type:Predecessor	elapsed time: 2386	ns per query: 23.86 (dummy=0)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2v2
+	type:Successor	elapsed time: 10331	ns per query: 103.31 (dummy=19)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2v2
+	type:Contains	elapsed time: 1656	ns per query: 16.56 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 9b. Two disjoint clusters, with n-1 on EF2v3...
+OK: 9b. Two disjoint clusters, with n-1 on EF2v3 (m=776, n=1000000, 1608 bytes)
+Running benchmarks for 9b. Two disjoint clusters, with n-1 on EF2v3...
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2v3
+	type:Access	elapsed time: 5089	ns per query: 50.89 (dummy=221)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2v3
+	type:Predecessor	elapsed time: 2448	ns per query: 24.48 (dummy=744)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2v3
+	type:Successor	elapsed time: 10086	ns per query: 100.86 (dummy=998835)
+Benchmark 9b. Two disjoint clusters, with n-1 on EF2v3
+	type:Contains	elapsed time: 1659	ns per query: 16.59 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 9b. Two disjoint clusters, with n-1 on Vigna's EF...
+OK: 9b. Two disjoint clusters, with n-1 on Vigna's EF (m=776, n=1000000, 1576 bytes)
+Running benchmarks for 9b. Two disjoint clusters, with n-1 on Vigna's EF...
+Benchmark 9b. Two disjoint clusters, with n-1 on Vigna's EF
+	type:Access	elapsed time: 2164	ns per query: 21.64 (dummy=998902)
+Benchmark 9b. Two disjoint clusters, with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 4650	ns per query: 46.5 (dummy=1000268)
+Benchmark 9b. Two disjoint clusters, with n-1 on Vigna's EF
+	type:Successor	elapsed time: 3295	ns per query: 32.95 (dummy=32740)
+Benchmark 9b. Two disjoint clusters, with n-1 on Vigna's EF
+	type:Contains	elapsed time: 3434	ns per query: 34.34 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 10. Exponential gaps (powers of 2), tight universe on EF1...
+OK: 10. Exponential gaps (powers of 2), tight universe on EF1 (m=59, n=576460752303423489, 448 bytes)
+Running benchmarks for 10. Exponential gaps (powers of 2), tight universe on EF1...
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF1
+	type:Access	elapsed time: 2861	ns per query: 28.61 (dummy=114001513794383130)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF1
+	type:Predecessor	elapsed time: 5005	ns per query: 50.05 (dummy=275001052246310912)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF1
+	type:Successor	elapsed time: 5147	ns per query: 51.47 (dummy=325948023030939648)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF1
+	type:Contains	elapsed time: 3710	ns per query: 37.1 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 10. Exponential gaps (powers of 2), tight universe on EF2...
+OK: 10. Exponential gaps (powers of 2), tight universe on EF2 (m=59, n=576460752303423489, 440 bytes)
+Running benchmarks for 10. Exponential gaps (powers of 2), tight universe on EF2...
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2
+	type:Access	elapsed time: 2902	ns per query: 29.02 (dummy=1088832145072915972)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2
+	type:Predecessor	elapsed time: 4939	ns per query: 49.39 (dummy=322886982659211264)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2
+	type:Successor	elapsed time: 6046	ns per query: 60.46 (dummy=155655662120992768)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2
+	type:Contains	elapsed time: 3332	ns per query: 33.32 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 10. Exponential gaps (powers of 2), tight universe on EF2v2...
+OK: 10. Exponential gaps (powers of 2), tight universe on EF2v2 (m=59, n=576460752303423489, 496 bytes)
+Running benchmarks for 10. Exponential gaps (powers of 2), tight universe on EF2v2...
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2v2
+	type:Access	elapsed time: 2772	ns per query: 27.72 (dummy=346814261654391010)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2v2
+	type:Predecessor	elapsed time: 3806	ns per query: 38.06 (dummy=163818436445601792)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2v2
+	type:Successor	elapsed time: 5915	ns per query: 59.15 (dummy=758856537211928576)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2v2
+	type:Contains	elapsed time: 3607	ns per query: 36.07 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 10. Exponential gaps (powers of 2), tight universe on EF2v3...
+OK: 10. Exponential gaps (powers of 2), tight universe on EF2v3 (m=59, n=576460752303423489, 496 bytes)
+Running benchmarks for 10. Exponential gaps (powers of 2), tight universe on EF2v3...
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2v3
+	type:Access	elapsed time: 2788	ns per query: 27.88 (dummy=1002884450941790500)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2v3
+	type:Predecessor	elapsed time: 3811	ns per query: 38.11 (dummy=494551534080622592)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2v3
+	type:Successor	elapsed time: 5746	ns per query: 57.46 (dummy=929993323052007424)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on EF2v3
+	type:Contains	elapsed time: 3403	ns per query: 34.03 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 10. Exponential gaps (powers of 2), tight universe on Vigna's EF...
+OK: 10. Exponential gaps (powers of 2), tight universe on Vigna's EF (m=59, n=576460752303423489, 784 bytes)
+Running benchmarks for 10. Exponential gaps (powers of 2), tight universe on Vigna's EF...
+Benchmark 10. Exponential gaps (powers of 2), tight universe on Vigna's EF
+	type:Access	elapsed time: 2534	ns per query: 25.34 (dummy=957732898517400152)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 6086	ns per query: 60.86 (dummy=390124317720969216)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on Vigna's EF
+	type:Successor	elapsed time: 5489	ns per query: 54.89 (dummy=871446527896190976)
+Benchmark 10. Exponential gaps (powers of 2), tight universe on Vigna's EF
+	type:Contains	elapsed time: 5797	ns per query: 57.97 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 11. m = 10M elements tight universe on EF1...
+OK: 11. m = 10M elements tight universe on EF1 (m=10000000, n=9223371940596489529, 57069208 bytes)
+Running benchmarks for 11. m = 10M elements tight universe on EF1...
+Benchmark 11. m = 10M elements tight universe on EF1
+	type:Access	elapsed time: 45398	ns per query: 453.98 (dummy=8765977574142286364)
+Benchmark 11. m = 10M elements tight universe on EF1
+	type:Predecessor	elapsed time: 29869	ns per query: 298.69 (dummy=3289571588737649282)
+Benchmark 11. m = 10M elements tight universe on EF1
+	type:Successor	elapsed time: 32267	ns per query: 322.67 (dummy=6038259019187347485)
+Benchmark 11. m = 10M elements tight universe on EF1
+	type:Contains	elapsed time: 29197	ns per query: 291.97 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 11. m = 10M elements tight universe on EF2...
+OK: 11. m = 10M elements tight universe on EF2 (m=10000000, n=9223371940596489529, 57036440 bytes)
+Running benchmarks for 11. m = 10M elements tight universe on EF2...
+Benchmark 11. m = 10M elements tight universe on EF2
+	type:Access	elapsed time: 45223	ns per query: 452.23 (dummy=7772397826668571173)
+Benchmark 11. m = 10M elements tight universe on EF2
+	type:Predecessor	elapsed time: 29325	ns per query: 293.25 (dummy=1172574330868913917)
+Benchmark 11. m = 10M elements tight universe on EF2
+	type:Successor	elapsed time: 29757	ns per query: 297.57 (dummy=8562911748566791293)
+Benchmark 11. m = 10M elements tight universe on EF2
+	type:Contains	elapsed time: 28019	ns per query: 280.19 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 11. m = 10M elements tight universe on EF2v2...
+OK: 11. m = 10M elements tight universe on EF2v2 (m=10000000, n=9223371940596489529, 59100816 bytes)
+Running benchmarks for 11. m = 10M elements tight universe on EF2v2...
+Benchmark 11. m = 10M elements tight universe on EF2v2
+	type:Access	elapsed time: 54147	ns per query: 541.47 (dummy=8333197753739631533)
+Benchmark 11. m = 10M elements tight universe on EF2v2
+	type:Predecessor	elapsed time: 30972	ns per query: 309.72 (dummy=2315119864564423697)
+Benchmark 11. m = 10M elements tight universe on EF2v2
+	type:Successor	elapsed time: 31217	ns per query: 312.17 (dummy=4673511016682381848)
+Benchmark 11. m = 10M elements tight universe on EF2v2
+	type:Contains	elapsed time: 29552	ns per query: 295.52 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 11. m = 10M elements tight universe on EF2v3...
+OK: 11. m = 10M elements tight universe on EF2v3 (m=10000000, n=9223371940596489529, 59100824 bytes)
+Running benchmarks for 11. m = 10M elements tight universe on EF2v3...
+Benchmark 11. m = 10M elements tight universe on EF2v3
+	type:Access	elapsed time: 44716	ns per query: 447.16 (dummy=7468192865625239983)
+Benchmark 11. m = 10M elements tight universe on EF2v3
+	type:Predecessor	elapsed time: 31629	ns per query: 316.29 (dummy=3961582047886051646)
+Benchmark 11. m = 10M elements tight universe on EF2v3
+	type:Successor	elapsed time: 31015	ns per query: 310.15 (dummy=6045452669542143500)
+Benchmark 11. m = 10M elements tight universe on EF2v3
+	type:Contains	elapsed time: 28832	ns per query: 288.32 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 11. m = 10M elements tight universe on Vigna's EF...
+OK: 11. m = 10M elements tight universe on Vigna's EF (m=10000000, n=9223371940596489529, 53143448 bytes)
+Running benchmarks for 11. m = 10M elements tight universe on Vigna's EF...
+Benchmark 11. m = 10M elements tight universe on Vigna's EF
+	type:Access	elapsed time: 21037	ns per query: 210.37 (dummy=5533237688743437358)
+Benchmark 11. m = 10M elements tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 36125	ns per query: 361.25 (dummy=6597145418030548637)
+Benchmark 11. m = 10M elements tight universe on Vigna's EF
+	type:Successor	elapsed time: 37014	ns per query: 370.14 (dummy=1613807363591001100)
+Benchmark 11. m = 10M elements tight universe on Vigna's EF
+	type:Contains	elapsed time: 34134	ns per query: 341.34 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 11b. m = 10M elements with n-1 on EF1...
+OK: 11b. m = 10M elements with n-1 on EF1 (m=10000001, n=9223372036854775808, 57069216 bytes)
+Running benchmarks for 11b. m = 10M elements with n-1 on EF1...
+Benchmark 11b. m = 10M elements with n-1 on EF1
+	type:Access	elapsed time: 53643	ns per query: 536.43 (dummy=134469723589596097)
+Benchmark 11b. m = 10M elements with n-1 on EF1
+	type:Predecessor	elapsed time: 33908	ns per query: 339.08 (dummy=5723783727747597947)
+Benchmark 11b. m = 10M elements with n-1 on EF1
+	type:Successor	elapsed time: 35063	ns per query: 350.63 (dummy=4802528362389453094)
+Benchmark 11b. m = 10M elements with n-1 on EF1
+	type:Contains	elapsed time: 33504	ns per query: 335.04 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 11b. m = 10M elements with n-1 on EF2...
+OK: 11b. m = 10M elements with n-1 on EF2 (m=10000001, n=9223372036854775808, 57036448 bytes)
+Running benchmarks for 11b. m = 10M elements with n-1 on EF2...
+Benchmark 11b. m = 10M elements with n-1 on EF2
+	type:Access	elapsed time: 45351	ns per query: 453.51 (dummy=3976473903132064747)
+Benchmark 11b. m = 10M elements with n-1 on EF2
+	type:Predecessor	elapsed time: 31985	ns per query: 319.85 (dummy=6971841124834305202)
+Benchmark 11b. m = 10M elements with n-1 on EF2
+	type:Successor	elapsed time: 30344	ns per query: 303.44 (dummy=3292131273764982419)
+Benchmark 11b. m = 10M elements with n-1 on EF2
+	type:Contains	elapsed time: 30014	ns per query: 300.14 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 11b. m = 10M elements with n-1 on EF2v2...
+OK: 11b. m = 10M elements with n-1 on EF2v2 (m=10000001, n=9223372036854775808, 59100824 bytes)
+Running benchmarks for 11b. m = 10M elements with n-1 on EF2v2...
+Benchmark 11b. m = 10M elements with n-1 on EF2v2
+	type:Access	elapsed time: 57194	ns per query: 571.94 (dummy=3274623717573867740)
+Benchmark 11b. m = 10M elements with n-1 on EF2v2
+	type:Predecessor	elapsed time: 30992	ns per query: 309.92 (dummy=624772677587064598)
+Benchmark 11b. m = 10M elements with n-1 on EF2v2
+	type:Successor	elapsed time: 30775	ns per query: 307.75 (dummy=3784248245817710048)
+Benchmark 11b. m = 10M elements with n-1 on EF2v2
+	type:Contains	elapsed time: 30327	ns per query: 303.27 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 11b. m = 10M elements with n-1 on EF2v3...
+OK: 11b. m = 10M elements with n-1 on EF2v3 (m=10000001, n=9223372036854775808, 59100832 bytes)
+Running benchmarks for 11b. m = 10M elements with n-1 on EF2v3...
+Benchmark 11b. m = 10M elements with n-1 on EF2v3
+	type:Access	elapsed time: 43909	ns per query: 439.09 (dummy=1698749036185121923)
+Benchmark 11b. m = 10M elements with n-1 on EF2v3
+	type:Predecessor	elapsed time: 31111	ns per query: 311.11 (dummy=4613570859018277603)
+Benchmark 11b. m = 10M elements with n-1 on EF2v3
+	type:Successor	elapsed time: 29935	ns per query: 299.35 (dummy=8098768739525331226)
+Benchmark 11b. m = 10M elements with n-1 on EF2v3
+	type:Contains	elapsed time: 28866	ns per query: 288.66 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 11b. m = 10M elements with n-1 on Vigna's EF...
+OK: 11b. m = 10M elements with n-1 on Vigna's EF (m=10000001, n=9223372036854775808, 53143504 bytes)
+Running benchmarks for 11b. m = 10M elements with n-1 on Vigna's EF...
+Benchmark 11b. m = 10M elements with n-1 on Vigna's EF
+	type:Access	elapsed time: 21192	ns per query: 211.92 (dummy=842041477217152007)
+Benchmark 11b. m = 10M elements with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 35282	ns per query: 352.82 (dummy=6106223462426058100)
+Benchmark 11b. m = 10M elements with n-1 on Vigna's EF
+	type:Successor	elapsed time: 35377	ns per query: 353.77 (dummy=668373567738802570)
+Benchmark 11b. m = 10M elements with n-1 on Vigna's EF
+	type:Contains	elapsed time: 35753	ns per query: 357.53 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 12. 50M Random Walk tight universe on EF1...
+OK: 12. 50M Random Walk tight universe on EF1 (m=50000000, n=2687336578478122, 203538952 bytes)
+Running benchmarks for 12. 50M Random Walk tight universe on EF1...
+Benchmark 12. 50M Random Walk tight universe on EF1
+	type:Access	elapsed time: 57188	ns per query: 571.88 (dummy=1353470495848098)
+Benchmark 12. 50M Random Walk tight universe on EF1
+	type:Predecessor	elapsed time: 36423	ns per query: 364.23 (dummy=33683059462737)
+Benchmark 12. 50M Random Walk tight universe on EF1
+	type:Successor	elapsed time: 36667	ns per query: 366.67 (dummy=1026726044931079)
+Benchmark 12. 50M Random Walk tight universe on EF1
+	type:Contains	elapsed time: 35158	ns per query: 351.58 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 12. 50M Random Walk tight universe on EF2...
+OK: 12. 50M Random Walk tight universe on EF2 (m=50000000, n=2687336578478122, 203407880 bytes)
+Running benchmarks for 12. 50M Random Walk tight universe on EF2...
+Benchmark 12. 50M Random Walk tight universe on EF2
+	type:Access	elapsed time: 57836	ns per query: 578.36 (dummy=1083845430360744)
+Benchmark 12. 50M Random Walk tight universe on EF2
+	type:Predecessor	elapsed time: 35444	ns per query: 354.44 (dummy=2169179240146816)
+Benchmark 12. 50M Random Walk tight universe on EF2
+	type:Successor	elapsed time: 36130	ns per query: 361.3 (dummy=2676632495277662)
+Benchmark 12. 50M Random Walk tight universe on EF2
+	type:Contains	elapsed time: 33886	ns per query: 338.86 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 12. 50M Random Walk tight universe on EF2v2...
+OK: 12. 50M Random Walk tight universe on EF2v2 (m=50000000, n=2687336578478122, 210223616 bytes)
+Running benchmarks for 12. 50M Random Walk tight universe on EF2v2...
+Benchmark 12. 50M Random Walk tight universe on EF2v2
+	type:Access	elapsed time: 68204	ns per query: 682.04 (dummy=1531526460821252)
+Benchmark 12. 50M Random Walk tight universe on EF2v2
+	type:Predecessor	elapsed time: 36183	ns per query: 361.83 (dummy=2692648352039400)
+Benchmark 12. 50M Random Walk tight universe on EF2v2
+	type:Successor	elapsed time: 35968	ns per query: 359.68 (dummy=4266776164398396)
+Benchmark 12. 50M Random Walk tight universe on EF2v2
+	type:Contains	elapsed time: 35626	ns per query: 356.26 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 12. 50M Random Walk tight universe on EF2v3...
+OK: 12. 50M Random Walk tight universe on EF2v3 (m=50000000, n=2687336578478122, 210223624 bytes)
+Running benchmarks for 12. 50M Random Walk tight universe on EF2v3...
+Benchmark 12. 50M Random Walk tight universe on EF2v3
+	type:Access	elapsed time: 56325	ns per query: 563.25 (dummy=629438930370934)
+Benchmark 12. 50M Random Walk tight universe on EF2v3
+	type:Predecessor	elapsed time: 36412	ns per query: 364.12 (dummy=2208826543285354)
+Benchmark 12. 50M Random Walk tight universe on EF2v3
+	type:Successor	elapsed time: 35444	ns per query: 354.44 (dummy=1164864160547450)
+Benchmark 12. 50M Random Walk tight universe on EF2v3
+	type:Contains	elapsed time: 35245	ns per query: 352.45 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 12. 50M Random Walk tight universe on Vigna's EF...
+OK: 12. 50M Random Walk tight universe on Vigna's EF (m=50000000, n=2687336578478122, 177593048 bytes)
+Running benchmarks for 12. 50M Random Walk tight universe on Vigna's EF...
+Benchmark 12. 50M Random Walk tight universe on Vigna's EF
+	type:Access	elapsed time: 23494	ns per query: 234.94 (dummy=610722233634862)
+Benchmark 12. 50M Random Walk tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 38786	ns per query: 387.86 (dummy=3291739630825906)
+Benchmark 12. 50M Random Walk tight universe on Vigna's EF
+	type:Successor	elapsed time: 38126	ns per query: 381.26 (dummy=3443000787846435)
+Benchmark 12. 50M Random Walk tight universe on Vigna's EF
+	type:Contains	elapsed time: 38873	ns per query: 388.73 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 12b. 50M Random Walk with n-1 on EF1...
+OK: 12b. 50M Random Walk with n-1 on EF1 (m=50000001, n=9223372036854775808, 272288960 bytes)
+Running benchmarks for 12b. 50M Random Walk with n-1 on EF1...
+Benchmark 12b. 50M Random Walk with n-1 on EF1
+	type:Access	elapsed time: 33451	ns per query: 334.51 (dummy=3268682064525164)
+Benchmark 12b. 50M Random Walk with n-1 on EF1
+	type:Predecessor	elapsed time: 836317	ns per query: 8363.17 (dummy=2959011301917744)
+Benchmark 12b. 50M Random Walk with n-1 on EF1
+	type:Successor	elapsed time: 845144	ns per query: 8451.44 (dummy=0)
+Benchmark 12b. 50M Random Walk with n-1 on EF1
+	type:Contains	elapsed time: 11012	ns per query: 110.12 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 12b. 50M Random Walk with n-1 on EF2...
+OK: 12b. 50M Random Walk with n-1 on EF2 (m=50000001, n=9223372036854775808, 272157888 bytes)
+Running benchmarks for 12b. 50M Random Walk with n-1 on EF2...
+Benchmark 12b. 50M Random Walk with n-1 on EF2
+	type:Access	elapsed time: 32873	ns per query: 328.73 (dummy=2054793081643627)
+Benchmark 12b. 50M Random Walk with n-1 on EF2
+	type:Predecessor	elapsed time: 77754	ns per query: 777.54 (dummy=4149526103030107)
+Benchmark 12b. 50M Random Walk with n-1 on EF2
+	type:Successor	elapsed time: 70898	ns per query: 708.98 (dummy=0)
+Benchmark 12b. 50M Random Walk with n-1 on EF2
+	type:Contains	elapsed time: 8307	ns per query: 83.07 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 12b. 50M Random Walk with n-1 on EF2v2...
+OK: 12b. 50M Random Walk with n-1 on EF2v2 (m=50000001, n=9223372036854775808, 280415416 bytes)
+Running benchmarks for 12b. 50M Random Walk with n-1 on EF2v2...
+Benchmark 12b. 50M Random Walk with n-1 on EF2v2
+	type:Access	elapsed time: 32860	ns per query: 328.6 (dummy=3568710912218246)
+Benchmark 12b. 50M Random Walk with n-1 on EF2v2
+	type:Predecessor	elapsed time: 11180	ns per query: 111.8 (dummy=0)
+Benchmark 12b. 50M Random Walk with n-1 on EF2v2
+	type:Successor	elapsed time: 89488	ns per query: 894.88 (dummy=0)
+Benchmark 12b. 50M Random Walk with n-1 on EF2v2
+	type:Contains	elapsed time: 9952	ns per query: 99.52 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 12b. 50M Random Walk with n-1 on EF2v3...
+OK: 12b. 50M Random Walk with n-1 on EF2v3 (m=50000001, n=9223372036854775808, 280415424 bytes)
+Running benchmarks for 12b. 50M Random Walk with n-1 on EF2v3...
+Benchmark 12b. 50M Random Walk with n-1 on EF2v3
+	type:Access	elapsed time: 33833	ns per query: 338.33 (dummy=1094750569840947)
+Benchmark 12b. 50M Random Walk with n-1 on EF2v3
+	type:Predecessor	elapsed time: 11305	ns per query: 113.05 (dummy=0)
+Benchmark 12b. 50M Random Walk with n-1 on EF2v3
+	type:Successor	elapsed time: 72377	ns per query: 723.77 (dummy=0)
+Benchmark 12b. 50M Random Walk with n-1 on EF2v3
+	type:Contains	elapsed time: 9736	ns per query: 97.36 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 12b. 50M Random Walk with n-1 on Vigna's EF...
+OK: 12b. 50M Random Walk with n-1 on Vigna's EF (m=50000001, n=9223372036854775808, 250463560 bytes)
+Running benchmarks for 12b. 50M Random Walk with n-1 on Vigna's EF...
+Benchmark 12b. 50M Random Walk with n-1 on Vigna's EF
+	type:Access	elapsed time: 22960	ns per query: 229.6 (dummy=2232323664884593)
+Benchmark 12b. 50M Random Walk with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 24606	ns per query: 246.06 (dummy=0)
+Benchmark 12b. 50M Random Walk with n-1 on Vigna's EF
+	type:Successor	elapsed time: 1.92222e+08	ns per query: 1.92222e+06 (dummy=0)
+Benchmark 12b. 50M Random Walk with n-1 on Vigna's EF
+	type:Contains	elapsed time: 1.81156e+08	ns per query: 1.81156e+06 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 13. 100M Contiguous Bursts, tight universe on EF1...
+OK: 13. 100M Contiguous Bursts, tight universe on EF1 (m=100000000, n=9223371595931040357, 532340040 bytes)
+Running benchmarks for 13. 100M Contiguous Bursts, tight universe on EF1...
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF1
+	type:Access	elapsed time: 68932	ns per query: 689.32 (dummy=5158205151615969853)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF1
+	type:Predecessor	elapsed time: 30930	ns per query: 309.3 (dummy=8194713226669553941)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF1
+	type:Successor	elapsed time: 30752	ns per query: 307.52 (dummy=5645240331752637799)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF1
+	type:Contains	elapsed time: 11297	ns per query: 112.97 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 13. 100M Contiguous Bursts, tight universe on EF2...
+OK: 13. 100M Contiguous Bursts, tight universe on EF2 (m=100000000, n=9223371595931040357, 532077896 bytes)
+Running benchmarks for 13. 100M Contiguous Bursts, tight universe on EF2...
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2
+	type:Access	elapsed time: 69743	ns per query: 697.43 (dummy=825879542443889782)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2
+	type:Predecessor	elapsed time: 38023	ns per query: 380.23 (dummy=4454741920069599991)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2
+	type:Successor	elapsed time: 36656	ns per query: 366.56 (dummy=320052254361121460)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2
+	type:Contains	elapsed time: 10432	ns per query: 104.32 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 13. 100M Contiguous Bursts, tight universe on EF2v2...
+OK: 13. 100M Contiguous Bursts, tight universe on EF2v2 (m=100000000, n=9223371595931040357, 548592960 bytes)
+Running benchmarks for 13. 100M Contiguous Bursts, tight universe on EF2v2...
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2v2
+	type:Access	elapsed time: 85124	ns per query: 851.24 (dummy=6533062693748883950)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2v2
+	type:Predecessor	elapsed time: 13520	ns per query: 135.2 (dummy=7392986128698945670)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2v2
+	type:Successor	elapsed time: 63054	ns per query: 630.54 (dummy=4681455764336720682)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2v2
+	type:Contains	elapsed time: 11248	ns per query: 112.48 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 13. 100M Contiguous Bursts, tight universe on EF2v3...
+OK: 13. 100M Contiguous Bursts, tight universe on EF2v3 (m=100000000, n=9223371595931040357, 548592968 bytes)
+Running benchmarks for 13. 100M Contiguous Bursts, tight universe on EF2v3...
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2v3
+	type:Access	elapsed time: 69318	ns per query: 693.18 (dummy=5735063796708027528)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2v3
+	type:Predecessor	elapsed time: 14479	ns per query: 144.79 (dummy=5524947498432962769)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2v3
+	type:Successor	elapsed time: 38600	ns per query: 386 (dummy=1484845703645234296)
+Benchmark 13. 100M Contiguous Bursts, tight universe on EF2v3
+	type:Contains	elapsed time: 10320	ns per query: 103.2 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 13. 100M Contiguous Bursts, tight universe on Vigna's EF...
+OK: 13. 100M Contiguous Bursts, tight universe on Vigna's EF (m=100000000, n=9223371595931040357, 488426672 bytes)
+Running benchmarks for 13. 100M Contiguous Bursts, tight universe on Vigna's EF...
+Benchmark 13. 100M Contiguous Bursts, tight universe on Vigna's EF
+	type:Access	elapsed time: 25441	ns per query: 254.41 (dummy=4655824107113691478)
+Benchmark 13. 100M Contiguous Bursts, tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 43572	ns per query: 435.72 (dummy=1150253244560308071)
+Benchmark 13. 100M Contiguous Bursts, tight universe on Vigna's EF
+	type:Successor	elapsed time: 48579	ns per query: 485.79 (dummy=6216055989413894468)
+Benchmark 13. 100M Contiguous Bursts, tight universe on Vigna's EF
+	type:Contains	elapsed time: 47541	ns per query: 475.41 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 13b. 100M Contiguous Bursts with n-1 on EF1...
+OK: 13b. 100M Contiguous Bursts with n-1 on EF1 (m=100000001, n=9223372036854775808, 532340048 bytes)
+Running benchmarks for 13b. 100M Contiguous Bursts with n-1 on EF1...
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF1
+	type:Access	elapsed time: 69379	ns per query: 693.79 (dummy=3081866963150958091)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF1
+	type:Predecessor	elapsed time: 30932	ns per query: 309.32 (dummy=1640654089993734940)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF1
+	type:Successor	elapsed time: 31632	ns per query: 316.32 (dummy=2528035777407061566)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF1
+	type:Contains	elapsed time: 12324	ns per query: 123.24 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 13b. 100M Contiguous Bursts with n-1 on EF2...
+OK: 13b. 100M Contiguous Bursts with n-1 on EF2 (m=100000001, n=9223372036854775808, 532077904 bytes)
+Running benchmarks for 13b. 100M Contiguous Bursts with n-1 on EF2...
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2
+	type:Access	elapsed time: 71162	ns per query: 711.62 (dummy=4772555297678968845)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2
+	type:Predecessor	elapsed time: 37379	ns per query: 373.79 (dummy=2834787062909468894)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2
+	type:Successor	elapsed time: 37743	ns per query: 377.43 (dummy=2380684234280214085)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2
+	type:Contains	elapsed time: 10173	ns per query: 101.73 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 13b. 100M Contiguous Bursts with n-1 on EF2v2...
+OK: 13b. 100M Contiguous Bursts with n-1 on EF2v2 (m=100000001, n=9223372036854775808, 548592968 bytes)
+Running benchmarks for 13b. 100M Contiguous Bursts with n-1 on EF2v2...
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2v2
+	type:Access	elapsed time: 86346	ns per query: 863.46 (dummy=3035850143871489652)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2v2
+	type:Predecessor	elapsed time: 12273	ns per query: 122.73 (dummy=6849580584197561549)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2v2
+	type:Successor	elapsed time: 46429	ns per query: 464.29 (dummy=5321786966480594744)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2v2
+	type:Contains	elapsed time: 13246	ns per query: 132.46 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 13b. 100M Contiguous Bursts with n-1 on EF2v3...
+OK: 13b. 100M Contiguous Bursts with n-1 on EF2v3 (m=100000001, n=9223372036854775808, 548592976 bytes)
+Running benchmarks for 13b. 100M Contiguous Bursts with n-1 on EF2v3...
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2v3
+	type:Access	elapsed time: 69559	ns per query: 695.59 (dummy=7587588045430758672)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2v3
+	type:Predecessor	elapsed time: 14397	ns per query: 143.97 (dummy=8725784221246810983)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2v3
+	type:Successor	elapsed time: 35564	ns per query: 355.64 (dummy=1801869811233648727)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on EF2v3
+	type:Contains	elapsed time: 11957	ns per query: 119.57 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 13b. 100M Contiguous Bursts with n-1 on Vigna's EF...
+OK: 13b. 100M Contiguous Bursts with n-1 on Vigna's EF (m=100000001, n=9223372036854775808, 488426728 bytes)
+Running benchmarks for 13b. 100M Contiguous Bursts with n-1 on Vigna's EF...
+Benchmark 13b. 100M Contiguous Bursts with n-1 on Vigna's EF
+	type:Access	elapsed time: 25959	ns per query: 259.59 (dummy=1915312750545938679)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 42634	ns per query: 426.34 (dummy=2662200006586354414)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on Vigna's EF
+	type:Successor	elapsed time: 47435	ns per query: 474.35 (dummy=5669824064684321149)
+Benchmark 13b. 100M Contiguous Bursts with n-1 on Vigna's EF
+	type:Contains	elapsed time: 48500	ns per query: 485 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 14. 50M Geometric Gaps tight universe on EF1...
+OK: 14. 50M Geometric Gaps tight universe on EF1 (m=50000000, n=95385947908981736, 234788952 bytes)
+Running benchmarks for 14. 50M Geometric Gaps tight universe on EF1...
+Benchmark 14. 50M Geometric Gaps tight universe on EF1
+	type:Access	elapsed time: 59341	ns per query: 593.41 (dummy=49199490224418006)
+Benchmark 14. 50M Geometric Gaps tight universe on EF1
+	type:Predecessor	elapsed time: 36598	ns per query: 365.98 (dummy=31503224627487908)
+Benchmark 14. 50M Geometric Gaps tight universe on EF1
+	type:Successor	elapsed time: 35765	ns per query: 357.65 (dummy=56189736075990639)
+Benchmark 14. 50M Geometric Gaps tight universe on EF1
+	type:Contains	elapsed time: 35095	ns per query: 350.95 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 14. 50M Geometric Gaps tight universe on EF2...
+OK: 14. 50M Geometric Gaps tight universe on EF2 (m=50000000, n=95385947908981736, 234657880 bytes)
+Running benchmarks for 14. 50M Geometric Gaps tight universe on EF2...
+Benchmark 14. 50M Geometric Gaps tight universe on EF2
+	type:Access	elapsed time: 59966	ns per query: 599.66 (dummy=40657423343260944)
+Benchmark 14. 50M Geometric Gaps tight universe on EF2
+	type:Predecessor	elapsed time: 35961	ns per query: 359.61 (dummy=105542616340662616)
+Benchmark 14. 50M Geometric Gaps tight universe on EF2
+	type:Successor	elapsed time: 36101	ns per query: 361.01 (dummy=94334735757368855)
+Benchmark 14. 50M Geometric Gaps tight universe on EF2
+	type:Contains	elapsed time: 36440	ns per query: 364.4 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 14. 50M Geometric Gaps tight universe on EF2v2...
+OK: 14. 50M Geometric Gaps tight universe on EF2v2 (m=50000000, n=95385947908981736, 242128976 bytes)
+Running benchmarks for 14. 50M Geometric Gaps tight universe on EF2v2...
+Benchmark 14. 50M Geometric Gaps tight universe on EF2v2
+	type:Access	elapsed time: 71009	ns per query: 710.09 (dummy=123739537493403169)
+Benchmark 14. 50M Geometric Gaps tight universe on EF2v2
+	type:Predecessor	elapsed time: 36742	ns per query: 367.42 (dummy=117550562998548391)
+Benchmark 14. 50M Geometric Gaps tight universe on EF2v2
+	type:Successor	elapsed time: 35827	ns per query: 358.27 (dummy=17293672056793691)
+Benchmark 14. 50M Geometric Gaps tight universe on EF2v2
+	type:Contains	elapsed time: 35910	ns per query: 359.1 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 14. 50M Geometric Gaps tight universe on EF2v3...
+OK: 14. 50M Geometric Gaps tight universe on EF2v3 (m=50000000, n=95385947908981736, 242128984 bytes)
+Running benchmarks for 14. 50M Geometric Gaps tight universe on EF2v3...
+Benchmark 14. 50M Geometric Gaps tight universe on EF2v3
+	type:Access	elapsed time: 59154	ns per query: 591.54 (dummy=53699311826994688)
+Benchmark 14. 50M Geometric Gaps tight universe on EF2v3
+	type:Predecessor	elapsed time: 35957	ns per query: 359.57 (dummy=110556670913336186)
+Benchmark 14. 50M Geometric Gaps tight universe on EF2v3
+	type:Successor	elapsed time: 35708	ns per query: 357.08 (dummy=47509155653025422)
+Benchmark 14. 50M Geometric Gaps tight universe on EF2v3
+	type:Contains	elapsed time: 35347	ns per query: 353.47 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 14. 50M Geometric Gaps tight universe on Vigna's EF...
+OK: 14. 50M Geometric Gaps tight universe on Vigna's EF (m=50000000, n=95385947908981736, 210278008 bytes)
+Running benchmarks for 14. 50M Geometric Gaps tight universe on Vigna's EF...
+Benchmark 14. 50M Geometric Gaps tight universe on Vigna's EF
+	type:Access	elapsed time: 23319	ns per query: 233.19 (dummy=80862228138781259)
+Benchmark 14. 50M Geometric Gaps tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 40323	ns per query: 403.23 (dummy=54470614411659468)
+Benchmark 14. 50M Geometric Gaps tight universe on Vigna's EF
+	type:Successor	elapsed time: 38726	ns per query: 387.26 (dummy=51341733308410217)
+Benchmark 14. 50M Geometric Gaps tight universe on Vigna's EF
+	type:Contains	elapsed time: 37950	ns per query: 379.5 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 14b. 50M Geometric Gaps with n-1 on EF1...
+OK: 14b. 50M Geometric Gaps with n-1 on EF1 (m=50000001, n=9223372036854775808, 272288960 bytes)
+Running benchmarks for 14b. 50M Geometric Gaps with n-1 on EF1...
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF1
+	type:Access	elapsed time: 37461	ns per query: 374.61 (dummy=61067055610181977)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF1
+	type:Predecessor	elapsed time: 767610	ns per query: 7676.1 (dummy=38953101175809638)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF1
+	type:Successor	elapsed time: 879784	ns per query: 8797.84 (dummy=41439742492227437)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF1
+	type:Contains	elapsed time: 11069	ns per query: 110.69 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 14b. 50M Geometric Gaps with n-1 on EF2...
+OK: 14b. 50M Geometric Gaps with n-1 on EF2 (m=50000001, n=9223372036854775808, 272157888 bytes)
+Running benchmarks for 14b. 50M Geometric Gaps with n-1 on EF2...
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2
+	type:Access	elapsed time: 37086	ns per query: 370.86 (dummy=71361130263265920)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2
+	type:Predecessor	elapsed time: 81056	ns per query: 810.56 (dummy=52075261381663203)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2
+	type:Successor	elapsed time: 71747	ns per query: 717.47 (dummy=87328404692579573)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2
+	type:Contains	elapsed time: 8673	ns per query: 86.73 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 14b. 50M Geometric Gaps with n-1 on EF2v2...
+OK: 14b. 50M Geometric Gaps with n-1 on EF2v2 (m=50000001, n=9223372036854775808, 280415416 bytes)
+Running benchmarks for 14b. 50M Geometric Gaps with n-1 on EF2v2...
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2v2
+	type:Access	elapsed time: 37972	ns per query: 379.72 (dummy=80537094617314101)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2v2
+	type:Predecessor	elapsed time: 11155	ns per query: 111.55 (dummy=64877553663879961)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2v2
+	type:Successor	elapsed time: 89800	ns per query: 898 (dummy=9126300458204010398)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2v2
+	type:Contains	elapsed time: 10713	ns per query: 107.13 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 14b. 50M Geometric Gaps with n-1 on EF2v3...
+OK: 14b. 50M Geometric Gaps with n-1 on EF2v3 (m=50000001, n=9223372036854775808, 280415424 bytes)
+Running benchmarks for 14b. 50M Geometric Gaps with n-1 on EF2v3...
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2v3
+	type:Access	elapsed time: 37064	ns per query: 370.64 (dummy=36110904207831177)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2v3
+	type:Predecessor	elapsed time: 12148	ns per query: 121.48 (dummy=117383823378376278)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2v3
+	type:Successor	elapsed time: 72931	ns per query: 729.31 (dummy=131277979599157038)
+Benchmark 14b. 50M Geometric Gaps with n-1 on EF2v3
+	type:Contains	elapsed time: 8990	ns per query: 89.9 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 14b. 50M Geometric Gaps with n-1 on Vigna's EF...
+OK: 14b. 50M Geometric Gaps with n-1 on Vigna's EF (m=50000001, n=9223372036854775808, 250463560 bytes)
+Running benchmarks for 14b. 50M Geometric Gaps with n-1 on Vigna's EF...
+Benchmark 14b. 50M Geometric Gaps with n-1 on Vigna's EF
+	type:Access	elapsed time: 23720	ns per query: 237.2 (dummy=96034395341658271)
+Benchmark 14b. 50M Geometric Gaps with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 26342	ns per query: 263.42 (dummy=103668615315713943)
+Benchmark 14b. 50M Geometric Gaps with n-1 on Vigna's EF
+	type:Successor	elapsed time: 1.86303e+08	ns per query: 1.86303e+06 (dummy=9169342207459839304)
+Benchmark 14b. 50M Geometric Gaps with n-1 on Vigna's EF
+	type:Contains	elapsed time: 1.77192e+08	ns per query: 1.77192e+06 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 15. 10M Adversarial Single-Prefix tight universe on EF1...
+OK: 15. 10M Adversarial Single-Prefix tight universe on EF1 (m=5841141, n=9165600411766226944, 33642864 bytes)
+Running benchmarks for 15. 10M Adversarial Single-Prefix tight universe on EF1...
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF1
+	type:Access	elapsed time: 21925	ns per query: 219.25 (dummy=2361963)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF1
+	type:Predecessor	elapsed time: 196075	ns per query: 1960.75 (dummy=0)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF1
+	type:Successor	elapsed time: 160443	ns per query: 1604.43 (dummy=0)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF1
+	type:Contains	elapsed time: 8615	ns per query: 86.15 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 15. 10M Adversarial Single-Prefix tight universe on EF2...
+OK: 15. 10M Adversarial Single-Prefix tight universe on EF2 (m=5841141, n=9165600411766226944, 33610096 bytes)
+Running benchmarks for 15. 10M Adversarial Single-Prefix tight universe on EF2...
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2
+	type:Access	elapsed time: 22836	ns per query: 228.36 (dummy=1411438)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2
+	type:Predecessor	elapsed time: 5202	ns per query: 52.02 (dummy=0)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2
+	type:Successor	elapsed time: 40973	ns per query: 409.73 (dummy=0)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2
+	type:Contains	elapsed time: 3639	ns per query: 36.39 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 15. 10M Adversarial Single-Prefix tight universe on EF2v2...
+OK: 15. 10M Adversarial Single-Prefix tight universe on EF2v2 (m=5841141, n=9165600411766226944, 35674472 bytes)
+Running benchmarks for 15. 10M Adversarial Single-Prefix tight universe on EF2v2...
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2v2
+	type:Access	elapsed time: 23506	ns per query: 235.06 (dummy=4600963)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2v2
+	type:Predecessor	elapsed time: 8536	ns per query: 85.36 (dummy=0)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2v2
+	type:Successor	elapsed time: 70223	ns per query: 702.23 (dummy=0)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2v2
+	type:Contains	elapsed time: 8091	ns per query: 80.91 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 15. 10M Adversarial Single-Prefix tight universe on EF2v3...
+OK: 15. 10M Adversarial Single-Prefix tight universe on EF2v3 (m=5841141, n=9165600411766226944, 35674480 bytes)
+Running benchmarks for 15. 10M Adversarial Single-Prefix tight universe on EF2v3...
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2v3
+	type:Access	elapsed time: 23069	ns per query: 230.69 (dummy=8202757)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2v3
+	type:Predecessor	elapsed time: 3509	ns per query: 35.09 (dummy=0)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2v3
+	type:Successor	elapsed time: 40087	ns per query: 400.87 (dummy=0)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on EF2v3
+	type:Contains	elapsed time: 3016	ns per query: 30.16 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 15. 10M Adversarial Single-Prefix tight universe on Vigna's EF...
+OK: 15. 10M Adversarial Single-Prefix tight universe on Vigna's EF (m=5841141, n=9165600411766226944, 31532000 bytes)
+Running benchmarks for 15. 10M Adversarial Single-Prefix tight universe on Vigna's EF...
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on Vigna's EF
+	type:Access	elapsed time: 19083	ns per query: 190.83 (dummy=321779)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 14527	ns per query: 145.27 (dummy=0)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on Vigna's EF
+	type:Successor	elapsed time: 15620	ns per query: 156.2 (dummy=0)
+Benchmark 15. 10M Adversarial Single-Prefix tight universe on Vigna's EF
+	type:Contains	elapsed time: 15981	ns per query: 159.81 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 15b. 10M Adversarial Single-Prefix with n-1 on EF1...
+OK: 15b. 10M Adversarial Single-Prefix with n-1 on EF1 (m=5841142, n=9223372036854775808, 33642864 bytes)
+Running benchmarks for 15b. 10M Adversarial Single-Prefix with n-1 on EF1...
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF1
+	type:Access	elapsed time: 22548	ns per query: 225.48 (dummy=4606736)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF1
+	type:Predecessor	elapsed time: 189662	ns per query: 1896.62 (dummy=9165600411766226943)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF1
+	type:Successor	elapsed time: 183232	ns per query: 1832.32 (dummy=0)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF1
+	type:Contains	elapsed time: 8395	ns per query: 83.95 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 15b. 10M Adversarial Single-Prefix with n-1 on EF2...
+OK: 15b. 10M Adversarial Single-Prefix with n-1 on EF2 (m=5841142, n=9223372036854775808, 33610096 bytes)
+Running benchmarks for 15b. 10M Adversarial Single-Prefix with n-1 on EF2...
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2
+	type:Access	elapsed time: 22184	ns per query: 221.84 (dummy=2167145)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2
+	type:Predecessor	elapsed time: 4925	ns per query: 49.25 (dummy=9165600411766226943)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2
+	type:Successor	elapsed time: 41421	ns per query: 414.21 (dummy=57771625096937471)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2
+	type:Contains	elapsed time: 3378	ns per query: 33.78 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 15b. 10M Adversarial Single-Prefix with n-1 on EF2v2...
+OK: 15b. 10M Adversarial Single-Prefix with n-1 on EF2v2 (m=5841142, n=9223372036854775808, 35674472 bytes)
+Running benchmarks for 15b. 10M Adversarial Single-Prefix with n-1 on EF2v2...
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2v2
+	type:Access	elapsed time: 23166	ns per query: 231.66 (dummy=7747710)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2v2
+	type:Predecessor	elapsed time: 9358	ns per query: 93.58 (dummy=9165600411766226943)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2v2
+	type:Successor	elapsed time: 75022	ns per query: 750.22 (dummy=0)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2v2
+	type:Contains	elapsed time: 7887	ns per query: 78.87 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 15b. 10M Adversarial Single-Prefix with n-1 on EF2v3...
+OK: 15b. 10M Adversarial Single-Prefix with n-1 on EF2v3 (m=5841142, n=9223372036854775808, 35674480 bytes)
+Running benchmarks for 15b. 10M Adversarial Single-Prefix with n-1 on EF2v3...
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2v3
+	type:Access	elapsed time: 23017	ns per query: 230.17 (dummy=8191656)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2v3
+	type:Predecessor	elapsed time: 4409	ns per query: 44.09 (dummy=9165600411766226943)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2v3
+	type:Successor	elapsed time: 39373	ns per query: 393.73 (dummy=0)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on EF2v3
+	type:Contains	elapsed time: 3220	ns per query: 32.2 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 15b. 10M Adversarial Single-Prefix with n-1 on Vigna's EF...
+OK: 15b. 10M Adversarial Single-Prefix with n-1 on Vigna's EF (m=5841142, n=9223372036854775808, 31540648 bytes)
+Running benchmarks for 15b. 10M Adversarial Single-Prefix with n-1 on Vigna's EF...
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on Vigna's EF
+	type:Access	elapsed time: 19676	ns per query: 196.76 (dummy=7042537)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 14826	ns per query: 148.26 (dummy=0)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on Vigna's EF
+	type:Successor	elapsed time: 16861	ns per query: 168.61 (dummy=0)
+Benchmark 15b. 10M Adversarial Single-Prefix with n-1 on Vigna's EF
+	type:Contains	elapsed time: 15847	ns per query: 158.47 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 16. 100M Uniform Random tight universe on EF1...
+OK: 16. 100M Uniform Random tight universe on EF1 (m=100000000, n=9223372025387165810, 532340040 bytes)
+Running benchmarks for 16. 100M Uniform Random tight universe on EF1...
+Benchmark 16. 100M Uniform Random tight universe on EF1
+	type:Access	elapsed time: 71441	ns per query: 714.41 (dummy=5597283371464949541)
+Benchmark 16. 100M Uniform Random tight universe on EF1
+	type:Predecessor	elapsed time: 36494	ns per query: 364.94 (dummy=3958866256159142007)
+Benchmark 16. 100M Uniform Random tight universe on EF1
+	type:Successor	elapsed time: 36458	ns per query: 364.58 (dummy=707312899635284692)
+Benchmark 16. 100M Uniform Random tight universe on EF1
+	type:Contains	elapsed time: 36244	ns per query: 362.44 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 16. 100M Uniform Random tight universe on EF2...
+OK: 16. 100M Uniform Random tight universe on EF2 (m=100000000, n=9223372025387165810, 532077896 bytes)
+Running benchmarks for 16. 100M Uniform Random tight universe on EF2...
+Benchmark 16. 100M Uniform Random tight universe on EF2
+	type:Access	elapsed time: 70222	ns per query: 702.22 (dummy=3556373251459856404)
+Benchmark 16. 100M Uniform Random tight universe on EF2
+	type:Predecessor	elapsed time: 35612	ns per query: 356.12 (dummy=4788350632345141834)
+Benchmark 16. 100M Uniform Random tight universe on EF2
+	type:Successor	elapsed time: 35177	ns per query: 351.77 (dummy=4100648794321105934)
+Benchmark 16. 100M Uniform Random tight universe on EF2
+	type:Contains	elapsed time: 34659	ns per query: 346.59 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 16. 100M Uniform Random tight universe on EF2v2...
+OK: 16. 100M Uniform Random tight universe on EF2v2 (m=100000000, n=9223372025387165810, 548592960 bytes)
+Running benchmarks for 16. 100M Uniform Random tight universe on EF2v2...
+Benchmark 16. 100M Uniform Random tight universe on EF2v2
+	type:Access	elapsed time: 88145	ns per query: 881.45 (dummy=3963053911782565885)
+Benchmark 16. 100M Uniform Random tight universe on EF2v2
+	type:Predecessor	elapsed time: 37220	ns per query: 372.2 (dummy=8360288399141088259)
+Benchmark 16. 100M Uniform Random tight universe on EF2v2
+	type:Successor	elapsed time: 37972	ns per query: 379.72 (dummy=2279094603310211218)
+Benchmark 16. 100M Uniform Random tight universe on EF2v2
+	type:Contains	elapsed time: 37156	ns per query: 371.56 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 16. 100M Uniform Random tight universe on EF2v3...
+OK: 16. 100M Uniform Random tight universe on EF2v3 (m=100000000, n=9223372025387165810, 548592968 bytes)
+Running benchmarks for 16. 100M Uniform Random tight universe on EF2v3...
+Benchmark 16. 100M Uniform Random tight universe on EF2v3
+	type:Access	elapsed time: 71468	ns per query: 714.68 (dummy=7549749375701701161)
+Benchmark 16. 100M Uniform Random tight universe on EF2v3
+	type:Predecessor	elapsed time: 36044	ns per query: 360.44 (dummy=7659279828538259153)
+Benchmark 16. 100M Uniform Random tight universe on EF2v3
+	type:Successor	elapsed time: 36596	ns per query: 365.96 (dummy=2364773508658965817)
+Benchmark 16. 100M Uniform Random tight universe on EF2v3
+	type:Contains	elapsed time: 35100	ns per query: 351 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 16. 100M Uniform Random tight universe on Vigna's EF...
+OK: 16. 100M Uniform Random tight universe on Vigna's EF (m=100000000, n=9223372025387165810, 488426672 bytes)
+Running benchmarks for 16. 100M Uniform Random tight universe on Vigna's EF...
+Benchmark 16. 100M Uniform Random tight universe on Vigna's EF
+	type:Access	elapsed time: 26721	ns per query: 267.21 (dummy=1302807239829843577)
+Benchmark 16. 100M Uniform Random tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 43982	ns per query: 439.82 (dummy=5366611148219250009)
+Benchmark 16. 100M Uniform Random tight universe on Vigna's EF
+	type:Successor	elapsed time: 43741	ns per query: 437.41 (dummy=6533510627341910402)
+Benchmark 16. 100M Uniform Random tight universe on Vigna's EF
+	type:Contains	elapsed time: 43152	ns per query: 431.52 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 16b. 100M Uniform Random with n-1 on EF1...
+OK: 16b. 100M Uniform Random with n-1 on EF1 (m=100000001, n=9223372036854775808, 532340048 bytes)
+Running benchmarks for 16b. 100M Uniform Random with n-1 on EF1...
+Benchmark 16b. 100M Uniform Random with n-1 on EF1
+	type:Access	elapsed time: 71251	ns per query: 712.51 (dummy=1126359186299149544)
+Benchmark 16b. 100M Uniform Random with n-1 on EF1
+	type:Predecessor	elapsed time: 37048	ns per query: 370.48 (dummy=6879493883819359263)
+Benchmark 16b. 100M Uniform Random with n-1 on EF1
+	type:Successor	elapsed time: 36096	ns per query: 360.96 (dummy=3332568764265316009)
+Benchmark 16b. 100M Uniform Random with n-1 on EF1
+	type:Contains	elapsed time: 35070	ns per query: 350.7 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 16b. 100M Uniform Random with n-1 on EF2...
+OK: 16b. 100M Uniform Random with n-1 on EF2 (m=100000001, n=9223372036854775808, 532077904 bytes)
+Running benchmarks for 16b. 100M Uniform Random with n-1 on EF2...
+Benchmark 16b. 100M Uniform Random with n-1 on EF2
+	type:Access	elapsed time: 69891	ns per query: 698.91 (dummy=3426222717683580269)
+Benchmark 16b. 100M Uniform Random with n-1 on EF2
+	type:Predecessor	elapsed time: 35165	ns per query: 351.65 (dummy=3293907239816055265)
+Benchmark 16b. 100M Uniform Random with n-1 on EF2
+	type:Successor	elapsed time: 36125	ns per query: 361.25 (dummy=6319691662756496248)
+Benchmark 16b. 100M Uniform Random with n-1 on EF2
+	type:Contains	elapsed time: 36119	ns per query: 361.19 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 16b. 100M Uniform Random with n-1 on EF2v2...
+OK: 16b. 100M Uniform Random with n-1 on EF2v2 (m=100000001, n=9223372036854775808, 548592968 bytes)
+Running benchmarks for 16b. 100M Uniform Random with n-1 on EF2v2...
+Benchmark 16b. 100M Uniform Random with n-1 on EF2v2
+	type:Access	elapsed time: 85903	ns per query: 859.03 (dummy=2111092976168456445)
+Benchmark 16b. 100M Uniform Random with n-1 on EF2v2
+	type:Predecessor	elapsed time: 37948	ns per query: 379.48 (dummy=9093043910052189901)
+Benchmark 16b. 100M Uniform Random with n-1 on EF2v2
+	type:Successor	elapsed time: 37603	ns per query: 376.03 (dummy=7574789246756118395)
+Benchmark 16b. 100M Uniform Random with n-1 on EF2v2
+	type:Contains	elapsed time: 36313	ns per query: 363.13 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 16b. 100M Uniform Random with n-1 on EF2v3...
+OK: 16b. 100M Uniform Random with n-1 on EF2v3 (m=100000001, n=9223372036854775808, 548592976 bytes)
+Running benchmarks for 16b. 100M Uniform Random with n-1 on EF2v3...
+Benchmark 16b. 100M Uniform Random with n-1 on EF2v3
+	type:Access	elapsed time: 70053	ns per query: 700.53 (dummy=3046949996694745834)
+Benchmark 16b. 100M Uniform Random with n-1 on EF2v3
+	type:Predecessor	elapsed time: 35395	ns per query: 353.95 (dummy=6260954845211598506)
+Benchmark 16b. 100M Uniform Random with n-1 on EF2v3
+	type:Successor	elapsed time: 35728	ns per query: 357.28 (dummy=7456173189638339186)
+Benchmark 16b. 100M Uniform Random with n-1 on EF2v3
+	type:Contains	elapsed time: 35918	ns per query: 359.18 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 16b. 100M Uniform Random with n-1 on Vigna's EF...
+OK: 16b. 100M Uniform Random with n-1 on Vigna's EF (m=100000001, n=9223372036854775808, 488426728 bytes)
+Running benchmarks for 16b. 100M Uniform Random with n-1 on Vigna's EF...
+Benchmark 16b. 100M Uniform Random with n-1 on Vigna's EF
+	type:Access	elapsed time: 25156	ns per query: 251.56 (dummy=3961837157407198904)
+Benchmark 16b. 100M Uniform Random with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 44492	ns per query: 444.92 (dummy=1845555295327632299)
+Benchmark 16b. 100M Uniform Random with n-1 on Vigna's EF
+	type:Successor	elapsed time: 43459	ns per query: 434.59 (dummy=7253866396951061259)
+Benchmark 16b. 100M Uniform Random with n-1 on Vigna's EF
+	type:Contains	elapsed time: 44265	ns per query: 442.65 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=10000 tight universe on EF1...
+OK: 17. Uniform crossover m=10000 tight universe on EF1 (m=10000, n=9999337, 19720 bytes)
+Running benchmarks for 17. Uniform crossover m=10000 tight universe on EF1...
+Benchmark 17. Uniform crossover m=10000 tight universe on EF1
+	type:Access	elapsed time: 10430	ns per query: 104.3 (dummy=10161262)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF1
+	type:Predecessor	elapsed time: 9159	ns per query: 91.59 (dummy=10566419)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF1
+	type:Successor	elapsed time: 8544	ns per query: 85.44 (dummy=2866917)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF1
+	type:Contains	elapsed time: 7621	ns per query: 76.21 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=10000 tight universe on EF2...
+OK: 17. Uniform crossover m=10000 tight universe on EF2 (m=10000, n=9999337, 19656 bytes)
+Running benchmarks for 17. Uniform crossover m=10000 tight universe on EF2...
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2
+	type:Access	elapsed time: 10170	ns per query: 101.7 (dummy=5614260)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2
+	type:Predecessor	elapsed time: 8807	ns per query: 88.07 (dummy=3334501)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2
+	type:Successor	elapsed time: 9139	ns per query: 91.39 (dummy=14859160)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2
+	type:Contains	elapsed time: 7645	ns per query: 76.45 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=10000 tight universe on EF2v2...
+OK: 17. Uniform crossover m=10000 tight universe on EF2v2 (m=10000, n=9999337, 21192 bytes)
+Running benchmarks for 17. Uniform crossover m=10000 tight universe on EF2v2...
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2v2
+	type:Access	elapsed time: 10125	ns per query: 101.25 (dummy=6909589)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2v2
+	type:Predecessor	elapsed time: 7981	ns per query: 79.81 (dummy=54917)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2v2
+	type:Successor	elapsed time: 8203	ns per query: 82.03 (dummy=2768549)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2v2
+	type:Contains	elapsed time: 7442	ns per query: 74.42 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=10000 tight universe on EF2v3...
+OK: 17. Uniform crossover m=10000 tight universe on EF2v3 (m=10000, n=9999337, 21192 bytes)
+Running benchmarks for 17. Uniform crossover m=10000 tight universe on EF2v3...
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2v3
+	type:Access	elapsed time: 10266	ns per query: 102.66 (dummy=16688091)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2v3
+	type:Predecessor	elapsed time: 8065	ns per query: 80.65 (dummy=11198922)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2v3
+	type:Successor	elapsed time: 8636	ns per query: 86.36 (dummy=13517337)
+Benchmark 17. Uniform crossover m=10000 tight universe on EF2v3
+	type:Contains	elapsed time: 13352	ns per query: 133.52 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=10000 tight universe on Vigna's EF...
+OK: 17. Uniform crossover m=10000 tight universe on Vigna's EF (m=10000, n=9999337, 16448 bytes)
+Running benchmarks for 17. Uniform crossover m=10000 tight universe on Vigna's EF...
+Benchmark 17. Uniform crossover m=10000 tight universe on Vigna's EF
+	type:Access	elapsed time: 3051	ns per query: 30.51 (dummy=8254368)
+Benchmark 17. Uniform crossover m=10000 tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 7503	ns per query: 75.03 (dummy=6876517)
+Benchmark 17. Uniform crossover m=10000 tight universe on Vigna's EF
+	type:Successor	elapsed time: 7201	ns per query: 72.01 (dummy=11524890)
+Benchmark 17. Uniform crossover m=10000 tight universe on Vigna's EF
+	type:Contains	elapsed time: 7015	ns per query: 70.15 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=10000 with n-1 on EF1...
+OK: 17b. Uniform crossover m=10000 with n-1 on EF1 (m=10001, n=10000000, 19720 bytes)
+Running benchmarks for 17b. Uniform crossover m=10000 with n-1 on EF1...
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF1
+	type:Access	elapsed time: 10154	ns per query: 101.54 (dummy=8945218)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF1
+	type:Predecessor	elapsed time: 9212	ns per query: 92.12 (dummy=3910942)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF1
+	type:Successor	elapsed time: 8731	ns per query: 87.31 (dummy=8342373)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF1
+	type:Contains	elapsed time: 7733	ns per query: 77.33 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=10000 with n-1 on EF2...
+OK: 17b. Uniform crossover m=10000 with n-1 on EF2 (m=10001, n=10000000, 19656 bytes)
+Running benchmarks for 17b. Uniform crossover m=10000 with n-1 on EF2...
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2
+	type:Access	elapsed time: 10194	ns per query: 101.94 (dummy=3970456)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2
+	type:Predecessor	elapsed time: 9040	ns per query: 90.4 (dummy=7058212)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2
+	type:Successor	elapsed time: 8607	ns per query: 86.07 (dummy=5509229)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2
+	type:Contains	elapsed time: 13387	ns per query: 133.87 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=10000 with n-1 on EF2v2...
+OK: 17b. Uniform crossover m=10000 with n-1 on EF2v2 (m=10001, n=10000000, 21192 bytes)
+Running benchmarks for 17b. Uniform crossover m=10000 with n-1 on EF2v2...
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2v2
+	type:Access	elapsed time: 10401	ns per query: 104.01 (dummy=12898589)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2v2
+	type:Predecessor	elapsed time: 8242	ns per query: 82.42 (dummy=7927277)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2v2
+	type:Successor	elapsed time: 8481	ns per query: 84.81 (dummy=15421968)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2v2
+	type:Contains	elapsed time: 7573	ns per query: 75.73 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=10000 with n-1 on EF2v3...
+OK: 17b. Uniform crossover m=10000 with n-1 on EF2v3 (m=10001, n=10000000, 21192 bytes)
+Running benchmarks for 17b. Uniform crossover m=10000 with n-1 on EF2v3...
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2v3
+	type:Access	elapsed time: 10174	ns per query: 101.74 (dummy=3109339)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2v3
+	type:Predecessor	elapsed time: 7561	ns per query: 75.61 (dummy=8473826)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2v3
+	type:Successor	elapsed time: 8833	ns per query: 88.33 (dummy=12415044)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on EF2v3
+	type:Contains	elapsed time: 13411	ns per query: 134.11 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=10000 with n-1 on Vigna's EF...
+OK: 17b. Uniform crossover m=10000 with n-1 on Vigna's EF (m=10001, n=10000000, 16448 bytes)
+Running benchmarks for 17b. Uniform crossover m=10000 with n-1 on Vigna's EF...
+Benchmark 17b. Uniform crossover m=10000 with n-1 on Vigna's EF
+	type:Access	elapsed time: 3066	ns per query: 30.66 (dummy=14634801)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 6982	ns per query: 69.82 (dummy=16359208)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on Vigna's EF
+	type:Successor	elapsed time: 7361	ns per query: 73.61 (dummy=2002512)
+Benchmark 17b. Uniform crossover m=10000 with n-1 on Vigna's EF
+	type:Contains	elapsed time: 7126	ns per query: 71.26 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=50000 tight universe on EF1...
+OK: 17. Uniform crossover m=50000 tight universe on EF1 (m=50000, n=49998755, 98112 bytes)
+Running benchmarks for 17. Uniform crossover m=50000 tight universe on EF1...
+Benchmark 17. Uniform crossover m=50000 tight universe on EF1
+	type:Access	elapsed time: 12441	ns per query: 124.41 (dummy=57468776)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF1
+	type:Predecessor	elapsed time: 9385	ns per query: 93.85 (dummy=63436281)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF1
+	type:Successor	elapsed time: 9226	ns per query: 92.26 (dummy=47790946)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF1
+	type:Contains	elapsed time: 8175	ns per query: 81.75 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=50000 tight universe on EF2...
+OK: 17. Uniform crossover m=50000 tight universe on EF2 (m=50000, n=49998755, 97856 bytes)
+Running benchmarks for 17. Uniform crossover m=50000 tight universe on EF2...
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2
+	type:Access	elapsed time: 12424	ns per query: 124.24 (dummy=19466211)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2
+	type:Predecessor	elapsed time: 9575	ns per query: 95.75 (dummy=39417008)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2
+	type:Successor	elapsed time: 8781	ns per query: 87.81 (dummy=27721864)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2
+	type:Contains	elapsed time: 7670	ns per query: 76.7 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=50000 tight universe on EF2v2...
+OK: 17. Uniform crossover m=50000 tight universe on EF2v2 (m=50000, n=49998755, 104512 bytes)
+Running benchmarks for 17. Uniform crossover m=50000 tight universe on EF2v2...
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2v2
+	type:Access	elapsed time: 13098	ns per query: 130.98 (dummy=62581581)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2v2
+	type:Predecessor	elapsed time: 8796	ns per query: 87.96 (dummy=62726784)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2v2
+	type:Successor	elapsed time: 9124	ns per query: 91.24 (dummy=36344921)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2v2
+	type:Contains	elapsed time: 8170	ns per query: 81.7 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=50000 tight universe on EF2v3...
+OK: 17. Uniform crossover m=50000 tight universe on EF2v3 (m=50000, n=49998755, 104512 bytes)
+Running benchmarks for 17. Uniform crossover m=50000 tight universe on EF2v3...
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2v3
+	type:Access	elapsed time: 12242	ns per query: 122.42 (dummy=8423090)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2v3
+	type:Predecessor	elapsed time: 8551	ns per query: 85.51 (dummy=46391913)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2v3
+	type:Successor	elapsed time: 8954	ns per query: 89.54 (dummy=18258394)
+Benchmark 17. Uniform crossover m=50000 tight universe on EF2v3
+	type:Contains	elapsed time: 7758	ns per query: 77.58 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=50000 tight universe on Vigna's EF...
+OK: 17. Uniform crossover m=50000 tight universe on Vigna's EF (m=50000, n=49998755, 80816 bytes)
+Running benchmarks for 17. Uniform crossover m=50000 tight universe on Vigna's EF...
+Benchmark 17. Uniform crossover m=50000 tight universe on Vigna's EF
+	type:Access	elapsed time: 3455	ns per query: 34.55 (dummy=9365025)
+Benchmark 17. Uniform crossover m=50000 tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 8389	ns per query: 83.89 (dummy=58827302)
+Benchmark 17. Uniform crossover m=50000 tight universe on Vigna's EF
+	type:Successor	elapsed time: 8216	ns per query: 82.16 (dummy=10089270)
+Benchmark 17. Uniform crossover m=50000 tight universe on Vigna's EF
+	type:Contains	elapsed time: 7624	ns per query: 76.24 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=50000 with n-1 on EF1...
+OK: 17b. Uniform crossover m=50000 with n-1 on EF1 (m=50001, n=50000000, 98112 bytes)
+Running benchmarks for 17b. Uniform crossover m=50000 with n-1 on EF1...
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF1
+	type:Access	elapsed time: 12342	ns per query: 123.42 (dummy=59438690)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF1
+	type:Predecessor	elapsed time: 9765	ns per query: 97.65 (dummy=59975228)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF1
+	type:Successor	elapsed time: 9427	ns per query: 94.27 (dummy=28289855)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF1
+	type:Contains	elapsed time: 14649	ns per query: 146.49 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=50000 with n-1 on EF2...
+OK: 17b. Uniform crossover m=50000 with n-1 on EF2 (m=50001, n=50000000, 97856 bytes)
+Running benchmarks for 17b. Uniform crossover m=50000 with n-1 on EF2...
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2
+	type:Access	elapsed time: 12455	ns per query: 124.55 (dummy=44431847)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2
+	type:Predecessor	elapsed time: 9358	ns per query: 93.58 (dummy=65336924)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2
+	type:Successor	elapsed time: 9228	ns per query: 92.28 (dummy=64906387)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2
+	type:Contains	elapsed time: 14244	ns per query: 142.44 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=50000 with n-1 on EF2v2...
+OK: 17b. Uniform crossover m=50000 with n-1 on EF2v2 (m=50001, n=50000000, 104512 bytes)
+Running benchmarks for 17b. Uniform crossover m=50000 with n-1 on EF2v2...
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2v2
+	type:Access	elapsed time: 12867	ns per query: 128.67 (dummy=5482505)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2v2
+	type:Predecessor	elapsed time: 8827	ns per query: 88.27 (dummy=23437322)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2v2
+	type:Successor	elapsed time: 20040	ns per query: 200.4 (dummy=16178613)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2v2
+	type:Contains	elapsed time: 7861	ns per query: 78.61 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=50000 with n-1 on EF2v3...
+OK: 17b. Uniform crossover m=50000 with n-1 on EF2v3 (m=50001, n=50000000, 104512 bytes)
+Running benchmarks for 17b. Uniform crossover m=50000 with n-1 on EF2v3...
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2v3
+	type:Access	elapsed time: 12374	ns per query: 123.74 (dummy=58945343)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2v3
+	type:Predecessor	elapsed time: 8608	ns per query: 86.08 (dummy=9794821)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2v3
+	type:Successor	elapsed time: 8718	ns per query: 87.18 (dummy=24357937)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on EF2v3
+	type:Contains	elapsed time: 7618	ns per query: 76.18 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=50000 with n-1 on Vigna's EF...
+OK: 17b. Uniform crossover m=50000 with n-1 on Vigna's EF (m=50001, n=50000000, 80816 bytes)
+Running benchmarks for 17b. Uniform crossover m=50000 with n-1 on Vigna's EF...
+Benchmark 17b. Uniform crossover m=50000 with n-1 on Vigna's EF
+	type:Access	elapsed time: 3475	ns per query: 34.75 (dummy=49993401)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 8361	ns per query: 83.61 (dummy=12217967)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on Vigna's EF
+	type:Successor	elapsed time: 8057	ns per query: 80.57 (dummy=36124208)
+Benchmark 17b. Uniform crossover m=50000 with n-1 on Vigna's EF
+	type:Contains	elapsed time: 7631	ns per query: 76.31 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=200000 tight universe on EF1...
+OK: 17. Uniform crossover m=200000 tight universe on EF1 (m=200000, n=199998638, 394464 bytes)
+Running benchmarks for 17. Uniform crossover m=200000 tight universe on EF1...
+Benchmark 17. Uniform crossover m=200000 tight universe on EF1
+	type:Access	elapsed time: 20181	ns per query: 201.81 (dummy=57404509)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF1
+	type:Predecessor	elapsed time: 13161	ns per query: 131.61 (dummy=7450055)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF1
+	type:Successor	elapsed time: 12466	ns per query: 124.66 (dummy=67034257)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF1
+	type:Contains	elapsed time: 10633	ns per query: 106.33 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=200000 tight universe on EF2...
+OK: 17. Uniform crossover m=200000 tight universe on EF2 (m=200000, n=199998638, 393440 bytes)
+Running benchmarks for 17. Uniform crossover m=200000 tight universe on EF2...
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2
+	type:Access	elapsed time: 20022	ns per query: 200.22 (dummy=19035905)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2
+	type:Predecessor	elapsed time: 13427	ns per query: 134.27 (dummy=264237193)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2
+	type:Successor	elapsed time: 11463	ns per query: 114.63 (dummy=187273417)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2
+	type:Contains	elapsed time: 9870	ns per query: 98.7 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=200000 tight universe on EF2v2...
+OK: 17. Uniform crossover m=200000 tight universe on EF2v2 (m=200000, n=199998638, 422112 bytes)
+Running benchmarks for 17. Uniform crossover m=200000 tight universe on EF2v2...
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2v2
+	type:Access	elapsed time: 20743	ns per query: 207.43 (dummy=264645076)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2v2
+	type:Predecessor	elapsed time: 13651	ns per query: 136.51 (dummy=219404190)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2v2
+	type:Successor	elapsed time: 11671	ns per query: 116.71 (dummy=126526949)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2v2
+	type:Contains	elapsed time: 10959	ns per query: 109.59 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=200000 tight universe on EF2v3...
+OK: 17. Uniform crossover m=200000 tight universe on EF2v3 (m=200000, n=199998638, 422112 bytes)
+Running benchmarks for 17. Uniform crossover m=200000 tight universe on EF2v3...
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2v3
+	type:Access	elapsed time: 20274	ns per query: 202.74 (dummy=107121691)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2v3
+	type:Predecessor	elapsed time: 12515	ns per query: 125.15 (dummy=243449771)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2v3
+	type:Successor	elapsed time: 11959	ns per query: 119.59 (dummy=84598605)
+Benchmark 17. Uniform crossover m=200000 tight universe on EF2v3
+	type:Contains	elapsed time: 9960	ns per query: 99.6 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=200000 tight universe on Vigna's EF...
+OK: 17. Uniform crossover m=200000 tight universe on Vigna's EF (m=200000, n=199998638, 322248 bytes)
+Running benchmarks for 17. Uniform crossover m=200000 tight universe on Vigna's EF...
+Benchmark 17. Uniform crossover m=200000 tight universe on Vigna's EF
+	type:Access	elapsed time: 7928	ns per query: 79.28 (dummy=57738365)
+Benchmark 17. Uniform crossover m=200000 tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 11995	ns per query: 119.95 (dummy=137655451)
+Benchmark 17. Uniform crossover m=200000 tight universe on Vigna's EF
+	type:Successor	elapsed time: 10798	ns per query: 107.98 (dummy=58542651)
+Benchmark 17. Uniform crossover m=200000 tight universe on Vigna's EF
+	type:Contains	elapsed time: 10009	ns per query: 100.09 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=200000 with n-1 on EF1...
+OK: 17b. Uniform crossover m=200000 with n-1 on EF1 (m=200001, n=200000000, 394472 bytes)
+Running benchmarks for 17b. Uniform crossover m=200000 with n-1 on EF1...
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF1
+	type:Access	elapsed time: 19458	ns per query: 194.58 (dummy=167859296)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF1
+	type:Predecessor	elapsed time: 13024	ns per query: 130.24 (dummy=82590383)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF1
+	type:Successor	elapsed time: 12128	ns per query: 121.28 (dummy=183354726)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF1
+	type:Contains	elapsed time: 10526	ns per query: 105.26 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=200000 with n-1 on EF2...
+OK: 17b. Uniform crossover m=200000 with n-1 on EF2 (m=200001, n=200000000, 393448 bytes)
+Running benchmarks for 17b. Uniform crossover m=200000 with n-1 on EF2...
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2
+	type:Access	elapsed time: 19240	ns per query: 192.4 (dummy=188860846)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2
+	type:Predecessor	elapsed time: 13728	ns per query: 137.28 (dummy=24341956)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2
+	type:Successor	elapsed time: 12288	ns per query: 122.88 (dummy=80296745)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2
+	type:Contains	elapsed time: 10651	ns per query: 106.51 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=200000 with n-1 on EF2v2...
+OK: 17b. Uniform crossover m=200000 with n-1 on EF2v2 (m=200001, n=200000000, 422120 bytes)
+Running benchmarks for 17b. Uniform crossover m=200000 with n-1 on EF2v2...
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2v2
+	type:Access	elapsed time: 20705	ns per query: 207.05 (dummy=257401710)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2v2
+	type:Predecessor	elapsed time: 13224	ns per query: 132.24 (dummy=126179208)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2v2
+	type:Successor	elapsed time: 12010	ns per query: 120.1 (dummy=104843202)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2v2
+	type:Contains	elapsed time: 10395	ns per query: 103.95 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=200000 with n-1 on EF2v3...
+OK: 17b. Uniform crossover m=200000 with n-1 on EF2v3 (m=200001, n=200000000, 422120 bytes)
+Running benchmarks for 17b. Uniform crossover m=200000 with n-1 on EF2v3...
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2v3
+	type:Access	elapsed time: 20350	ns per query: 203.5 (dummy=96723285)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2v3
+	type:Predecessor	elapsed time: 13783	ns per query: 137.83 (dummy=59252693)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2v3
+	type:Successor	elapsed time: 12059	ns per query: 120.59 (dummy=43210118)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on EF2v3
+	type:Contains	elapsed time: 10395	ns per query: 103.95 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=200000 with n-1 on Vigna's EF...
+OK: 17b. Uniform crossover m=200000 with n-1 on Vigna's EF (m=200001, n=200000000, 322256 bytes)
+Running benchmarks for 17b. Uniform crossover m=200000 with n-1 on Vigna's EF...
+Benchmark 17b. Uniform crossover m=200000 with n-1 on Vigna's EF
+	type:Access	elapsed time: 8494	ns per query: 84.94 (dummy=212923389)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 12480	ns per query: 124.8 (dummy=246602317)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on Vigna's EF
+	type:Successor	elapsed time: 10962	ns per query: 109.62 (dummy=121887900)
+Benchmark 17b. Uniform crossover m=200000 with n-1 on Vigna's EF
+	type:Contains	elapsed time: 11238	ns per query: 112.38 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=500000 tight universe on EF1...
+OK: 17. Uniform crossover m=500000 tight universe on EF1 (m=500000, n=499999546, 978472 bytes)
+Running benchmarks for 17. Uniform crossover m=500000 tight universe on EF1...
+Benchmark 17. Uniform crossover m=500000 tight universe on EF1
+	type:Access	elapsed time: 23176	ns per query: 231.76 (dummy=530089480)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF1
+	type:Predecessor	elapsed time: 17288	ns per query: 172.88 (dummy=191853065)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF1
+	type:Successor	elapsed time: 15537	ns per query: 155.37 (dummy=3290967)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF1
+	type:Contains	elapsed time: 14346	ns per query: 143.46 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=500000 tight universe on EF2...
+OK: 17. Uniform crossover m=500000 tight universe on EF2 (m=500000, n=499999546, 976424 bytes)
+Running benchmarks for 17. Uniform crossover m=500000 tight universe on EF2...
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2
+	type:Access	elapsed time: 23552	ns per query: 235.52 (dummy=522094909)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2
+	type:Predecessor	elapsed time: 17324	ns per query: 173.24 (dummy=176765847)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2
+	type:Successor	elapsed time: 15453	ns per query: 154.53 (dummy=82117621)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2
+	type:Contains	elapsed time: 13511	ns per query: 135.11 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=500000 tight universe on EF2v2...
+OK: 17. Uniform crossover m=500000 tight universe on EF2v2 (m=500000, n=499999546, 1035816 bytes)
+Running benchmarks for 17. Uniform crossover m=500000 tight universe on EF2v2...
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2v2
+	type:Access	elapsed time: 25630	ns per query: 256.3 (dummy=379766556)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2v2
+	type:Predecessor	elapsed time: 15645	ns per query: 156.45 (dummy=386369828)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2v2
+	type:Successor	elapsed time: 15517	ns per query: 155.17 (dummy=216761931)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2v2
+	type:Contains	elapsed time: 14712	ns per query: 147.12 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=500000 tight universe on EF2v3...
+OK: 17. Uniform crossover m=500000 tight universe on EF2v3 (m=500000, n=499999546, 1035816 bytes)
+Running benchmarks for 17. Uniform crossover m=500000 tight universe on EF2v3...
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2v3
+	type:Access	elapsed time: 23165	ns per query: 231.65 (dummy=340117332)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2v3
+	type:Predecessor	elapsed time: 15624	ns per query: 156.24 (dummy=365012153)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2v3
+	type:Successor	elapsed time: 15048	ns per query: 150.48 (dummy=478226884)
+Benchmark 17. Uniform crossover m=500000 tight universe on EF2v3
+	type:Contains	elapsed time: 14189	ns per query: 141.89 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=500000 tight universe on Vigna's EF...
+OK: 17. Uniform crossover m=500000 tight universe on Vigna's EF (m=500000, n=499999546, 805096 bytes)
+Running benchmarks for 17. Uniform crossover m=500000 tight universe on Vigna's EF...
+Benchmark 17. Uniform crossover m=500000 tight universe on Vigna's EF
+	type:Access	elapsed time: 11544	ns per query: 115.44 (dummy=108718729)
+Benchmark 17. Uniform crossover m=500000 tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 15856	ns per query: 158.56 (dummy=323543278)
+Benchmark 17. Uniform crossover m=500000 tight universe on Vigna's EF
+	type:Successor	elapsed time: 16265	ns per query: 162.65 (dummy=206542294)
+Benchmark 17. Uniform crossover m=500000 tight universe on Vigna's EF
+	type:Contains	elapsed time: 14223	ns per query: 142.23 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=500000 with n-1 on EF1...
+OK: 17b. Uniform crossover m=500000 with n-1 on EF1 (m=500001, n=500000000, 978472 bytes)
+Running benchmarks for 17b. Uniform crossover m=500000 with n-1 on EF1...
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF1
+	type:Access	elapsed time: 23503	ns per query: 235.03 (dummy=380642638)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF1
+	type:Predecessor	elapsed time: 17186	ns per query: 171.86 (dummy=224087319)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF1
+	type:Successor	elapsed time: 15703	ns per query: 157.03 (dummy=135052517)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF1
+	type:Contains	elapsed time: 15437	ns per query: 154.37 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=500000 with n-1 on EF2...
+OK: 17b. Uniform crossover m=500000 with n-1 on EF2 (m=500001, n=500000000, 976424 bytes)
+Running benchmarks for 17b. Uniform crossover m=500000 with n-1 on EF2...
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2
+	type:Access	elapsed time: 23470	ns per query: 234.7 (dummy=324102358)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2
+	type:Predecessor	elapsed time: 17265	ns per query: 172.65 (dummy=313443969)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2
+	type:Successor	elapsed time: 15525	ns per query: 155.25 (dummy=265971739)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2
+	type:Contains	elapsed time: 14182	ns per query: 141.82 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=500000 with n-1 on EF2v2...
+OK: 17b. Uniform crossover m=500000 with n-1 on EF2v2 (m=500001, n=500000000, 1035816 bytes)
+Running benchmarks for 17b. Uniform crossover m=500000 with n-1 on EF2v2...
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2v2
+	type:Access	elapsed time: 24814	ns per query: 248.14 (dummy=510354837)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2v2
+	type:Predecessor	elapsed time: 15570	ns per query: 155.7 (dummy=128530161)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2v2
+	type:Successor	elapsed time: 16369	ns per query: 163.69 (dummy=41397071)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2v2
+	type:Contains	elapsed time: 13724	ns per query: 137.24 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=500000 with n-1 on EF2v3...
+OK: 17b. Uniform crossover m=500000 with n-1 on EF2v3 (m=500001, n=500000000, 1035816 bytes)
+Running benchmarks for 17b. Uniform crossover m=500000 with n-1 on EF2v3...
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2v3
+	type:Access	elapsed time: 23574	ns per query: 235.74 (dummy=69736321)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2v3
+	type:Predecessor	elapsed time: 17471	ns per query: 174.71 (dummy=297272387)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2v3
+	type:Successor	elapsed time: 15873	ns per query: 158.73 (dummy=246077467)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on EF2v3
+	type:Contains	elapsed time: 15213	ns per query: 152.13 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=500000 with n-1 on Vigna's EF...
+OK: 17b. Uniform crossover m=500000 with n-1 on Vigna's EF (m=500001, n=500000000, 805096 bytes)
+Running benchmarks for 17b. Uniform crossover m=500000 with n-1 on Vigna's EF...
+Benchmark 17b. Uniform crossover m=500000 with n-1 on Vigna's EF
+	type:Access	elapsed time: 27125	ns per query: 271.25 (dummy=43535221)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 16697	ns per query: 166.97 (dummy=493027615)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on Vigna's EF
+	type:Successor	elapsed time: 14461	ns per query: 144.61 (dummy=256731749)
+Benchmark 17b. Uniform crossover m=500000 with n-1 on Vigna's EF
+	type:Contains	elapsed time: 15219	ns per query: 152.19 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=2000000 tight universe on EF1...
+OK: 17. Uniform crossover m=2000000 tight universe on EF1 (m=2000000, n=1999999758, 3930232 bytes)
+Running benchmarks for 17. Uniform crossover m=2000000 tight universe on EF1...
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF1
+	type:Access	elapsed time: 27536	ns per query: 275.36 (dummy=1341466180)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF1
+	type:Predecessor	elapsed time: 19336	ns per query: 193.36 (dummy=1588448720)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF1
+	type:Successor	elapsed time: 20500	ns per query: 205 (dummy=781355389)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF1
+	type:Contains	elapsed time: 18528	ns per query: 185.28 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=2000000 tight universe on EF2...
+OK: 17. Uniform crossover m=2000000 tight universe on EF2 (m=2000000, n=1999999758, 3922040 bytes)
+Running benchmarks for 17. Uniform crossover m=2000000 tight universe on EF2...
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2
+	type:Access	elapsed time: 27639	ns per query: 276.39 (dummy=1317353848)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2
+	type:Predecessor	elapsed time: 18713	ns per query: 187.13 (dummy=465950828)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2
+	type:Successor	elapsed time: 20121	ns per query: 201.21 (dummy=1973017692)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2
+	type:Contains	elapsed time: 18336	ns per query: 183.36 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=2000000 tight universe on EF2v2...
+OK: 17. Uniform crossover m=2000000 tight universe on EF2v2 (m=2000000, n=1999999758, 4175992 bytes)
+Running benchmarks for 17. Uniform crossover m=2000000 tight universe on EF2v2...
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2v2
+	type:Access	elapsed time: 32801	ns per query: 328.01 (dummy=1517467177)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2v2
+	type:Predecessor	elapsed time: 21098	ns per query: 210.98 (dummy=1796322519)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2v2
+	type:Successor	elapsed time: 23077	ns per query: 230.77 (dummy=712903364)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2v2
+	type:Contains	elapsed time: 21587	ns per query: 215.87 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=2000000 tight universe on EF2v3...
+OK: 17. Uniform crossover m=2000000 tight universe on EF2v3 (m=2000000, n=1999999758, 4175992 bytes)
+Running benchmarks for 17. Uniform crossover m=2000000 tight universe on EF2v3...
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2v3
+	type:Access	elapsed time: 27577	ns per query: 275.77 (dummy=1540422197)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2v3
+	type:Predecessor	elapsed time: 18476	ns per query: 184.76 (dummy=190863333)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2v3
+	type:Successor	elapsed time: 18970	ns per query: 189.7 (dummy=1645114351)
+Benchmark 17. Uniform crossover m=2000000 tight universe on EF2v3
+	type:Contains	elapsed time: 18794	ns per query: 187.94 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17. Uniform crossover m=2000000 tight universe on Vigna's EF...
+OK: 17. Uniform crossover m=2000000 tight universe on Vigna's EF (m=2000000, n=1999999758, 3219344 bytes)
+Running benchmarks for 17. Uniform crossover m=2000000 tight universe on Vigna's EF...
+Benchmark 17. Uniform crossover m=2000000 tight universe on Vigna's EF
+	type:Access	elapsed time: 13994	ns per query: 139.94 (dummy=783063148)
+Benchmark 17. Uniform crossover m=2000000 tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 26305	ns per query: 263.05 (dummy=1215360167)
+Benchmark 17. Uniform crossover m=2000000 tight universe on Vigna's EF
+	type:Successor	elapsed time: 24178	ns per query: 241.78 (dummy=195769033)
+Benchmark 17. Uniform crossover m=2000000 tight universe on Vigna's EF
+	type:Contains	elapsed time: 22588	ns per query: 225.88 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=2000000 with n-1 on EF1...
+OK: 17b. Uniform crossover m=2000000 with n-1 on EF1 (m=2000001, n=2000000000, 3930240 bytes)
+Running benchmarks for 17b. Uniform crossover m=2000000 with n-1 on EF1...
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF1
+	type:Access	elapsed time: 28100	ns per query: 281 (dummy=673818399)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF1
+	type:Predecessor	elapsed time: 21249	ns per query: 212.49 (dummy=190349442)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF1
+	type:Successor	elapsed time: 27936	ns per query: 279.36 (dummy=1910552613)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF1
+	type:Contains	elapsed time: 27610	ns per query: 276.1 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=2000000 with n-1 on EF2...
+OK: 17b. Uniform crossover m=2000000 with n-1 on EF2 (m=2000001, n=2000000000, 3922048 bytes)
+Running benchmarks for 17b. Uniform crossover m=2000000 with n-1 on EF2...
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2
+	type:Access	elapsed time: 27654	ns per query: 276.54 (dummy=1054236618)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2
+	type:Predecessor	elapsed time: 19523	ns per query: 195.23 (dummy=1908469102)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2
+	type:Successor	elapsed time: 20260	ns per query: 202.6 (dummy=552121487)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2
+	type:Contains	elapsed time: 18506	ns per query: 185.06 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=2000000 with n-1 on EF2v2...
+OK: 17b. Uniform crossover m=2000000 with n-1 on EF2v2 (m=2000001, n=2000000000, 4176000 bytes)
+Running benchmarks for 17b. Uniform crossover m=2000000 with n-1 on EF2v2...
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2v2
+	type:Access	elapsed time: 32460	ns per query: 324.6 (dummy=1579243356)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2v2
+	type:Predecessor	elapsed time: 20895	ns per query: 208.95 (dummy=2057905319)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2v2
+	type:Successor	elapsed time: 21244	ns per query: 212.44 (dummy=412048833)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2v2
+	type:Contains	elapsed time: 21184	ns per query: 211.84 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=2000000 with n-1 on EF2v3...
+OK: 17b. Uniform crossover m=2000000 with n-1 on EF2v3 (m=2000001, n=2000000000, 4176000 bytes)
+Running benchmarks for 17b. Uniform crossover m=2000000 with n-1 on EF2v3...
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2v3
+	type:Access	elapsed time: 27965	ns per query: 279.65 (dummy=1873757039)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2v3
+	type:Predecessor	elapsed time: 19224	ns per query: 192.24 (dummy=1448217537)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2v3
+	type:Successor	elapsed time: 19116	ns per query: 191.16 (dummy=998669802)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on EF2v3
+	type:Contains	elapsed time: 18457	ns per query: 184.57 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 17b. Uniform crossover m=2000000 with n-1 on Vigna's EF...
+OK: 17b. Uniform crossover m=2000000 with n-1 on Vigna's EF (m=2000001, n=2000000000, 3219352 bytes)
+Running benchmarks for 17b. Uniform crossover m=2000000 with n-1 on Vigna's EF...
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on Vigna's EF
+	type:Access	elapsed time: 14732	ns per query: 147.32 (dummy=404154357)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 25886	ns per query: 258.86 (dummy=580988106)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on Vigna's EF
+	type:Successor	elapsed time: 23199	ns per query: 231.99 (dummy=2094390060)
+Benchmark 17b. Uniform crossover m=2000000 with n-1 on Vigna's EF
+	type:Contains	elapsed time: 23197	ns per query: 231.97 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 18. Uniform sparse m=1M tight universe on EF1...
+OK: 18. Uniform sparse m=1M tight universe on EF1 (m=1000000, n=1125898406524021, 4461024 bytes)
+Running benchmarks for 18. Uniform sparse m=1M tight universe on EF1...
+Benchmark 18. Uniform sparse m=1M tight universe on EF1
+	type:Access	elapsed time: 26505	ns per query: 265.05 (dummy=1029426382968038)
+Benchmark 18. Uniform sparse m=1M tight universe on EF1
+	type:Predecessor	elapsed time: 19954	ns per query: 199.54 (dummy=418510106957704)
+Benchmark 18. Uniform sparse m=1M tight universe on EF1
+	type:Successor	elapsed time: 20679	ns per query: 206.79 (dummy=62676226630959)
+Benchmark 18. Uniform sparse m=1M tight universe on EF1
+	type:Contains	elapsed time: 18765	ns per query: 187.65 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 18. Uniform sparse m=1M tight universe on EF2...
+OK: 18. Uniform sparse m=1M tight universe on EF2 (m=1000000, n=1125898406524021, 4456928 bytes)
+Running benchmarks for 18. Uniform sparse m=1M tight universe on EF2...
+Benchmark 18. Uniform sparse m=1M tight universe on EF2
+	type:Access	elapsed time: 26410	ns per query: 264.1 (dummy=227587673769966)
+Benchmark 18. Uniform sparse m=1M tight universe on EF2
+	type:Predecessor	elapsed time: 19218	ns per query: 192.18 (dummy=327690134921964)
+Benchmark 18. Uniform sparse m=1M tight universe on EF2
+	type:Successor	elapsed time: 20817	ns per query: 208.17 (dummy=104194168352080)
+Benchmark 18. Uniform sparse m=1M tight universe on EF2
+	type:Contains	elapsed time: 19917	ns per query: 199.17 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 18. Uniform sparse m=1M tight universe on EF2v2...
+OK: 18. Uniform sparse m=1M tight universe on EF2v2 (m=1000000, n=1125898406524021, 4661720 bytes)
+Running benchmarks for 18. Uniform sparse m=1M tight universe on EF2v2...
+Benchmark 18. Uniform sparse m=1M tight universe on EF2v2
+	type:Access	elapsed time: 28181	ns per query: 281.81 (dummy=402792032201424)
+Benchmark 18. Uniform sparse m=1M tight universe on EF2v2
+	type:Predecessor	elapsed time: 23034	ns per query: 230.34 (dummy=639644638573667)
+Benchmark 18. Uniform sparse m=1M tight universe on EF2v2
+	type:Successor	elapsed time: 23065	ns per query: 230.65 (dummy=218414259216203)
+Benchmark 18. Uniform sparse m=1M tight universe on EF2v2
+	type:Contains	elapsed time: 22456	ns per query: 224.56 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 18. Uniform sparse m=1M tight universe on EF2v3...
+OK: 18. Uniform sparse m=1M tight universe on EF2v3 (m=1000000, n=1125898406524021, 4661728 bytes)
+Running benchmarks for 18. Uniform sparse m=1M tight universe on EF2v3...
+Benchmark 18. Uniform sparse m=1M tight universe on EF2v3
+	type:Access	elapsed time: 26314	ns per query: 263.14 (dummy=912747246116667)
+Benchmark 18. Uniform sparse m=1M tight universe on EF2v3
+	type:Predecessor	elapsed time: 19781	ns per query: 197.81 (dummy=849299484577249)
+Benchmark 18. Uniform sparse m=1M tight universe on EF2v3
+	type:Successor	elapsed time: 20391	ns per query: 203.91 (dummy=413530027060923)
+Benchmark 18. Uniform sparse m=1M tight universe on EF2v3
+	type:Contains	elapsed time: 19322	ns per query: 193.22 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 18. Uniform sparse m=1M tight universe on Vigna's EF...
+OK: 18. Uniform sparse m=1M tight universe on Vigna's EF (m=1000000, n=1125898406524021, 4086408 bytes)
+Running benchmarks for 18. Uniform sparse m=1M tight universe on Vigna's EF...
+Benchmark 18. Uniform sparse m=1M tight universe on Vigna's EF
+	type:Access	elapsed time: 12880	ns per query: 128.8 (dummy=493973711452873)
+Benchmark 18. Uniform sparse m=1M tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 21915	ns per query: 219.15 (dummy=548030777869157)
+Benchmark 18. Uniform sparse m=1M tight universe on Vigna's EF
+	type:Successor	elapsed time: 21667	ns per query: 216.67 (dummy=222724529120321)
+Benchmark 18. Uniform sparse m=1M tight universe on Vigna's EF
+	type:Contains	elapsed time: 30538	ns per query: 305.38 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 18b. Uniform sparse m=1M with n-1 on EF1...
+OK: 18b. Uniform sparse m=1M with n-1 on EF1 (m=1000001, n=1125899906842624, 4461032 bytes)
+Running benchmarks for 18b. Uniform sparse m=1M with n-1 on EF1...
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF1
+	type:Access	elapsed time: 26609	ns per query: 266.09 (dummy=1321772362187)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF1
+	type:Predecessor	elapsed time: 20338	ns per query: 203.38 (dummy=1086215227271666)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF1
+	type:Successor	elapsed time: 20942	ns per query: 209.42 (dummy=936248770626811)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF1
+	type:Contains	elapsed time: 19769	ns per query: 197.69 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 18b. Uniform sparse m=1M with n-1 on EF2...
+OK: 18b. Uniform sparse m=1M with n-1 on EF2 (m=1000001, n=1125899906842624, 4456936 bytes)
+Running benchmarks for 18b. Uniform sparse m=1M with n-1 on EF2...
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2
+	type:Access	elapsed time: 26500	ns per query: 265 (dummy=431759777200525)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2
+	type:Predecessor	elapsed time: 19576	ns per query: 195.76 (dummy=718029304449601)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2
+	type:Successor	elapsed time: 19580	ns per query: 195.8 (dummy=424894382227712)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2
+	type:Contains	elapsed time: 19296	ns per query: 192.96 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 18b. Uniform sparse m=1M with n-1 on EF2v2...
+OK: 18b. Uniform sparse m=1M with n-1 on EF2v2 (m=1000001, n=1125899906842624, 4661728 bytes)
+Running benchmarks for 18b. Uniform sparse m=1M with n-1 on EF2v2...
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2v2
+	type:Access	elapsed time: 28096	ns per query: 280.96 (dummy=608850454687124)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2v2
+	type:Predecessor	elapsed time: 20798	ns per query: 207.98 (dummy=387703640071950)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2v2
+	type:Successor	elapsed time: 22337	ns per query: 223.37 (dummy=1007426287614296)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2v2
+	type:Contains	elapsed time: 22092	ns per query: 220.92 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 18b. Uniform sparse m=1M with n-1 on EF2v3...
+OK: 18b. Uniform sparse m=1M with n-1 on EF2v3 (m=1000001, n=1125899906842624, 4661736 bytes)
+Running benchmarks for 18b. Uniform sparse m=1M with n-1 on EF2v3...
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2v3
+	type:Access	elapsed time: 26474	ns per query: 264.74 (dummy=223117603930623)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2v3
+	type:Predecessor	elapsed time: 19392	ns per query: 193.92 (dummy=180378541406191)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2v3
+	type:Successor	elapsed time: 18008	ns per query: 180.08 (dummy=263456943124707)
+Benchmark 18b. Uniform sparse m=1M with n-1 on EF2v3
+	type:Contains	elapsed time: 18216	ns per query: 182.16 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 18b. Uniform sparse m=1M with n-1 on Vigna's EF...
+OK: 18b. Uniform sparse m=1M with n-1 on Vigna's EF (m=1000001, n=1125899906842624, 4086464 bytes)
+Running benchmarks for 18b. Uniform sparse m=1M with n-1 on Vigna's EF...
+Benchmark 18b. Uniform sparse m=1M with n-1 on Vigna's EF
+	type:Access	elapsed time: 12617	ns per query: 126.17 (dummy=1123365759802802)
+Benchmark 18b. Uniform sparse m=1M with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 22124	ns per query: 221.24 (dummy=891472886831929)
+Benchmark 18b. Uniform sparse m=1M with n-1 on Vigna's EF
+	type:Successor	elapsed time: 20168	ns per query: 201.68 (dummy=990180214199939)
+Benchmark 18b. Uniform sparse m=1M with n-1 on Vigna's EF
+	type:Contains	elapsed time: 18167	ns per query: 181.67 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 19. 50M Random Walk [bounded queries] tight universe on EF1...
+OK: 19. 50M Random Walk [bounded queries] tight universe on EF1 (m=50000000, n=25026954942, 97288952 bytes)
+Running benchmarks for 19. 50M Random Walk [bounded queries] tight universe on EF1...
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF1
+	type:Access	elapsed time: 59421	ns per query: 594.21 (dummy=407809771)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF1
+	type:Predecessor	elapsed time: 33331	ns per query: 333.31 (dummy=5836173578)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF1
+	type:Successor	elapsed time: 34246	ns per query: 342.46 (dummy=29006906577)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF1
+	type:Contains	elapsed time: 32062	ns per query: 320.62 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 19. 50M Random Walk [bounded queries] tight universe on EF2...
+OK: 19. 50M Random Walk [bounded queries] tight universe on EF2 (m=50000000, n=25026954942, 97157880 bytes)
+Running benchmarks for 19. 50M Random Walk [bounded queries] tight universe on EF2...
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2
+	type:Access	elapsed time: 58632	ns per query: 586.32 (dummy=6689610935)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2
+	type:Predecessor	elapsed time: 32184	ns per query: 321.84 (dummy=9683317425)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2
+	type:Successor	elapsed time: 33250	ns per query: 332.5 (dummy=10239913058)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2
+	type:Contains	elapsed time: 31473	ns per query: 314.73 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 19. 50M Random Walk [bounded queries] tight universe on EF2v2...
+OK: 19. 50M Random Walk [bounded queries] tight universe on EF2v2 (m=50000000, n=25026954942, 101745400 bytes)
+Running benchmarks for 19. 50M Random Walk [bounded queries] tight universe on EF2v2...
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2v2
+	type:Access	elapsed time: 68200	ns per query: 682 (dummy=13528588930)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2v2
+	type:Predecessor	elapsed time: 33679	ns per query: 336.79 (dummy=29048120576)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2v2
+	type:Successor	elapsed time: 34059	ns per query: 340.59 (dummy=3546862268)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2v2
+	type:Contains	elapsed time: 32831	ns per query: 328.31 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 19. 50M Random Walk [bounded queries] tight universe on EF2v3...
+OK: 19. 50M Random Walk [bounded queries] tight universe on EF2v3 (m=50000000, n=25026954942, 101745400 bytes)
+Running benchmarks for 19. 50M Random Walk [bounded queries] tight universe on EF2v3...
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2v3
+	type:Access	elapsed time: 56590	ns per query: 565.9 (dummy=13643775293)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2v3
+	type:Predecessor	elapsed time: 31955	ns per query: 319.55 (dummy=5262398346)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2v3
+	type:Successor	elapsed time: 32092	ns per query: 320.92 (dummy=12430553778)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on EF2v3
+	type:Contains	elapsed time: 31084	ns per query: 310.84 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 19. 50M Random Walk [bounded queries] tight universe on Vigna's EF...
+OK: 19. 50M Random Walk [bounded queries] tight universe on Vigna's EF (m=50000000, n=25026954942, 74242496 bytes)
+Running benchmarks for 19. 50M Random Walk [bounded queries] tight universe on Vigna's EF...
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on Vigna's EF
+	type:Access	elapsed time: 23834	ns per query: 238.34 (dummy=4489610785)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on Vigna's EF
+	type:Predecessor	elapsed time: 38770	ns per query: 387.7 (dummy=4525997256)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on Vigna's EF
+	type:Successor	elapsed time: 39158	ns per query: 391.58 (dummy=29181661917)
+Benchmark 19. 50M Random Walk [bounded queries] tight universe on Vigna's EF
+	type:Contains	elapsed time: 39100	ns per query: 391 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 19b. 50M Random Walk [bounded queries] with n-1 on EF1...
+OK: 19b. 50M Random Walk [bounded queries] with n-1 on EF1 (m=50000001, n=9223372036854775808, 272288960 bytes)
+Running benchmarks for 19b. 50M Random Walk [bounded queries] with n-1 on EF1...
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF1
+	type:Access	elapsed time: 29828	ns per query: 298.28 (dummy=15554106486)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF1
+	type:Predecessor	elapsed time: 108739	ns per query: 1087.39 (dummy=25186522695)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF1
+	type:Successor	elapsed time: 109984	ns per query: 1099.84 (dummy=12180676547)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF1
+	type:Contains	elapsed time: 111646	ns per query: 1116.46 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 19b. 50M Random Walk [bounded queries] with n-1 on EF2...
+OK: 19b. 50M Random Walk [bounded queries] with n-1 on EF2 (m=50000001, n=9223372036854775808, 272157888 bytes)
+Running benchmarks for 19b. 50M Random Walk [bounded queries] with n-1 on EF2...
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2
+	type:Access	elapsed time: 29316	ns per query: 293.16 (dummy=9117773576)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2
+	type:Predecessor	elapsed time: 110981	ns per query: 1109.81 (dummy=31118130016)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2
+	type:Successor	elapsed time: 111664	ns per query: 1116.64 (dummy=24488952595)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2
+	type:Contains	elapsed time: 107707	ns per query: 1077.07 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 19b. 50M Random Walk [bounded queries] with n-1 on EF2v2...
+OK: 19b. 50M Random Walk [bounded queries] with n-1 on EF2v2 (m=50000001, n=9223372036854775808, 280415416 bytes)
+Running benchmarks for 19b. 50M Random Walk [bounded queries] with n-1 on EF2v2...
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2v2
+	type:Access	elapsed time: 30077	ns per query: 300.77 (dummy=33839466089)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2v2
+	type:Predecessor	elapsed time: 112027	ns per query: 1120.27 (dummy=5407719148)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2v2
+	type:Successor	elapsed time: 108460	ns per query: 1084.6 (dummy=9606045849)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2v2
+	type:Contains	elapsed time: 109288	ns per query: 1092.88 (dummy=0)
+------------------------------------------------------------
+Checking correctness of 19b. 50M Random Walk [bounded queries] with n-1 on EF2v3...
+OK: 19b. 50M Random Walk [bounded queries] with n-1 on EF2v3 (m=50000001, n=9223372036854775808, 280415424 bytes)
+Running benchmarks for 19b. 50M Random Walk [bounded queries] with n-1 on EF2v3...
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2v3
+	type:Access	elapsed time: 29630	ns per query: 296.3 (dummy=8464095121)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2v3
+	type:Predecessor	elapsed time: 108134	ns per query: 1081.34 (dummy=10331353091)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2v3
+	type:Successor	elapsed time: 110883	ns per query: 1108.83 (dummy=8257563957)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on EF2v3
+	type:Contains	elapsed time: 105121	ns per query: 1051.21 (dummy=1)
+------------------------------------------------------------
+Checking correctness of 19b. 50M Random Walk [bounded queries] with n-1 on Vigna's EF...
+OK: 19b. 50M Random Walk [bounded queries] with n-1 on Vigna's EF (m=50000001, n=9223372036854775808, 250463560 bytes)
+Running benchmarks for 19b. 50M Random Walk [bounded queries] with n-1 on Vigna's EF...
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on Vigna's EF
+	type:Access	elapsed time: 22645	ns per query: 226.45 (dummy=14345145940)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on Vigna's EF
+	type:Predecessor	elapsed time: 9.4995e+09	ns per query: 9.4995e+07 (dummy=3654927204)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on Vigna's EF
+	type:Successor	elapsed time: 8.54108e+09	ns per query: 8.54108e+07 (dummy=27100137006)
+Benchmark 19b. 50M Random Walk [bounded queries] with n-1 on Vigna's EF
+	type:Contains	elapsed time: 8.9355e+09	ns per query: 8.9355e+07 (dummy=0)
+------------------------------------------------------------
+
+All tests passed.
